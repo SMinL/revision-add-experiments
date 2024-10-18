@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python /home/wyd/yunze/code/Experiments/added-experiments/questions-data-random-5shot/llama_test.py

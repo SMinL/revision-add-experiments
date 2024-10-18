@@ -1,0 +1,1864 @@
+Visualize BAR SELECT Grape , COUNT(Grape) FROM wine GROUP BY Grape  ORDER BY Grape  ASC
+Visualize HISTOGRAM SELECT OPENNING_YEAR , AVG(capacity) FROM cinema GROUP BY OPENNING_YEAR ORDER BY AVG(capacity) ASC
+Visualize BAR SELECT occupation , COUNT(occupation) FROM player GROUP BY occupation ORDER BY occupation ASC
+Visualize SCATTER SELECT customer_id, ORDER_STATUS_CODE , customer_orders.order_shipping_charges FROM Customer_Orders JOIN Customer_Addresses ON Customer_Orders.customer_id = Customer_Addresses.customer_id JOIN Customers ON Customer_Addresses.customer_id = Customers.customer_id JOIN Mailshot_Customers ON Customer_Addresses.customer_id = Mailshot_Customers.customer_id WHERE Mailshot_Customers.outcome_code IS NULL AND customer_id IS NOT NULL
+Visualize SCATTER SELECT shipping_charges, customer_id FROM Customer_Orders WHERE order_status_code IN(Cancelled, Paid)
+Visualize HISTOGRAM SELECT Studio FROM film ORDER BY Studio ASC
+Visualize BAR SELECT Party , COUNT(People_ID) FROM people GROUP BY Party ORDER BY COUNT(People_ID) DESC
+Visualize BAR SELECT Hometown , AVG(Age) FROM teacher GROUP BY Hometown ORDER BY AVG(Age) DESC
+
+Visualize BAR SELECT No, COUNT(No) FROM appellations GROUP BY No ORDER BY COUNT(No) DESC
+Visualize BAR SELECT city_code , COUNT(StuID) FROM Student GROUP BY city_code
+Visualize BAR SELECT other_account_details , COUNT(other_account_details) FROM Accounts GROUP BY other_account_details ORDER BY COUNT(other_account_details) DESC
+Visualize LINE SELECT AllergyType , SUM(Allergy) FROM Allergy_Type GROUP BY AllergyType ORDER BY SUM(Allergy) ASC
+Visualize BAR SELECT Building , count(*) FROM Faculty GROUP BY Building
+Visualize BAR SELECT Last_Name , count(*) FROM Student GROUP BY Last_Name, Sex ORDER BY Last_Name DESC
+Visualize BAR SELECT customer_details , COUNT(customer_id) FROM Customers GROUP BY customer_details ORDER BY customer_details DESC
+Visualize BAR SELECT customer_status_code, count(*) FROM Customers GROUP BY customer_status_code ORDER BY customer_status_code DESC
+Visualize BAR SELECT Faculty , COUNT(Faculty) FROM Student GROUP BY Rank ORDER BY COUNT(Faculty) DESC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) ASC
+Visualize BAR SELECT Type_of_Thing_Code , COUNT(Type_of_Thing_Code) FROM Things GROUP BY Type_of_Thing_Code
+Visualize BAR SELECT Year , AVG(Price) FROM wine GROUP BY Year
+
+Visualize BAR SELECT transaction_type , COUNT(transaction_id) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(transaction_id) ASC
+Visualize BAR SELECT Appelation , count(*) FROM appellations
+Visualize BAR SELECT Occupation ,count(*) FROM player WHERE occupation != 'Researcher' GROUP BY Occupation ORDER BY count(*) DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer GROUP BY cust_name ORDER BY acc_bal ASC
+Visualize BAR SELECT date_account_opened , COUNT(*) FROM Accounts GROUP BY date_account_opened
+Visualize LINE SELECT date_account_opened FROM Accounts ORDER BY date_account_opened ASC
+Visualize BAR SELECT Winery , Grape FROM wine WHERE Price > 100 GROUP BY Grape , Winery ORDER BY Grape ASC
+Visualize BAR SELECT Building , COUNT(*) FROM Faculty GROUP BY Building ORDER BY Building ASC
+Visualize Histogram SELECT STUDENT_ID , Mean(Age) FROM Student GROUP BY Sex ORDER BY Mean(Age) ASC
+Visualize BAR SELECT occupation , COUNT(*) FROM player GROUP BY occupation ORDER BY COUNT(*) ASC
+Visualize HISTOGRAM SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code
+Visualize LINE SELECT year , COUNT(account_id) FROM Accounts GROUP BY year BIN year BY YEAR  Order BY year ASC
+Visualize LINE SELECT booking_start_date , booking_end_date FROM apartment_bookings
+Visualize BAR SELECT customer_id , count(*) FROM Customers GROUP BY customer_id ORDER BY count(*) ASC
+Visualize BAR SELECT No , COUNT(Year) FROM Wine GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT Operating_system, COUNT(Operating_system) FROM Web_client_accelerator GROUP BY Operating_system
+Visualize BAR SELECT customer_status_code , COUNT(customer_status_code) FROM customers GROUP BY customer_status_code ORDER BY COUNT(customer_status_code) ASC BIN customer_status_code BY WEEKDAY
+Visualize BAR SELECT LName , count(*) FROM Student GROUP BY LName HAVING Sex='F' ORDER BY count(*) ASC
+Visualize BAR SELECT Directed_by , COUNT(Film_ID) FROM film GROUP BY Directed_by ORDER BY Directed_by ASC
+Visualize BAR SELECT year , COUNT(*) FROM matches GROUP BY year
+Visualize BAR SELECT Sex , Count(Faculty.FacID) FROM Student LEFT JOIN Faculty ON Student.FacID = Faculty.FacID GROUP BY Sex
+Visualize BAR SELECT program_id , count(*) FROM channel GROUP BY owner ORDER BY owner ASC
+Visualize PIE SELECT Rank, COUNT(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Competition_type , count(Distinct competition_type) FROM competition ORDER BY count(Distinct competition_type) ASC
+Visualize BAR SELECT color , count(*) FROM photos GROUP BY color
+Visualize BAR SELECT Directed_by , count(*) FROM film GROUP BY Directed_by ORDER BY count(*) DESC
+Visualize BAR SELECT payment_method_code , count(amount_payment) FROM Customer_Payments GROUP BY Payment_method_code
+Visualize BAR SELECT customer_status_code , COUNT(*) FROM Customers GROUP BY customer_status_code ORDER BY customer_status_code
+Visualize BAR SELECT date_of_birth , count(*) FROM Guests WHERE gender_code = 'M' ORDER BY count(*) DESC
+Visualize BAR SELECT Winery , count(*) FROM wine WHERE price >100 GROUP BY Winery ORDER BY price DESC ,count(*) ASC
+
+Visualize BAR SELECT AllergyType , count(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize LINE SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ASC
+Visualize HISTOGRAM SELECT average(capacity) BY Openning_year
+Visualize HISTOGRAM SELECT booking_start_date , COUNT(Booking_start_date) FROM Apartment_bookings
+Visualize LINE SELECT date_account_opened , COUNT(date_account_opened) FROM Accounts GROUP BY date_account_opened ,major_genres , other_account_details ORDER BY date_account_opened ASC
+Visualize BAR SELECT customer_details , count(*) FROM Customer GROUP BY customer_details
+
+Visualize BAR SELECT booking_status_code , count(booking_status_code) FROM apartment_bookings GROUP BY booking_status_code ORDER BY count(booking_status_code) DESC
+Visualize BAR SELECT COUNT(*) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT customer_status_code, COUNT(customer_status_code) FROM Customers GROUP BY customer_status_code
+Visualize BAR SELECT booking_status_code , COUNT(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code DESC
+Visualize BAR SELECT payment_method_code, COUNT(*) FROM Customer_Payments GROUP BY payment_method_code
+Visualize BAR SELECT Year, COUNT(Year) FROM matches GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT first_name , gender_mf FROM Customers WHERE good_or_bad_customer = "Good Customer" GROUP BY first_name ORDER BY last_name
+Visualize BAR SELECT Capacity , SUM(Capacity) FROM cinema GROUP BY Capacity ORDER BY Capacity DESC
+Visualize BAR SELECT apt_type_code ,count(apt_type_code) FROM Apartments GROUP BY apt_type_code ORDER BY count(apt_type_code) DESC
+Visualize BAR SELECT No , COUNT(*) FROM appellations GROUP BY No, County ORDER BY COUNT(*) DESC
+Visualize BAR SELECT AllergyType , COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(*) DESC
+1. Select the venue column, sort in ascending order. Visualize DISTINCT SELECT Venue FROM debate GROUP BY Venue ORDER BY Venue ASC 2. Add another column [*] , select the number of audience and sort in ascending order.  Visualize DISTINCT SELECT Num_of_Audience FROM debate GROUP BY Venue ORDER BY Venue ASC
+Visualize SELECT cust_name , avg(acc_bal) FROM customer GROUP BY cust_name ORDER BY avg(acc_bal) DESC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Building, count(*) FROM Faculty GROUP BY Building ORDER BY count(*) DESC BIN Building BY MONTH
+Visualize HISTOGRAM SELECT competition_type , count(competition_type) FROM competition GROUP BY competition_type ORDER BY competition_type ASC
+Visualize BAR SELECT sex , age FROM student
+Visualize BAR SELECT first_name , good_or_bad_customer FROM customers GROUP BY first_name ORDER BY good_or_bad_customer DESC
+Visualize BAR SELECT AllergyType , COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType DESC
+
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT Sales_billion, Profits_billion, Assets_billion, Market_Value_billion FROM companies ORDER BY Sales_billion
+Visualize BAR SELECT count(distinct date_moved_in) FROM Residents GROUP BY count(distinct date_moved_in) ORDER BY count(distinct date_moved_in) DESC
+Visualize BAR SELECT Owner , sum(Rating_in_percent) FROM channel GROUP BY Owner
+
+BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize SCATTER SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ASC
+Visualize BAR SELECT Lname , Fname , Phone , Room , Building FROM Faculty  GROUP BY Building ORDER BY Building ASC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+1) Visualize SCATTER SELECT Competition_type , min(Year) FROM competition GROUP BY Competition_type 2) Visualize SCATTER SELECT Competition_type , Year FROM competition ORDER BY Year DESC
+SELECT Year , Count(*) FROM wine WHERE price > 100 GROUP BY Year ORDER BY Year
+Visualize SCATTER SELECT Low_Estimate , High_Estimate FROM film_market_estimation GROUP BY Market_ID
+HISTOGRAM SELECT Player_ID , points FROM player
+Visualize BAR SELECT Name , assets_billion FROM Companies GROUP BY Name ORDER BY Name ASC
+Visualize PIE SELECT Program_ID , Owner, Sum(Rating_in_percent) FROM program,channel GROUP BY Owner
+Visualize LINE SELECT CUSTOMER_ID,COUNT(*) FROM ORDERS GROUP BY CUSTOMER_ID LINE SELECT CUSTOMER_ID,COUNT(*) FROM ACCOUNTS GROUP BY CUSTOMER_ID
+Visualize BAR SELECT Name ,Age FROM editor GROUP BY Name ORDER BY Age
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system DESC
+Visualize BAR SELECT Age , AVG(Age) FROM Student GROUP BY Age ORDER BY Age ASC
+Visualize BAR SELECT payment_method_code, COUNT(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Price , COUNT(CASES) FROM wine WHERE Price > 100 GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT Channel_ID , sum(Rating_in_percent) FROM channel GROUP BY Channel_ID , Owner ORDER BY Channel_ID , Rating_in_percent DESC
+Visualize BAR SELECT Lname , COUNT(Lname) FROM Student GROUP BY Lname ORDER BY Lname DESC
+Visualize BAR SELECT Price, Score FROM wine GROUP BY Price HAVING Price > 100.0
+Visualize BAR SELECT booking_start_date , COUNT(*) FROM Apartment_Bookings GROUP BY booking_start_date
+Visualize SCATTER SELECT Gender , COUNT(customer_id) FROM Customers GROUP BY Gender
+SELECT Building , SUM(Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Faculty.Fac
+
+Visualize HISTOGRAM SELECT Grape, COUNT(Grape) FROM grapes GROUP BY Grape
+Visualize BAR SELECT Name , COUNT(Editor_ID) FROM editor  ORDER BY Age ASC BIN Editor_ID BY Editor_ID
+Visualize BAR SELECT Time_of_day , count(*) FROM broadcast GROUP BY Time_of_day ORDER BY Time_of_day
+Visualize BAR SELECT Apt_Number , Bathroom_Count FROM Apartment GROUP BY Apt_Number, Bathroom_Count ORDER BY Bathroom_Count ASC
+Visualize BAR SELECT Position , COUNT(*) FROM player WHERE Points < 30
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY Gender ASC
+Visualize SCATTER SELECT DNO , CID FROM Department GROUP BY DNO
+Visualize BAR SELECT premises_type , count(premise_id) FROM Premises GROUP BY premises_type ORDER BY count(premise_id) DESC BIN premises_type
+Visualize PIE SELECT AllergyType , COUNT(*) FROM Allergy_Type GROUP BY AllergyType
+Visualize SCATTER SELECT order_items.other_order_item_details , SUM(order_items.product_quantity) FROM Orders INNER JOIN Order_Items ON order_items.order_id = orders.order_id GROUP BY order_items.other_order_item_details , sum(order_items.product_quantity)
+Visualize BAR SELECT customer_status_code , COUNT(*) FROM Customers GROUP BY customer_status_code ORDER BY customer_status_code ASC
+Visualize HISTOGRAM SELECT Capacity , Openning_year FROM cinema GROUP BY Capacity , Openning_year ORDER BY Openning_year
+Visualize SCATTER SELECT customer_first_name, customer_last_name, gender FROM customers
+Visualize BAR SELECT LName FROM Student WHERE Sex = 'F'
+Visualize BAR SELECT Hometown , count(*) FROM teacher GROUP BY Hometown ORDER BY count(*) DESC
+Visualize SCATTER SELECT Credits , DNO FROM Course GROUP BY Credits,DNO
+Visualize BAR SELECT credit_score, AVG(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT Industry , count(*) FROM Companies GROUP BY Industry ORDER BY count(*) ASC
+
+Visualize BAR SELECT Hometown , COUNT(Hometown) FROM teacher GROUP BY Age
+Visualize SCATTER SELECT Major , Total_number_students FROM Student GROUP BY Major
+Visualize BAR SELECT other_details, resident_id FROM Properties GROUP BY other_details ORDER BY other_details ASC
+Visualize BAR SELECT city_code , COUNT(StuID) FROM Student GROUP BY city_code ORDER BY COUNT(StuID) DESC
+Visualize BAR SELECT acc_bal , credit_score FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY acc_bal
+Visualize BAR SELECT Date_Moved_In FROM Residents_Services GROUP BY date_moved_in
+
+Visualize STACKED BAR SELECT Date_Account_Opened , count(*) FROM accounts GROUP BY Date_Account_Opened , other_account_details
+Visualize BAR SELECT date_moved_in , COUNT(*) FROM Residents GROUP BY YEAR(date_moved_in)
+
+Visualize BAR SELECT Allergy , COUNT(*) FROM Allergy_Type GROUP BY Allergy
+Visualize BAR SELECT date_moved_in , COUNT(other_details) FROM Residents GROUP BY date_moved_in ORDER BY COUNT(other_details) DESC
+Visualize Scatter Plot Select property_id,customer_event_id from customer_event_notes
+Visualize LINE SELECT date_of_birth , COUNT(*) FROM Customers WHERE customer_status_code='Good Customer' GROUP BY date_of_birth ORDER BY date_of_birth
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) DESC
+Visualize BAR SELECT Position , sum(Points) FROM player GROUP BY Position ORDER BY Position ASC
+Visualize LINE SELECT date_of_birth , COUNT(date_of_birth) FROM Guests WHERE gender_code = "Male" BIN date_of_birth BY DAY
+Visualize BAR SELECT Year , count(*) FROM wine
+Visualize BAR SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY COUNT(Studio) ASC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) DESC
+Visualize BAR SELECT Capacity , AVG(Capacity) FROM cinema GROUP BY Capacity ORDER BY Year_of_Openning ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM cinema GROUP BY Location ORDER BY COUNT(Location) ASC BIN Location BY WEEKDAY
+Visualize LINE SELECT AllergyType , COUNT(Allergy) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(Allergy) DESC
+Visualize BAR SELECT name , COUNT(*) FROM editor GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Name , Capacity FROM cinema GROUP BY Name
+Visualize BAR SELECT other_details , COUNT(RESIDENT_ID) FROM Residents GROUP BY other_details ORDER BY count(RESIDENT_ID) ASC RESIDENT_ID BIN date_moved_in by MONTH
+Visualize BAR SELECT cust_name , acc_bal FROM customer GROUP BY cust_name ORDER BY acc_bal DESC
+Visualize LINE SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC
+Visualize BAR SELECT first_name , Gender_MF FROM Customers GROUP BY first_name ORDER BY Gender_MF DESC
+Visualize BAR SELECT booking_status_code , Count(booking_status_code) FROM Apartment_bookings GROUP BY booking_status_code ORDER BY name DESC
+Visualize BAR SELECT Directed_by , COUNT(DIRECTED_BY) FROM film GROUP BY Directed_by ORDER BY COUNT(DIRECTED_BY) ASC
+
+Visualize BAR SELECT brand , count(*) FROM camera_lens GROUP BY brand ORDER BY count(*) DESC
+Visualize BAR SELECT COUNT(*) FROM Residents GROUP BY date_moved_in    or  Visualize BAR SELECT COUNT(*) FROM Residents_Services GROUP BY date_moved_in    or  Visualize BAR SELECT COUNT(*) FROM Customer_Event_Notes GROUP BY date_moved_in    or  Visualize BAR SELECT COUNT(*) FROM Customer_Events GROUP BY date_moved_in
+Visualize BAR SELECT Openning_year , COUNT(*) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT booking_status_code , count(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize STACKED BAR SELECT Color , Count(*) FROM grapes GROUP BY Color  , Visualize BAR SELECT Winery , Count(*) FROM wine GROUP BY Winery ,  Visualize BAR SELECT Grape , Count(*) FROM wine WHERE price > 100 ORDER BY Winery DESC,  Visualize BAR SELECT Grape , Count(*) FROM wine WHERE price > 100 GROUP BY Grape
+Visualize BAR SELECT cust_name , COUNT(cust_name) FROM customer WHERE cust_name LIKE 'a%' ORDER BY cust_name ASC
+Visualize BIN BY Payment_method_code
+Visualize PIE SELECT Price , Grape FROM wine GROUP BY Year ORDER BY Year DESC BIN Price BY 100
+Visualize BAR SELECT date , COUNT(date) FROM battle GROUP BY date ORDER BY COUNT(date) ASC
+Visualize BAR SELECT OPENNING_YEAR , COUNT(CAPACITY) FROM CINEMA GROUP BY OPENNING_YEAR ORDER BY CAPACITY
+Visualize LINE SELECT date_account_opened , COUNT(1) FROM Accounts GROUP BY other_account_details,  date_account_opened ORDER BY date_account_opened ASC
+Visualize PIE SELECT Allergy, count(*) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT Date_account_opened , COUNT(date_account_opened) FROM Accounts  GROUP BY Date_account_opened BIN Date_account_opened BY WEEKDAY  ORDER BY Date_account_opened ASC
+Visualize BAR SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY COUNT(FacID) ASC
+Visualize BAR SELECT AllergyType, COUNT(Allergy) FROM Has_Allergy GROUP BY AllergyType
+Visualize BAR SELECT party , count(*) FROM people GROUP BY party ORDER BY count(*) DESC
+Visualize SCATTER SELECT Advisor , COUNT(StuID) FROM Student GROUP BY Advisor
+Visualize BAR SELECT date_of_birth , count(*) FROM Guests GROUP BY date_of_birth HAVING gender_code = "Male"
+Visualize BAR SELECT Openning_year , SUM(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY Studio ASC
+Visualize BAR SELECT Sex , AVG(Age) FROM student GROUP BY Sex , Fname ORDER BY Fname DESC
+Visualize BAR SELECT APT_TYPE_CODE , MIN(ROOM_COUNT) FROM Apartments
+Visualize BAR SELECT Openning_year , COUNT(Openning_year) FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT year , COUNT(year) FROM matches GROUP BY year
+
+Visualize BAR SELECT Hand , COUNT(*) FROM players GROUP BY Hand ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) DESC
+Visualize BAR SELECT Owner , count(*) FROM Channel GROUP BY Owner ORDER BY Owner ASC
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in , DATEPART (WEEKDAY , date_moved_in)
+Visualize BAR SELECT Name , Capacity FROM cinema ORDER BY Capacity DESC
+Visualize BAR SELECT Owner , COUNT(Program_ID) FROM program GROUP BY Owner ORDER BY Owner ASC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code DESC
+Visualize BAR SELECT grape_ID , COUNT(*) FROM wine GROUP BY grape_ID ORDER BY count(*) ASC
+Visualize BAR SELECT Competition_type , count(Distinct Competition_type) FROM competition GROUP BY Competition_type ORDER BY count(Distinct Competition_type) ASC
+Visualize BAR SELECT Age , COUNT(Age) FROM student GROUP BY Age ORDER BY COUNT(Age) DESC
+Visualize SCATTER SELECT council_tax_id, cmi_cross_ref_id FROM CMI_Cross_References
+Visualize HISTOGRAM SELECT year , COUNT(year) FROM matches GROUP BY year ORDER BY COUNT(year)
+Visualize SCATTER SELECT Student , count(*) FROM adviser_student GROUP BY Student ORDER BY count(*) DESC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize BAR SELECT year , COUNT(*) FROM matches GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT booking_status_code , count(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT COUNT(COUNTY) , COUNTY FROM appellation GROUP BY COUNTY ORDER BY COUNTY
+Visualize BAR SELECT Residence , count(*) FROM player WHERE occupation <> "Researcher" GROUP BY Residence ORDER BY count(*) DESC
+Visualize BAR SELECT transaction_type , count(transaction_type) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(transaction_type) DESC
+Visualize BAR SELECT AllergyType , COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType DESC
+Visualize PIE SELECT time_of_day , COUNT(*) FROM broadcast GROUP BY time_of_day
+Visualize BAR SELECT Winery , Count(Wine) FROM wine GROUP BY Grape , Winery ORDER BY Cases DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT Allergy , AllergyType FROM Allergy_Type
+Visualize LINE SELECT Year , Max(Score) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT Rank , COUNT(FacID) FROM Faculty GROUP BY Rank ORDER BY Rank ASC
+Plot SCATTER SELECT order_details.total_price , order_item_id FROM Order_Items WHERE order_id = order_item_id
+Visualize BAR SELECT customer_status_code , COUNT(customer_status_code) FROM Customers WHERE customer_status_code = 'Good Customer'
+Visualize BAR SELECT Hometown , Age FROM teacher GROUP BY Hometown , Age ORDER BY Age ASC
+
+Visualize SCATTER SELECT count(*) , customer_id FROM Customers GROUP BY customer_id
+Visualize HISTOGRAM SELECT year , count(*) FROM matches GROUP BY year ORDER BY year
+Visualize BAR SELECT cust_name FROM customer
+
+Visualize PIE SELECT (LName + ', ' + Fname), Age , count(*) from Student where Sex = 'M' GROUP BY (LName + ', ' + Fname) , order by count(*) ASC
+1. Visualize LINE SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date 2. Visualize LINE SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date  ORDER BY booking_end_date DESC
+Visualize BAR SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions  GROUP BY transaction_type ORDER BY COUNT(transaction_type) DESC
+Visualize BAR SELECT Days , SUM(Instructor) FROM Course GROUP BY Days
+Visualize PIE SELECT Premises_Type , COUNT(premise_id) FROM Premises GROUP BY Premises_Type
+Visualize BAR SELECT AllergyType, COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT Directed_by , count(*) FROM film GROUP BY Directed_by ORDER BY Count(*)
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings  GROUP BY booking_end_date YEAR(booking_end_date) ORDER BY COUNT(booking_end_date) ASC
+Visualize SCATTER SELECT CID, Grade FROM Enrolled_in GROUP BY CID
+Visualize BAR SELECT gender_code , COUNT(gender_code) FROM Guests GROUP BY gender_code ORDER BY gender_code
+Visualize SCRATTER SELECT order_id , COUNT(order_item_id) FROM invoices GROUP BY order_id ORDER BY COUNT(order_item_id) ASC
+Visualize BAR SELECT Instructor , Days FROM Course GROUP BY Days ORDER BY Days DESC
+Visualize HISTOGRAM SELECT Year ,Max(Score) FROM wine GROUP BY Year
+Visualize PIE SELECT Rank FROM Faculty ORDER BY Rank ASC
+1. Visualize BAR SELECT Age , COUNT(Age) FROM Student GROUP BY Age HAVING COUNT(Age) > 10 ORDER BY Age ASC 2. Visualize BAR SELECT Age , AVG(Age) FROM Student GROUP BY Age HAVING COUNT(Age) > 10 3. Visualize BAR SELECT Name , AVG(Age) FROM Student GROUP BY Name HAVING COUNT(Age) > 10 ORDER BY Name ASC
+Visualize BAR SELECT color , COUNT(*) FROM photos GROUP BY color ORDER BY color ASC
+Visualize BAR SELECT Location , COUNT(Cinema_ID) FROM cinema GROUP BY Location ORDER BY COUNT(Cinema_ID) DESC
+
+Visualize BAR SELECT Sex , AVG(Age) FROM Student GROUP BY Sex ORDER BY AVG(Age) ASC
+Visualize BAR SELECT outcome_code , count(*) FROM mailshot_customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize TREND SELECT Capacity ,AVG(Capacity) FROM cinema  GROUP BY Capacity ORDER BY Capacity ASC
+Visualize LINE SELECT year , COUNT(year) FROM Accounts GROUP BY year ORDER BY year DESC
+Visualize LINE SELECT booking_end_date , COUNT(*) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC BIN booking_end_date BY YEAR
+Visualize BAR SELECT Venue , COUNT(*) FROM debate GROUP BY Venue ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Time_of_day , count(*) FROM broadcast GROUP BY Time_of_day
+Visualize BAR SELECT District , COUNT(Party) FROM people GROUP BY District ORDER BY Name
+Visualize SCATTER SELECT distinct date_moved_in FROM Residents GROUP BY total_count
+Visualize PIE SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType
+Visualize HISTOGRAM SELECT hand, COUNT(*) FROM players GROUP BY hand ORDER BY hand
+
+Visualize BAR SELECT customer_details , COUNT(customer_details) FROM Customers GROUP BY customer_details ORDER BY COUNT(customer_details) DESC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) DESC
+Visualize BAR SELECT Age , SUM(Major) FROM Student GROUP BY LName
+SELECT    Country,   COUNT(*) FROM     perpetrator GROUP BY    Country ORDER BY    COUNT(*) DESC
+
+Visualize BAR SELECT Sex , COUNT(*) FROM Faculty GROUP BY Sex ORDER BY COUNT(*) ASC
+Visualize BAR SELECT CITY_CODE , COUNT(1) FROM Student GROUP BY CITY_CODE
+Visualize BAR SELECT distinct product_category , count(*) FROM Mailshot_Campaigns GROUP BY product_category ORDER BY product_category,count(*) ASC
+Visualize PIE SELECT Channel_ID , COUNT(Time_of_day) FROM broadcast GROUP BY Channel_ID ORDER BY Channel_ID DESC
+Visualize LINE SELECT Year , AVG(Price) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT position , Count(*) FROM player GROUP BY position ORDER BY Count(*) DESC
+
+Visualize BAR SELECT Occupation , count(*) FROM player  GROUP BY Occupation
+Visualize BAR SELECT bulgarian_commander , COUNT(*) FROM battle WHERE bulgarian_commander <> 'Boril' GROUP BY bulgarian_commander ORDER BY bulgarian_commander DESC
+
+/* A bar chart about the average ages of male and female in the students , and order by the bar from low to high . */ Visualize BAR SELECT Age , AVG(Age) FROM Student GROUP BY Sex ORDER BY AGE ASC  /* A bar chart about the average ages of male and female in the students , order by the bar in asc . */ Visualize BAR SELECT Age , AVG(Age) FROM Student GROUP BY Sex  /* A bar chart about the average ages of male and female in the students , and order by the bar from high to low . */ Visualize B
+Visualize BAR SELECT Credits , Days FROM Course GROUP BY Days
+Visualize BAR SELECT Sex, COUNT(*) FROM Student GROUP BY Sex ORDER BY Sex ASC
+Visualize BAR SELECT apt_number, room_count FROM Apartments GROUP BY apt_number ORDER BY room_count DESC
+Visualize BAR SELECT acc_bal , avg(credit_score) FROM customer WHERE credit_score < 50 GROUP BY acc_bal ORDER BY acc_bal DESC
+Visualize LINE SELECT date_account_opened , COUNT(account_name) FROM accounts GROUP BY other_account_details ORDER BY other_account_details
+Visualize BAR SELECT DISTINCT Products.product_category , COUNT(Mailshot_Campaigns.product_category) FROM Products JOIN Mailshot_Campaigns ON Products.product_category = Mailshot_Campaigns.product_category GROUP BY DISTINCT Products.product_category ORDER BY DISTINCT Products.product_category DESC
+Visualize BAR SELECT LName , avg(Age) FROM student GROUP BY LName
+Visualize LINE SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date DESC
+Visualize BAR SELECT cust_name , account_bal FROM customer GROUP BY cust_name ORDER BY account_bal ASC
+Visualize PIE SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT payment_date , COUNT(*) FROM Payments WHERE amount_paid_in_full_yn = 'N' AND amount_due > 300 AND payment_type_code = 'CHECK' GROUP BY payment_date ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Year , AVG(Price) FROM wine GROUP BY Year ORDER BY AVG(Price)
+
+Visualize BAR SELECT Year , MAX(Price) , MAX(Score) FROM wine GROUP BY Year BIN Year BY WEEKDAY
+Visualize BAR SELECT Sex , COUNT(*) FROM Student GROUP BY Sex ORDER BY Sex DESC
+Visualize SCA LINE SELECT Year, AVG(Score) FROM wine GROUP BY Year
+Visualize PIE customer_status_code , count(*) FROM Customers GROUP BY customer_status_code
+Visualize BAR SELECT Sex , count(*) FROM Student, Faculty GROUP BY Sex ORDER BY count(*) ASC
+Visualize BAR SELECT AGE , AVG(AGE) FROM Student GROUP BY Sex ORDER BY AGE ASC
+Visualize BAR SELECT competition_type, COUNT(*) FROM competition GROUP BY competition_type  ORDER BY competition_type ASC
+
+Visualize PIE SELECT Gender, Count(*) FROM player GROUP BY Gender ORDER BY Count(*) DESC
+SELECT Grape , COUNT(Grape) FROM wine GROUP BY Grape  ORDER BY Grape ASC
+Visualize BAR SELECT competition_type , COUNT(competition_type) FROM competition GROUP BY Country , competition_type ORDER BY competition_type DESC
+Visualize BAR SELECT Rank , SUM(FacID) FROM Faculty GROUP BY Rank BIN Rank BY YEAR
+Visualize BAR SELECT Age, AVG(Age) FROM Student GROUP BY Age , AVG(Age)
+- Visualize BAR SELECT Grape , COUNT(*) FROM wine GROUP BY Grape    - Visualize BAR SELECT Grape , COUNT(*) FROM grapes GROUP BY Grape   - Visualize BAR SELECT Winery , COUNT(*) FROM wine GROUP BY Winery   - Visualize BAR SELECT Grape , Appelation FROM wine GROUP BY Grape   - Visualize BAR SELECT Winery , Appelation FROM wine GROUP BY Winery   - Visualize BAR SELECT Grape , Appelation FROM grapes GROUP BY Grape   - Visualize B
+
+Visualize BAR SELECT Type_of_Thing_Code , count(thing_id) FROM things GROUP BY Type_of_Thing_Code ORDER BY Type_of_Thing_Code ASC
+Visualize BAR SELECT booking_status_code , count(booking_start_date) FROM Apartment_Bookings GROUP BY booking_status_code  ORDER BY booking_status_code ASC
+Visualize LINE SELECT Transaction_Type, sum(transaction_amount) FROM Financial_Transactions GROUP BY Transaction_Type ORDER BY sum(transaction_amount) DESC
+Visualize BAR SELECT Rank , COUNT(Faculty.Rank) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Time_of_day , COUNT(Program_ID) FROM broadcast GROUP BY Time_of_day ORDER BY Time_of_day ASC
+Visualize BAR SELECT customer_details , COUNT(*) FROM customers GROUP BY customer_details ORDER BY Count(*) ASC
+Visualize BAR SELECT Age FROM Student GROUP BY Sex , LName , Fname , Major
+Visualize LINE SELECT Year , AVG(Price) FROM wine GROUP BY Year ORDER BY Year ASC
+Visualize PIE SELECT booking_status_code , booking_num FROM Apartment_Bookings
+Visualize BAR SELECT Customer_Event_ID , COUNT(Customer_Event_ID) FROM Residents_Services GROUP BY Customer_Event_ID ORDER BY COUNT(Customer_Event_ID) DESC
+Visualize BAR SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building
+Visualize BAR SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT payment_method_code, COUNT(customer_id) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(customer_id) ASC
+Visualize BAR SELECT Building , COUNT(*) FROM Faculty GROUP BY Building
+Visualize BAR SELECT Grape , count(*) FROM wine GROUP BY Grape ORDER BY Grape ASC
+Visualize SCATTER SELECT DISTINCT order_item_id , COUNT(order_item_id) FROM Products GROUP BY order_item_id , COUNT(order_item_id) FROM Products GROUP BY order_item_id , COUNT(order_item_id) FROM Order_Items GROUP BY order_item_id , COUNT(order_item_id) FROM Invoice_Line_Items
+Visualize BAR SELECT faculty.Faculty.Rank , COUNT(faculty.Faculty.Lname) FROM Faculty  GROUP BY faculty.Faculty.Rank , faculty.Faculty.Lname ORDER BY faculty.Faculty.Rank  DESC
+Visualize SCATTER SELECT ranking_date , SUM(tours) FROM rankings GROUP BY ranking_date ORDER BY SUM(tours) DESC
+SELECT Fname , COUNT(*) FROM Student GROUP BY Fname ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Hometown , Age FROM teacher GROUP BY Hometown ORDER BY Age ASC
+Visualize BAR SELECT Year , Country, Count(*) FROM competition GROUP BY Year, Country ORDER BY Country DESC
+Visualize PIE SELECT Sex , count(*) FROM Student GROUP BY Sex ORDER BY count(*) DESC
+Visualize BAR SELECT Studio , COUNT(studio) FROM film GROUP BY Studio
+Visualize BAR SELECT name , Sales_billion , Profits_billion , Assets_billion , Market_Value_billion FROM Companies ORDER BY Sales_billion DESC
+Visualize BAR SELECT branch_ID , AVG(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY branch_ID ORDER BY credit_score ASC
+Visualize SCATTER SELECT customer_id, ACCOUNTS.account_id FROM Customers LEFT JOIN Accounts ON CUSTOMERS.customer_id = Accounts.customer_id
+Visualize BAR SELECT Gender , SUM(Votes) FROM player GROUP BY Gender ORDER BY SUM(Votes) ASC
+1. Visualize SCATTER SELECT order_details.order_id , count(order_details.order_id) FROM orders group by order_details.order_id  2. Visualize PIE SELECT invoice_date , COUNT(invoice_date) FROM invoices group by invoice_date 3. Visualize BAR SELECT product_id , COUNT(product_id) FROM order_items group by product_id
+Visualize BAR SELECT apt_type_code , MIN(room_count) FROM Apartments WHERE apt_type_code = '1'  GROUP BY apt_type_code ORDER BY room_count DESC
+Visualize BAR SELECT Customer_Status_Code , COUNT(Customer_Status_Code) FROM Customers ORDER BY Customer_Status_Code ASC
+Visualize BAR SELECT Country , count(*) FROM perpetrator GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Studio , count(*) FROM film GROUP BY Studio ORDER BY count(*) ASC
+Visualize BAR SELECT Location , COUNT(*) FROM cinema GROUP BY Location ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Sex , COUNT(*) FROM Faculty GROUP BY Sex ORDER BY COUNT(*) DESC
+Visualize BAR SELECT winery , COUNT(winery) FROM wine WHERE Price > 100 AND wine.Grape IN (SELECT Grape FROM grapes) GROUP BY Grape ORDER BY Grape ASC
+SELECT  	StuID, faculty.FacID, Students.LName, Students.Fname, students.Sex, Students.Major, Advisor, students.Age, city_code FROM Students LEFT JOIN Faculty ON Students.Advisor=Faculty.FacID WHERE Students.Sex='M' ORDER BY Students.LName
+Visualize BAR SELECT Allergy , count(allergy) FROM has_allergy GROUP BY Allergy ORDER BY count(allergy) DESC
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY COUNT(hand) DESC
+Visualize BAR SELECT Resident_Id , COUNT(Resident_Id) FROM Residents_Services GROUP BY Resident_Id ORDER BY COUNT(Resident_Id) ASC
+Visualize BAR SELECT APT_TYPE_CODE , count(*) FROM Apartments GROUP BY APT_TYPE_CODE ORDER BY count(*)
+Visualize BAR SELECT LName , COUNT(LName) FROM Student GROUP BY LName ORDER BY COUNT(LName) DESC
+Visualize PIE SELECT Count(DISTINCT Directed_by) AS Count , Directed_by FROM film GROUP BY Directed_by HAVING Count > 3
+Visualize LINE SELECT People_ID , COUNT( * ) FROM perpetrator GROUP BY Country ORDER BY Country
+Visualize BAR SELECT Date_moved_in , COUNT(Date_moved_in) FROM Residents WHERE property_id = 1 GROUP BY Date_moved_in ORDER BY Date_moved_in ASC
+Visualize BAR SELECT year , COUNT(*) FROM matches
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+
+Visualize BAR SELECT Gender , count(Gender) FROM player GROUP BY Gender ORDER BY count(Gender) DESC
+
+视图线图SELECT Gender_Code , COUNT(Gender_Code) FROM Guests GROUP BY Gender_Code ORDER BY Count(Gender_Code) DESC BIN Date_Of_Birth
+Visualize LINE SELECT account_id, YEAR(date_account_opened) from Accounts GROUP BY account_id ORDER BY YEAR(date_account_opened) DESC
+1. Visualize Scatter SELECT account_name , COUNT(*) FROM financial_transactions GROUP BY account_name 2. Visualize BAR SELECT account_name , COUNT(*) FROM accounts GROUP BY account_name
+Visualize BAR SELECT Building, COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY COUNT(FacID) DESC
+1. Visualize BAR SELECT City_Code , count(*) FROM Student GROUP BY City_Code ORDER BY count(*) ASC 2. Visualize BAR SELECT City_Code , count(*) FROM Student GROUP BY City_Code ORDER BY count(*) DESC
+Visualize LINE SELECT guest_id , COUNT(gender_code) FROM Guests GROUP BY guest_id ORDER BY guest_id ASC
+Visualize BAR SELECT booking_start_date , COUNT(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_start_date ORDER BY COUNT(apt_booking_id) DESC
+Visualize BAR SELECT Openning_year , count(*) FROM cinema GROUP BY Openning_year ORDER BY count(*) ASC
+Visualize HISTOGRAM SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) DESC
+1. Visualize SCATTER SELECT DNO , CID FROM Course 2. Visualize SCATTER SELECT Enrolled_in.StuID, CID FROM Course WHERE DNO=CID 3. Visualize SCATTER SELECT Member_of.FacID, DNO FROM Course WHERE CID=DNO
+Visualize PIE SELECT outcome_code , count(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY count(*) DESC BIN outcome_code BY "month"
+
+Visualize BAR SELECT COUNT(COUNTY) FROM appellations GROUP BY Appelation, Area
+Visualize BAR SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT cust_name, acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name ASC
+Visualize HISTOGRAM SELECT  product_category , COUNT(mailshot_id) FROM Products LEFT JOIN Mailshot_Campaigns ON Products.product_category = Mailshot_Campaigns.product_category GROUP BY product_category  ORDER BY product_category
+Visualize BAR SELECT Rank, Count(*) FROM Faculty GROUP BY Rank ORDER BY Count(*) DESC
+Visualize BAR SELECT booking_end_date , YEAR(booking_end_date) FROM Apartment_Bookings GROUP BY YEAR(booking_end_date) ORDER BY YEAR(booking_end_date) ASC
+Visualize LINE SELECT customer_status_code , count(*) FROM Customers  WHERE Customer_Status_Code = 'Good Customer'  ORDER BY date_of_birth  ASC
+PIE SELECT Industry , Count(id) FROM Companies GROUP BY Industry
+Visualize BAR SELECT date_moved_in , Count(*) FROM Residents GROUP BY date_moved_in ORDER BY Count(*) DESC LIMIT 15
+Visualize STACK BAR SELECT Year , Country , count(*) FROM competition GROUP BY Year , Competition_type , Country
+Visualize BAR SELECT booking_start_date , booking_start_date FROM Apartment_Bookings  ORDER BY booking_start_date ASC
+Visualize PIE SELECT Points , COUNT(Points) FROM player GROUP BY Position HAVING COUNT(Points) < 30
+Visualize BAR SELECT DISTINCT color , count(*) FROM photos GROUP BY color ORDER BY count(*)
+Visualize PIE SELECT color , count(*) FROM photos GROUP BY color, ORDER BY count(*) ASC
+Visualize BAR SELECT Grape , COUNT(*) FROM wine GROUP BY Winery
+Visualize BAR SELECT (bulgarian_commander != "Boril") , COUNT(result) FROM battle GROUP BY (bulgarian_commander != "Boril")
+
+Visualize BAR SELECT Studio , count(*) FROM film GROUP BY studio ORDER BY count(*) ASC
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY COUNT(booking_end_date) ASC BIN booking_end_date BY MONTH
+Visualize BAR SELECT Country_ID , Length , Height FROM roller_coaster GROUP BY Country_ID ORDER BY Length ASC
+Visualize BAR SELECT Name , count(Name) FROM editor GROUP BY Name  ORDER BY count(Name) DESC
+
+Visualize BAR SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type ORDER BY SUM(transaction_amount) DESC
+Visualize BAR SELECT Year , Count(*) FROM competition GROUP BY Competition_type, Country
+Visualize BAR SELECT Name , COUNT(Name) FROM teacher GROUP BY Name ORDER BY Hometown DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Position, AVG(Points) FROM player GROUP BY Position
+Visualize BAR SELECT Openning_year , COUNT(*) FROM cinema GROUP BY Openning_year
+1. Visualize HISTOGRAM Y-axis is INC , show by [Competition_type]  2. Visualize HISTOGRAM Y-axis is DESC , show by [Competition_type]
+Visualize BAR SELECT Days , AVG(Instructor) FROM Course GROUP BY Days
+Visualize BAR SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type, Country ORDER BY Competition_type
+Visualize BAR SELECT Grape, count(*) FROM wine GROUP BY Grape ORDER BY Grape_Name_high
+Visualize HISTOGRAM SELECT Competition_type , Count(*) FROM competition GROUP BY Competition_type ORDER BY Count(*) ASC
+Visualize BAR SELECT Share_in_percent , Rating_in_percent FROM channel WHERE Owner != "" AND owner = "" ORDER BY Share_in_percent
+Visualize SCATTER SELECT Film_ID , Low_Estimate , High_Estimate FROM film_market_estimation GROUP BY Film_ID, Type
+Visualize BAR SELECT Gender_Code , count(*) FROM Guests GROUP BY gender_code ORDER BY count(*) DESC
+Visualize BAR SELECT Sex , COUNT(FacID) FROM Faculty GROUP BY Sex ORDER BY Y-axis_position
+Visualize PIE SELECT Industry , COUNT(Industry) FROM Companies GROUP BY Industry
+Visualize BAR SELECT No , COUNT(*) FROM appellations GROUP BY Appelation ORDER BY COUNT(*) ASC
+Visualize BAR SELECT No, AREA FROM appellations GROUP BY No, AREA
+Visualize BAR SELECT Operating_system , COUNT(Operating_system) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system ASC
+Visualize BAR SELECT count(StuID) FROM Student WHERE Advisor = Major GROUP BY Advisor ORDER BY count(StuID) DESC
+Visualize BAR SELECT city_code , count(*) FROM Student GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT Allergy , AllergyType FROM Allergy_Type GROUP BY Allergy HAVING COUNT(StuID) >= 50
+Visualize BAR SELECT year , AVG(match_num) FROM matches GROUP BY year ORDER BY AVG(match_num) ASC
+Visualize BAR SELECT transaction_type , total_amount FROM Financial_Transactions GROUP BY transaction_type ORDER BY total_amount ASC
+1. Visualize BAR SELECT account_name , count(other_account_details) FROM Accounts GROUP BY account_name ORDER BY count(other_account_details) DESC 2. Visualize BAR SELECT account_name , count(other_account_details) FROM Accounts GROUP BY account_name ORDER BY account_name ASC
+Visualize BAR SELECT Party , COUNT(Party) FROM People GROUP BY Party ORDER BY COUNT(Party) DESC
+
+Visualize BAR SELECT Rank , Count(Rank) FROM Faculty GROUP BY Rank
+Visualize SCATTER SELECT Customer_ID , COUNT(Account_ID) FROM Accounts GROUP BY Customer_ID
+Visualize BAR SELECT Room , COUNT(*) FROM Faculty GROUP BY Room ORDER BY Room
+Visualize SCATTER SELECT order_item_id, COUNT(order_item_id) FROM Orders GROUP BY order_item_id
+Visualize PIE SELECT Party, COUNT(People_ID) FROM people GROUP BY Party
+Visualize BAR SELECT Openning_year , COUNT(Openning_year) FROM cinema GROUP BY Openning_year ORDER BY Openning_year DESC
+Visualize LINE SELECT booking_end_date , count(*) FROM apartment_bookings GROUP BY booking_end_date
+Visualize BAR SELECT Year , Count(Competition_type) FROM competition GROUP BY Year ORDER BY Count(Competition_type) ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM wine GROUP BY Year BIN Year BY WEEKDAY ORDER BY Total_Count DESC LIMIT 10
+Visualize BAR SELECT Year , max(Price) FROM wine GROUP BY Year BIN Year by DAY
+Visualize BAR SELECT Allergy , AllergyType FROM Allergy_Type GROUP BY AllergyType
+Visualize TABLE SELECT Year, Grape , Count(Grape) FROM wine GROUP BY Grape ORDER BY Year DESC BIN Year BY Year
+SELECT apt_type_code , COUNT(apt_id) FROM Apartments GROUP BY apt_type_code ORDER BY Count(apt_id) ASC
+Visualize BAR SELECT camera_lens_id , COUNT(name) FROM photos GROUP BY camera_lens_id ORDER BY COUNT(name) ASC
+Visualize HISTOGRAM SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Year , Count(Competition_type) FROM competition GROUP BY Year,Competition_type,Country ORDER BY Competition_type , Year DESC
+Visualize SCATTER SELECT date_of_birth , COUNT(date_of_birth) FROM guests GROUP BY gender_code ORDER BY gender_code ASC
+Visualize LINE SELECT Openning_Year, AVG(Capacity) FROM Cinema GROUP BY Openning_Year ORDER BY Openning_Year ASC
+Visualize PIE SELECT Sex, COUNT(*) FROM Student GROUP BY Sex
+Visualize BAR SELECT count(guest_id) FROM Guests WHERE gender_code="Male"  ORDER BY date_of_birth ASC
+Visualize SCATTER SELECT council_tax_id , count(*) FROM parking_fines WHERE council_tax_id is not null GROUP BY council_tax_id ORDER BY council_tax_id DESC
+Visualize BAR SELECT Fname, COUNT(Fname) FROM Student GROUP BY Fname
+Visualize BAR SELECT Name , Age FROM editor GROUP BY Age ORDER BY Age DESC
+Visualize LINE SELECT account_id , date_account_opened , COUNT(*) FROM accounts GROUP BY account_id, date_account_opened
+Visualize BAR SELECT Studio , COUNT(Film_ID) FROM film GROUP BY Studio ORDER BY Count(Film_ID) DESC
+Visualize LINE SELECT account_id , COUNT(date_account_opened) FROM Accounts GROUP BY other_account_details BIN date_account_opened BY YEAR
+Visualize BAR SELECT Area , count(*) FROM appellations GROUP BY Area ORDER BY count(*) ASC
+Visualize BAR SELECT Allergy FROM Has_Allergy GROUP BY Allergy
+Visualize BAR SELECT County , count(*) FROM appellations GROUP BY COUNTY ORDER BY COUNTY ASC
+SELECT brands.brand , COUNT(*) FROM camera_lens GROUP BY brands.brand
+Visualize HISTOGRAM SELECT winery , count(*) FROM wine WHERE Price > 100 GROUP BY winery , Price ASC
+Visualize LINE SELECT 1 AS QUANTITY , Year AS Month , Price AS WinePrice, sum(CASES) AS Cases , sum(DRINK) AS Drink FROM wine GROUP BY Year ORDER BY Price DESC BIN Year BY Month
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM Companies GROUP BY Headquarters ORDER BY COUNT(Headquarters) ASC BIN Headquarters BY Industry
+Visualize BAR SELECT name , Apps , Points , Case WHEN Position IS NULL THEN 0.0 ELSE Apps/Point END AS Average_Points FROM player ORDER BY Points DESC
+Visualize BAR SELECT amount_paid_in_full_yn , COUNT(*) FROM Payments GROUP BY amount_paid_in_full_yn ORDER BY amount_paid_in_full_yn DESC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+
+SELECT Directed_by , COUNT(Film_ID) FROM film GROUP BY Directed_by
+Visualize BAR SELECT acc_type , AVG(acc_bal) FROM customer WHERE credit_score > 50 GROUP BY acc_type ORDER BY acc_type
+Visualize BAR SELECT acc_bal , AVG(acc_bal) FROM customer WHERE credit_score > 50 AND acc_type != 'mortgage' GROUP BY acc_type  ORDER BY acc_type
+Visualize BAR SELECT Country , COUNT(Country) FROM competition GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT AllergyType , COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType
+Visualize BAR SELECT city_code , count(*) FROM students GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT BOOKING_END_DATE , COUNT(BOOKING_END_DATE) FROM Apartment_Bookings GROUP BY BOOKING_END_DATE ORDER BY COUNT(BOOKING_END_DATE) DESC
+Visualize BAR SELECT AllergyType , COUNT(StuID) FROM Has_Allergy GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT customer_details , count(*) FROM customers GROUP BY customer_details ORDER BY count(*) ASC
+Visualize HISTOGRAM SELECT year , COUNT(*) FROM matches GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Year_Openning , COUNT(Year_Openning) FROM cinema GROUP BY Year_Openning ORDER BY Year_Openning DESC
+Visualize PIE SELECT room_count , apt_number , bathroom_count , bedroom_count FROM Apartments GROUP BY apt_number, bathroom_count, bedroom_count ORDER BY room_count ASC
+Visualize BAR SELECT party , count(*) FROM people GROUP BY Party ORDER BY Party ASC
+Visualize PIE SELECT Sex , count(*) FROM Student GROUP BY Sex
+Visualize HISTOGRAM SELECT booking_start_date, COUNT(booking_start_date) FROM Apartment_Bookings GROUP BY booking_start_date ORDER BY COUNT(booking_start_date) DESC
+Visualize BAR SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY COUNT(FacID) DESC
+Visualize BAR SELECT Allergy FROM Allergy_Type  GROUP BY Allergy order by Allergy ASC
+Visualize BAR SELECT premise_type , COUNT(*) FROM Premises GROUP BY premise_type ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Directed_by FROM film GROUP BY Directed_by
+Visualize BAR SELECT Debate_ID , Count(Debate_ID) FROM debate GROUP BY Debate_ID
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents_Services  GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) ASC BIN date_moved_in BY YEAR
+Visualize PIE SELECT District , COUNT(People_ID) FROM people GROUP BY District
+Visualize SCATTER SELECT order_item_id , COUNT(*) FROM order_items GROUP BY order_item_id
+Visualize BAR SELECT customer_status_code , COUNT(customer_status_code) FROM Customers GROUP BY customer_status_code  ORDER BY count(customer_status_code) ASC
+Visualize SPARKLINE SELECT invoice_number , count(transaction_id) FROM Financial_Transactions GROUP BY invoice_number
+Visualize PIE SELECT Account_ID , count(*) FROM Accounts GROUP BY account_id
+Visualize BAR SELECT Price FROM wine WHERE Winery = "Domaine Tempier" OR Appelation = "Bandol" GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT customer_details FROM customers
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY Occupation
+Visualize BAR SELECT Rank , COUNT(FacID) FROM Faculty GROUP BY Rank,Sex HAVING Sex = 'M' OR Sex = 'F' ORDER BY Count(FacID) DESC , COUNT(FacID) ASC
+Visualize PIE SELECT Apt_Type_Code,count(*) FROM Apartments GROUP BY Apt_Type_Code
+Visualize BAR SELECT Lname , count(*) FROM Faculty GROUP BY Lname ORDER BY Lname DESC
+Visualize LINE SELECT Openning_year , SUM(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year DESC
+Visualize PIE SELECT apt_type_code , room_count FROM Apartments GROUP BY apt_type_code
+Visualize BAR SELECT premises_type , COUNT(*) FROM Premises GROUP BY premises_type
+Visualize BAR SELECT apt_type_code , min(room_count) FROM apartments GROUP BY apt_type_code ORDER BY apt_type_code ASC
+Visualize BAR SELECT gender_code , date_of_birth FROM Guests WHERE gender_code = "Male" GROUP BY date_of_birth ORDER BY date_of_birth DESC
+Visualize BAR SELECT Fname, COUNT(Fname) FROM student WHERE Sex = 'F' GROUP BY Fname ORDER BY Fname ASC
+Visualize BAR SELECT Area , COUNT(Area) FROM appellations GROUP BY Appelation , Area
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player WHERE Occupation <> "Researcher" GROUP BY Residence ORDER BY Residence ASC , COUNT(Residence) DESC
+Visualize BAR SELECT booking_status_code, COUNT(booking_status_code) FROM apartment_bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT Days, Hours FROM Course GROUP BY Days ORDER BY Hours DESC
+
+Visualize BAR SELECT customer_details , COUNT(customer_details) FROM Customers GROUP BY customer_details ORDER BY customer_details
+Visualize LINE SELECT Openning_year , AVG(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize SCATTER SELECT INVOICE_NUMBER , SUM(TRANSACTION_NUMBER) FROM FINANCIAL_TRANSACTIONS GROUP BY INVOICE_NUMBER
+Visualize SELECT * FROM Student, Faculty WHERE Student.FacID = Faculty.FacID GROUP BY Student.Sex ORDER BY COUNT(*)
+Visualize PIE SELECT apt_number , bathroom_count FROM Apartments GROUP BY apt_number ORDER BY bathroom_count DESC
+Visualize BAR SELECT outcome_code, count(mailshot_id) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY count(mailshot_id) ASC
+Visualize BAR SELECT Position, AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) ASC
+Visualize SCATTER SELECT DISTINCT product_id, COUNT(*) FROM Order_Items GROUP BY product_id ORDER BY product_id ASC
+Visualize BAR SELECT Channel_ID , channel.Share_in_percent *100/ channel.Rating_in_percent as perc_rat , channel.Rating_in_percent AS rating_in_percent FROM program  JOIN channel  WHERE program.Owner=channel.Owner
+
+Visualize PIE SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code
+Visualize BAR SELECT Booking_Status_Code , COUNT(*) FROM apartment_bookings GROUP BY Booking_Status_Code  ORDER BY Booking_Status_Code ASC
+
+Visualize LINE SELECT Age, COUNT(*) FROM Student GROUP BY Age
+Visualize LINE SELECT date_of_birth , count(*) FROM Customers WHERE customer_status_code = 'Good Customer' GROUP BY date_of_birth ORDER BY date_of_birth ASC
+Visualize HISTOGRAM SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT Age , COUNT(Age) FROM Student GROUP BY Sex , Age
+/* The customer table is already filtered to filter out customers with credit score lower than 50 */   /* The query is sorting by credit_score descending .*/   /* The pie chart shows the account balance distribution .*/   Visualize PIE SELECT acc_bal FROM customer WHERE acc_score < 50 ORDER BY credit_score DESC
+Visualize BAR SELECT Fname , COUNT(Fname) FROM Student GROUP BY Fname ORDER BY Age DESC LIMIT 10
+SELECT First_name FROM Student WHERE Sex = 'F' AND Major = 'XYZ'
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT total , COUNT(*) FROM cinema GROUP BY location ORDER BY COUNT(*) DESC
+SELECT DNO , MIN(Credits) FROM Course  GROUP BY DNO  HAVING COUNT(CID) >= 3 AND COUNT(Minor_in.StuID) >= 1 AND COUNT(Member_of.Appt_Type) >= 3 AND COUNT(Department.DPhone) >= 3 AND COUNT(Department.DPhone) >= 4
+Visualize BAR SELECT Faculty.FacID , COUNT(StuID) FROM Student,Faculty WHERE Major = "C.S." AND City_code = "NY" GROUP BY Faculty.FacID ORDER BY COUNT(StuID) DESC
+Visualize BAR SELECT Studio , sum(Gross_in_dollar) FROM film GROUP BY Studio ORDER BY Studio ASC
+Visualize SCRATTER SELECT Market_ID , Low_Estimate , High_Estimate FROM film_market_estimation BIN Market_ID BY YEAR
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents, Residents_Services WHERE service_type_code = 'Move' GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Area, COUNT(Area) FROM appellations GROUP BY Area ORDER BY Area
+Visualize BAR SELECT room_count , apt_number FROM apartments GROUP BY apt_number ORDER BY room_count ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM perpetrator GROUP BY Location
+1.COUNT(distinct date_moved_in)  2.Count(distinct Date_Requested )  3.Count(distinct date_provided)  4.COUNT(distinct Date_Moved_In) , COUNT(distinct Date_Requested) , COUNT(distinct Date_Moved_In) , COUNT(distinct Date_Requested) , COUNT(distinct Date_Moved_In) , COUNT(distinct Date_Requested)
+Visualize BAR SELECT Allergy , count(*) FROM Has_Allergy GROUP BY Allergy ORDER BY count(*) DESC
+100 BAR SELECT Grape , COUNT(grape) FROM wine GROUP BY Grape ,  ORDER BY Grape DESC
+Visualize BAR SELECT Sex , avg(Age) FROM Student GROUP BY Sex
+Visualize BAR SELECT date_of_birth , COUNT(date_of_birth) FROM Staff WHERE status_code='Good Customer' GROUP BY date_of_birth
+Visualize BAR SELECT other_account_details , COUNT(*) FROM accounts GROUP BY other_account_details , order by other_account_details
+Visualize BAR SELECT Date_moved_in, count(*) FROM Residents GROUP BY Date_moved_in BIN Date_moved_in by day_of_week ORDER BY Date_moved_in ASC
+VQL SELECT Competition_type , SUM(COUNT(*)) AS Count_Row FROM competition GROUP BY Competition_type   VQL SELECT Count_Row , Country FROM competition GROUP BY Competition_Type , Country
+Visualize BAR SELECT Title ,Number_in_season , Rank_in_series FROM film GROUP BY Title , Number_in_season , Directed_by  ORDER BY Number_in_season ASC
+Visualize BAR SELECT apt_number , count(*) FROM Apartments GROUP BY apt_number ORDER BY apt_number ASC
+Visualize BAR SELECT date , COUNT(date) FROM battle GROUP BY date ORDER BY COUNT(date) DESC
+Visualize BAR SELECT acc_bal , count(*) FROM customer WHERE credit_score < 50 GROUP BY acc_bal ORDER BY acc_bal DESC
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player  WHERE Occupation != "Researcher"  ORDER BY COUNT(Residence) DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Teacher_ID ASC
+Visualize BAR SELECT date_moved_in , COUNT(*) FROM Residents_Services , Customer_Events_Notes WHERE date_moved_in BETWEEN '1998-04-01' AND '2001-12-15' GROUP BY date_moved_in ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Allergy , Count(Allergy) FROM Has_Allergy GROUP BY Allergy ORDER BY Count(Allergy) ASC
+Visualize LINE SELECT ranking , SUM(ranking_points) FROM rankings GROUP BY ranking ORDER BY ranking ASC BIN ranking BY ranking_date
+
+Visualize BAR SELECT name, assets, COUNT(*) FROM Companies, buildings GROUP BY name, assets ORDER BY name, assets ASC
+Visualize BAR SELECT gender_code , COUNT(guest_id) FROM Guests WHERE gender_code = "Male" GROUP BY gender_code ORDER BY COUNT(guest_id) DESC
+Visualize BAR SELECT customer_details , COUNT(customer_details) FROM Customers GROUP BY customer_details  ORDER BY COUNT(customer_details) ASC BIN customer_details BY customer_details
+Visualize  BAR SELECT  MAX(score) ,Year FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize HISTOGRAM SELECT outcome_code, COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code
+
+Visualize BAR SELECT booking_start_date , YEAR(booking_start_date) FROM Apartment_Bookings GROUP BY YEAR(booking_start_date)
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY count(*) DESC
+Visualize BAR SELECT Allergy , COUNT(*) FROM Has_Allergy GROUP BY Allergy ASC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+SELECT invoice_number , COUNT(order_items) FROM invoices GROUP BY invoice_number ORDER BY COUNT(order_items) ASC
+Visualize BAR SELECT transaction_type, SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Days , COUNT(Days) FROM Course GROUP BY Days
+Visualize BAR SELECT ranking_date , COUNT(*) FROM rankings GROUP BY ranking_date ORDER BY COUNT(*) ASC
+SELECT Competition_type FROM competition GROUP BY Competition_type HAVING COUNT(*) > 1
+
+Visualize BAR SELECT Grape, COUNT(Grape) FROM wine GROUP BY Grape ORDER BY COUNT(Grape) DESC
+Visualize BAR SELECT payment_method_code, count(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age
+Visualize BAR SELECT count(other_account_details) FROM accounts GROUP BY other_account_details  ORDER BY count(other_account_details) ASC  BIN other_account_details  BY YEAR
+Visualize BAR SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+SELECT Invoice_Number , count( * ) FROM Invoices GROUP BY Invoice_Number
+Visualize TEXT SELECT COUNT(*) FROM Things GROUP BY Type_of_Thing_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Year , COUNT(Year) FROM wine GROUP BY Year ORDER BY COUNT(Year) DESC BIN Year BY WEEKDAY
+Visualize BAR SELECT city_code, COUNT(city_code) FROM Student GROUP BY city_code
+Visualize BAR SELECT customer_status_code , count(*) FROM Customers GROUP BY customer_status_code ORDER BY count(*) ASC
+Visualize BAR SELECT camera_lens_id , count(*) FROM photos GROUP BY camera_lens_id
+Visualize BAR SELECT Openning_Year, SUM(Capacity) FROM cinema GROUP BY Openning_Year
+Visualize BAR SELECT transaction_type , transaction_amount FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_amount DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Salary, Sex FROM employee GROUP BY Sex
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name
+Visualize BAR SELECT datetime_payment , count(*) FROM Customer_Payments GROUP BY datetime_payment , payment_method_code
+Visualize BAR SELECT Grape , Count(*) FROM Wine GROUP BY Grape ORDER BY Count(*) ASC
+Visualize BAR SELECT Date , AVG(Num_of_Audience) FROM debate GROUP BY Venue ORDER BY AVG(Num_of_Audience) DESC BIN Date BY YEAR
+Select F.Building , Count (F.FacID)  From Faculty F  GROUP BY F.Building ORDER BY F.Building
+Select order_id , count(*) FROM Financial_Transactions GROUP BY order_id
+
+Visualize BAR SELECT District , COUNT(*) FROM people GROUP BY District, Name, Party ORDER BY District
+Visualize BAR SELECT City , name , Assets_billion FROM Companies GROUP BY City ORDER BY name ASC
+Visualize SELECT resident_id, count(*) FROM Residents WHERE date_moved_in IS NOT NULL GROUP BY resident_id ORDER BY count(*) ASC BAR
+Visualize COLUMN SELECT Score, Winery , COLUMNSELECT Appelation,State, No, grapes.Grape FROM wine GROUP BY Score , grapes.Grape , COLUMNSELECT Appelation,State, No
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT Age , COUNT(*) FROM editor GROUP BY Age ORDER BY Age DESC
+Visualize LINE SELECT Year , COUNT(Cinema_ID) FROM cinema GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT premises_type , COUNT(*) FROM Premises GROUP BY premises_type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Days , SUM(Instructor) FROM Course GROUP BY Days ORDER BY Days DESC
+1. Visualize BAR SELECT Room_Count , COUNT(Room_Count) FROM Apartments GROUP BY Room_Count ORDER BY Room_Count ASC  2. List data of the room count : SELECT Room_Count , COUNT(Room_Count) FROM Apartments GROUP BY Room_Count ORDER BY Room_Count ASC
+Visualize BAR SELECT Faculty.FacultyRank , COUNT(Faculty.FacultyRank) FROM Faculty GROUP BY Faculty.FacultyRank ORDER BY Faculty.FacultyRank ASC
+Visualize RANK SELECT Artwork_ID , COUNT(*) FROM artwork GROUP BY Artwork_ID ORDER BY COUNT(*) DESC
+Visualize BAR SELECT PAYMENT_METHOD_CODE , COUNT(PAYMENT_METHOD_CODE) FROM Customer_Payments GROUP BY PAYMENT_METHOD_CODE
+Visualize HISTOGRAM SELECT Film_ID FROM film GROUP BY Studio ORDER BY Gross_in_dollar
+Visualize PIE SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT Time_of_day , count(*) FROM broadcast GROUP BY time_of_day ORDER BY count(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT Allergy , COUNT(StuID) FROM Has_Allergy GROUP BY Allergy
+Visualize BAR SELECT Advisor , avg(age) FROM Student GROUP BY Advisor ORDER BY avg(age) ASC
+Visualize BAR SELECT avg(acc_bal) , acc_type FROM customer GROUP BY acc_type ORDER BY acc_type ASC
+Visualize BAR SELECT count(FacID) FROM Faculty GROUP BY Building ORDER BY Building
+Visualize PIE SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY Rank
+Visualize BAR SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY Studio DESC
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT Year , Count(Competition_ID) FROM competition GROUP BY Year , Count(Competition_ID)
+Visualize BAR SELECT Teacher_ID , AGE FROM teacher
+Visualize BAR SELECT Openning_year, SUM(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Allergy , count(*) FROM Has_Allergy  GROUP BY Allergy_Type ORDER BY Allergy
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank ORDER BY count(*) ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY COUNT(Rank) DESC
+
+Visualize BAR SELECT CUSTOMER_DETAILS , COUNT(*) FROM Customers GROUP BY customer_details ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Studio , count(*) FROM film GROUP BY Studio ORDER BY count(*)
+Visualize BAR SELECT Venue , COUNT(*) FROM debate GROUP BY Venue ORDER BY COUNT(*) ASC
+1. Visualize BAR SELECT distinct date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in 2. Visualize BAR SELECT distinct date_moved_in , COUNT(date_moved_in) FROM Residents_Services GROUP BY date_moved_in 3. Visualize BAR SELECT distinct date_moved_in , COUNT(date_moved_in) FROM Customer_Events GROUP BY date_moved_in 4. Visualize BAR SELECT distinct date_moved_in , COUNT(
+Visualize STACKED BAR SELECT Country , COUNT(*) FROM competition GROUP BY Country , Competition_type
+1) SELECT DNO, DName FROM Department ORDER BY DNO, DName 2) SELECT DNO , AVG(Credits) FROM Course GROUP BY DNO ORDER BY DNO, AVG(Credits)
+Visualize BAR SELECT CName , SUM(Credits) FROM Course GROUP BY CName
+Visualize BAR SELECT Building , COUNT(Building) FROM Faculty GROUP BY Building ORDER BY COUNT(Building) DESC
+
+Visualize PIE SELECT Venue , count(*) FROM debate GROUP BY Venue
+Visualize BAR SELECT Days , AVG(Instructor) FROM Course GROUP BY Days BIN Days BY WEEKDAY
+Visualize BAR SELECT Sex , count(*) FROM student GROUP BY Sex ORDER BY count(*) DESC
+Visualize BAR SELECT TAGS, Hometown FROM teacher ORDER BY Hometown ASC
+Visualize BAR SELECT date_account_opened , count(account_id) FROM Accounts GROUP BY date_account_opened
+Visualize BAR SELECT payment_method_code, COUNT(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in BIN date_moved_in BY WEEKDAY ORDER BY date_moved_in DESC
+Visualize BAR SELECT Country , COUNT(*) FROM Perpetrator GROUP BY Country ORDER BY Country
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings
+Visualize LINE SELECT Openning_year , COUNT(Openning_year) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT DATE_ACCOUNT_OPENED , COUNT(DATE_ACCOUNT_OPENED) FROM ACCOUNTS GROUP BY DATE_ACCOUNT_OPENED ORDER BY COUNT(DATE_ACCOUNT_OPENED)
+
+Visualize BAR SELECT gender_code , count(*) FROM Guests GROUP BY gender_code ORDER BY gender_code ASC
+Visualize BAR SELECT date_moved_in, COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) ASC
+Visualize BAR SELECT LName, COUNT(LName) FROM Student WHERE Sex = 'F' GROUP BY LName ORDER BY count(*) DESC
+Visualize HISTOGRAM SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY Studio DESC
+Visualize BAR SELECT Grape , SUM(Drink) FROM grapes GROUP BY Grape ORDER BY Grape ASC, SUM(Drink) DESC
+Visualize BAR SELECT Name , count(*) FROM editor GROUP BY Name ORDER BY Name DESC
+Visualize BAR SELECT booking_status_code , COUNT(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code
+Visualize BAR SELECT apt_number , COUNT(apt_number) FROM Apartments GROUP BY apt_type_code ,  apt_number ORDER BY COUNT(apt_number) DESC
+Visualize BAR SELECT grape , sum(cases) FROM wine GROUP BY grape ,  grape
+Visualize BAR SELECT premise_details, COUNT(*) FROM premises GROUP BY premise_details ORDER BY COUNT(*) DESC BIN premise_details BY premises_type
+Visualize BAR SELECT Year , Competition_type , count(*) FROM competition GROUP BY Year, Competition_type , Order by Year, Competition_type DESC
+Visualize BAR SELECT Sex , Count(*) FROM Student GROUP BY Sex
+Visualize BAR SELECT Industry , sum(Sales_billion) FROM companies GROUP BY Industry ORDER BY sum(Sales_billion)
+Visualize BAR SELECT Country , Competition_type FROM competition GROUP BY Country , Competition_type ORDER BY Competition_type ASC
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize SCATTER SELECT Age, count(Age) FROM student
+Visualize BAR SELECT year , COUNT(*) FROM matches GROUP BY year
+Visualize SCATTER SELECT CID , Credits FROM Course GROUP BY CID
+Visualize LINE SELECT Year , MAX(Score) FROM wine ORDER BY Year ASC
+Visualize BAR SELECT city_code , count(*) FROM Student GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT AGE , avg(Age) FROM Student GROUP BY Fname ORDER BY AGE ASC
+Visualize BAR SELECT Year , Count(Capacity) FROM cinema GROUP BY Year ORDER BY Count(Capacity) DESC
+
+Visualize BAR SELECT Winery , COUNT(Winery) FROM wine GROUP BY Winery
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY hand
+Visualize BAR SELECT Time_of_day , COUNT(Program_ID) FROM broadcast GROUP BY Time_of_day ORDER BY COUNT(Program_ID) DESC
+Visualize BAR SELECT AllergyType , COUNT(Allergy) FROM Has_Allergy GROUP BY AllergyType ORDER BY COUNT(Allergy) DESC
+Visualize BAR SELECT Year , competition_type FROM competition GROUP BY Year , competition_type ORDER BY Year DESC, competition_type DESC
+Visualize BAR SELECT product_category , COUNT(product_category) FROM Products GROUP BY product_category
+Visualize BAR SELECT Points , Club_ID FROM player GROUP BY Player_ID ORDER BY Points DESC
+Visualize HISTOGRAM SELECT COUNT(product_category) FROM Products GROUP BY product_category ORDER BY COUNT(product_category) DESC
+Visualize HISTOGRAM SELECT year, min(matches) FROM matches GROUP BY year;     Visualize HISTOGRAM SELECT min(matches) FROM matches GROUP BY year;     Visualize HISTOGRAM SELECT year, count(*) FROM matches GROUP BY year;     Visualize HISTOGRAM SELECT matches, min(matches) FROM matches GROUP BY matches;     Visualize HISTOGRAM SELECT matches, count(*) FROM matches GROUP BY matches;
+Visualize TABLE SELECT Artwork_ID , count(*) FROM artwork GROUP BY Type, Name, Artwork_ID
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date DESC
+Visualize LINE SELECT Openning_year, sum(Capacity) FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT SUM(amount_due) FROM Payments WHERE amount_paid_in_full_yn = 'N' AND amount_paid > 300 GROUP BY amount_due
+
+Visualize BAR SELECT Allergy , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT Faculty , Faculty.Sex FROM Student LEFT JOIN Faculty ON Student.StuID = Faculty.FacID GROUP BY Student.StuID, Faculty.Sex
+Visualize PIE SELECT Date , SUM(Num_of_Audience) FROM debate GROUP BY Date
+Visualize PIE SELECT outcome_code , count(*) FROM Mailshot_Customers GROUP BY outcome_code
+Visualize HISTOGRAM SELECT Country , count(*) FROM Competition GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT date_account_opened, COUNT(*) FROM Accounts GROUP BY date_account_opened ORDER BY date_account_opened ASC
+Visualize BAR SELECT date_moved_in , Count(*) FROM Residents GROUP BY date_moved_in ORDER BY date_moved_in ASC
+Visualize LINE SELECT gender_code , Count(guest_first_name) FROM guests GROUP BY gender_code ORDER BY Count(guest_first_name) DESC
+Visualize BAR SELECT Dependent_name , COUNT(Dependent_name) FROM dependent GROUP BY Dependent_name ORDER BY count(Dependent_name) ASC
+Visualize BAR SELECT Age , COUNT(*) FROM Student GROUP BY Age , LName ORDER BY Age DESC
+Visualize BAR SELECT AVG(Age) , Sex FROM Student GROUP BY Sex
+Visualize BAR SELECT Allergy , COUNT(*) FROM Has_Allergy GROUP BY Allergy , BIN Allergy BY AllergyType DESC
+Visualize BAR SELECT apt_number , COUNT(apt_number) FROM apartments GROUP BY apt_number ORDER BY apt_number DESC
+Visualize BAR SELECT Year , MAX(Price) FROM wine GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT COUNT(*) , Appelation , COUNT(*) FROM appellations GROUP BY appellation DESC
+Visualize LINE  SELECT date_account_opened , account_name FROM Accounts GROUP BY date_account_opened , account_name
+Visualize HISTOGRAM SELECT Year , Country FROM competition GROUP BY Country RANK BY Year DESC
+
+Visualize LINE SELECT Capacity , SUM(Capacity) FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT Appelation , COUNT(Appelation) FROM appellations WHERE Score > 93 GROUP BY Appelation ORDER BY Name ASC
+Visualize HISTOGRAM SELECT * FROM Student WHERE city_code IN ( 'Bethlehem', 'Philadelphia', 'New York', 'Baltimore', 'Pittsburgh', 'Providence', 'Norwich', 'Rochester' )
+Visualize BAR SELECT Resident_id , COUNT(Resident_id) FROM Properties GROUP BY Resident_id ,  Visualize BAR SELECT Resident_id , COUNT(Resident_id) FROM Residents GROUP BY Resident_id ,  Visualize BAR SELECT Resident_id , COUNT(Resident_id) FROM Residents_Services GROUP BY Resident_id ,  Visualize BAR SELECT Customer_Event_Note_ID , COUNT(Customer_Event_Note_ID) FROM Customer_Event_Notes GROUP BY Customer_Event_Note_ID
+Visualize BAR SELECT apt_number , room_count FROM Apartments GROUP BY room_count ORDER BY room_count ASC
+Visualize PIE SELECT product_category , COUNT(mailshot_id) FROM Mailshot_Campaigns GROUP BY product_category
+
+Visualize BAR SELECT Customer_status_code , COUNT(*) FROM Staff JOIN Customers ON Staff.staff_address_id = Customers.customer_address_id AND Customer_status_code = 'Good Customer' GROUP BY Customer_status_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Major , Sex FROM Student JOIN Faculty ON Student.Advisor = Faculty.FacID WHERE Sex = "Male" GROUP BY Major
+Visualize BAR SELECT COUNT(Country), Country , sum(Competition_type) FROM competition GROUP BY Country , Competition_type ORDER BY sum(Competition_type) DESC
+Visualize BAR SELECT Faculty.Rank , COUNT(Faculty.Rank) FROM Faculty GROUP BY RANK ORDER BY COUNT(Faculty.Rank) DESC
+Visualize FEATURE SELECT DNO , COUNT(Course.CID) FROM Minor_in GROUP BY DNO ORDER BY DNO DESC
+Visualize SCATTER SELECT CName , Credits FROM Course WHERE CID = CName GROUP BY CID ORDER BY Credits ASC
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Fname , AVG(Age) FROM Student GROUP BY Fname ORDER BY AVG(Age) DESC
+Visualize BAR SELECT name , COUNT(color) FROM photos GROUP BY color ORDER BY COUNT(color) DESC
+Visualize BAR SELECT cust_name FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name
+Visualize BAR SELECT Winery , count(*) FROM wine WHERE Price > 100 GROUP BY Winery
+Visualize BAR SELECT first_name , COUNT(first_name) FROM Customers GROUP BY first_name ORDER BY first_name ASC
+Visualize PIE SELECT Booking_status_code , COUNT(*) FROM Apartment_Bookings
+Visualize BAR SELECT date , COUNT(date) FROM battle GROUP BY date ORDER BY COUNT(date) ASC
+Visualize BAR SELECT Country , Competition_type , COUNT(*) AS C, FROM competition  	GROUP BY Competition_type ,  Country  	ORDER BY C DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+1. Visualize LINE SELECT Credits , DNO FROM Course  ORDER BY Credits DESC 2. Select DNO from Course GROUP BY DNO
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by
+Visualize BAR SELECT transaction_type , sum(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT master_customer_id , COUNT(master_customer_id) FROM Customer_Master_Index GROUP BY master_customer_id ORDER BY COUNT(master_customer_id) DESC
+Visualize BAR SELECT brand , COUNT(brand) FROM CAMERA_LENS GROUP BY brand ORDER BY COUNT(brand) DESC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT CID , Credits FROM Course GROUP BY CID, Credits HUE Credits BY Credits SPLOT STUID BY Grade
+Visualize BAR SELECT city_code , COUNT(*) FROM Student GROUP BY city_code ORDER BY COUNT(*) DESC
+Visualize LINE SELECT date_account_opened FROM accounts GROUP BY date_account_opened ORDER BY date_account_opened DESC   /* Database schema: Table Person, columns = [*,name, age, city, gender, job] Answer: Visualize PIE SELECT job , min(age) FROM Person GROUP BY job  */
+Visualize BAR SELECT Position , COUNT(Position) FROM player GROUP BY Position ORDER BY COUNT(Position) ASC
+Visualize BAR SELECT Appelation , count(*) FROM appellations GROUP BY Appelation ORDER BY count(*) ASC
+Visualize BAR SELECT Apt_id , room_count FROM Apartments GROUP BY Apt_id
+SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY Building ASC
+Visualize BAR SELECT Competition_ID , SUM(Competition_type) FROM competition GROUP BY Competition_ID ORDER BY SUM(Competition_type) DESC
+Visualize LINE SELECT AVG(Capacity) , Openning_year FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Essn , Sex FROM employee WHERE Salary<50000 GROUP BY Sex HAVING COUNT(Essn)>0
+Visualize BAR SELECT weekday , count(*) FROM Apartment_Bookings GROUP BY weekday ORDER BY count(*) ASC
+Visualize BAR SELECT COUNT(*) AS Total_Number , Appellation FROM appellations GROUP BY Appellation ORDER BY Total_Number DESC
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand
+SELECT COUNT(*) , booking_end_date FROM Apartment_Bookings GROUP BY booking_end_date
+SELECT apt_number , bedroom_count FROM Apartments GROUP BY Apartments ORDER BY bedroom_count ASC
+Visualize SCATTER SELECT film_market_estimation.low_estimate , film_market_estimation.high_estimate FROM film_market_estimation GROUP BY film_market_estimation.low_estimate
+Visualize BAR SELECT Days , CREDITS FROM Course GROUP BY Days
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize SCATTER SELECT Customer_Event_ID , Property_ID FROM Customer_Events GROUP BY Customer_Event_ID, Property_ID
+Visualize BAR SELECT BOOKING_END_DATE , COUNT(APT_BOOKING_ID) FROM Apartment_Bookings GROUP BY booking_end_date
+1) Visualize BAR SELECT Year , Count(Competition_type) FROM competition GROUP BY Competition_type 2) Visualize STACKED BAR SELECT Country , SUM(Competition_type) FROM competition GROUP BY Competition_type , Country
+Visualize BAR SELECT Price , Year FROM wine GROUP BY Grape , Year
+Visualize LINE SELECT Openning_year , SUM(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Name , avg(Age) FROM editor GROUP BY Name ORDER BY Name ASC
+Visualize BAR SELECT Type, Count(Artwork_ID) FROM artwork GROUP BY Type, Count(Artwork_ID) ORDER BY Count(Artwork_ID)
+Visualize PIE SELECT Allergy , Count(*) FROM Allergy_Type GROUP BY Allergy
+Visualize BAR SELECT apt_number , room_count FROM Apartments ORDER BY room_count DESC
+Visualize BAR SELECT apt_type_code , COUNT(room_count) FROM Apartments GROUP BY apt_type_code
+Visualize BAR SELECT Year , count(Year) FROM matches GROUP BY Year , order by count(Year) DESC
+Visualize BAR SELECT Days , Days_Amount FROM Course GROUP BY Days_Amount
+Visualize BAR SELECT FacID , Rank FROM Faculty  ORDER BY Rank DESC
+1-Filter the female students and order by age desc SELECT * from Student where Sex='F' ORDER BY Age DESC  2-Check if their are any male students if exists   Select * from Student where Sex='M' and Age<Age of female students  3- Find the id of the female students of the last age SELECT StuID from Student where Sex='F' and Age<StuID of the last female student  4- From the last female student we extract all male students with the same age as the last female student SELECT F1.StuID FROM Student
+Visualize BAR SELECT datetime_payment , payment_method_code , amount_payment FROM Customer_Payments GROUP BY payment_method_code, amount_payment ORDER BY datetime_payment DESC
+SELECT Booking_status_code, count(*) FROM Apartment_Bookings GROUP BY Booking_status_code ORDER BY Booking_status_code DESC
+Visualize BAR SELECT Count(FacID) , Sex FROM Student GROUP BY Sex ORDER BY Count(FacID) DESC
+Visualize BAR SELECT Date_Account_Opened , COUNT(Date_Account_Opened) FROM Accounts GROUP BY Date_Account_Opened , other_account_details
+Visualize BAR SELECT Year , count(*) FROM wine WHERE Price >100 GROUP BY Year
+Visualize BAR SELECT gender_code, count(*) FROM Guests GROUP BY gender_code ORDER BY count(*) DESC
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) ASC
+Visualize BAR SELECT Days , Sum(Credits) FROM Course GROUP BY Days
+Visualize BAR SELECT Country , COUNT(*) FROM competition GROUP BY Country ORDER BY COUNT(*)
+Visualize BAR SELECT PAYMENT_TYPE_CODE , count(payment_date) FROM Payments WHERE (amount_paid > 300 OR payment_type_code = 'Check') GROUP BY PAYMENT_TYPE_CODE
+Visualize SCALE SELECT Year , MAX(Score) FROM wine GROUP BY Year ORDER BY Year DESC
+
+Visualize BAR SELECT date_account_opened , customer_id, account_name , other_account_details FROM accounts GROUP BY other_account_details , weekday, account_name BIN (date_account_opened , 1, 1, 7) ORDER BY account_name
+Visualize SCATTER SELECT count(*), type FROM artwork GROUP BY Type ORDER BY type ASC
+Visualize BAR SELECT outcome_code , COUNT(Mailshot_Customers.mailshot_customer_date) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize BAR SELECT channel , COUNT(program) FROM program GROUP BY channel, owner ORDER BY channel, owner DESC
+Visualize BAR SELECT apt_type_code , MIN(room_count) FROM Apartments GROUP BY apt_type_code ORDER BY MIN(room_count) DESC
+Visualize BAR SELECT DISTINCT color FROM photos
+Visualize BAR SELECT Openning_year , COUNT(Openning_year) FROM cinema GROUP BY Openning_year ORDER BY Openning_year DESC
+Visualize BAR SELECT COUNT(*) , invoice_number FROM invoices GROUP BY invoice_number ORDER BY COUNT(*) DESC Visualize LINE SELECT invoice_number , COUNT(*) FROM invoices GROUP BY invoice_number
+Visualize BAR SELECT LName , count(*) FROM Student WHERE Sex = 'F' ORDER BY count(*) ASC
+1. JOIN Orders and Invoices using order_id, and use GROUP BY .     2. JOIN Orders and Order_Items using order_id, and use GROUP BY .
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY COUNT(*) DESC
+Visualize PIE Faculty , COUNT(Rank) FROM Faculty GROUP BY Faculty ORDER BY Faculty ASC
+Visualize LINE SELECT D(date_of_birth) , COUNT(*) FROM guests WHERE gender_code = "M" GROUP BY D(date_of_birth)
+Visualize PIE SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT date_moved_in , COUNT(*) FROM Residents GROUP BY date_moved_in ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Gender FROM player GROUP BY Gender
+Visualize BAR SELECT color , COUNT(*) FROM photos GROUP BY color ORDER BY color ASC
+Visualize HISTOGRAM SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize BAR SELECT year , COUNT(match_num) FROM matches GROUP BY year
+Visualize BAR SELECT player.Position , AVG(player.Points) FROM player GROUP BY Position
+Visualize BAR SELECT Booking_Status_Code , COUNT(Booking_Status_Code) FROM Apartment_Bookings GROUP BY Booking_Status_Code ORDER BY COUNT(Booking_Status_Code) DESC
+Visualize BAR SELECT Teacher_ID, Age, Hometown FROM teacher ORDER BY Age DESC
+Visualize SCATTER SELECT CID , Credits, Instructor , COUNT(*) FROM Course GROUP BY CID, Credits, Instructor
+Visualize BAR SELECT grapes.Grape , count(*) FROM grapes WHERE score >= 93 AND Winery = "Belleville" GROUP BY Grape
+Visualize BAR SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY Building ASC
+Visualize BAR SELECT year , match_num , score FROM matches GROUP BY year ORDER BY match_num ASC, score DESC
+Visualize BAR SELECT Venue , count(*) FROM debate GROUP BY Venue ORDER BY count(*) ASC
+
+SELECT FacID, Sex FROM Faculty GROUP BY FacID ,Sex Visualize BAR SELECT FacID , count(FacID) FROM Student, Faculty WHERE Faculty.FacID = Student.Advisor GROUP BY FacID, Sex ORDER BY count(FacID) DESC
+1. create a counter table by column "Type" as "counter_type". 2. Then select the counter_type and sum of the counter by "Name". 3. Use CIRCLE in the VQL query to create a pie chart about "Total".
+Visualize BAR SELECT Sex , AVG(Age) FROM Student GROUP BY Sex
+
+Visualize BAR SELECT Winery , COUNT(*) FROM wine WHERE Price > 100 GROUP BY Winery ORDER BY Winery ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Faculty_Rank ORDER BY Faculty_Rank ASC
+Visualize BAR SELECT Location , COUNT(Cinema_ID) FROM cinema GROUP BY Location ORDER BY Location ASC
+Visualize BAR SELECT AllergyType, Allergy FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Select COUNT(*) AS Count_Of_Counties FROM appellations GROUP BY Count_Of_Counties DESC
+Visualize SCATTER SELECT winery, AVG(price) FROM wine GROUP BY winery ORDER BY AVG(price)
+Visualize LINE SELECT date_of_birth , COUNT(*) FROM guests GROUP BY date_of_birth ORDER BY date_of_birth DESC
+Visualize TREND SELECT MIN(MAX(Score)) FROM wine GROUP BY Year ORDER BY Year
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize HISTOGRAM SELECT product_category , COUNT(*) FROM Products GROUP BY product_category
+Visualize BAR SELECT Days , Credits FROM Course GROUP BY Days ORDER BY Days ASC
+Visualize LINE SELECT Price , Score FROM wine GROUP BY Price
+Visualize BAR SELECT Date_Moved_In , COUNT(Date_Moved_In) FROM Residents  GROUP BY Date_Moved_In ORDER BY COUNT(Date_Moved_In) ASC
+SELECT Days , SUM(Credits) FROM Course GROUP BY Days
+Visualize BAR SELECT Grape , COUNT(Grape) FROM wine GROUP BY Grape ORDER BY COUNT(Grape) DESC
+Visualize BAR SELECT player_id , sum(hand) FROM players GROUP BY player_id ORDER BY sum(hand) ASC
+Visualize BAR SELECT FacID, count(FacID) FROM Faculty WHERE Rank IN ('Professor','Associate', 'Assistant') GROUP BY FacID ORDER BY count(FacID) ASC
+Visualize PIE SELECT customer_status_code , COUNT(*) FROM Customers
+Visualize BAR SELECT Venue , COUNT(Venue) FROM debate GROUP BY Venue ORDER BY Venue DESC BIN Venue BY WEEKDAY
+
+Visualize BAR SELECT Gender , Player_ID FROM player GROUP BY Gender , Player_ID ORDER BY Player_ID ASC
+Visualize PIE SELECT Customer_Status_Code , COUNT(Customer_Status_Code) FROM Customers GROUP BY Customer_Status_Code  Visualize PIE SELECT Customer_Status_Code , COUNT(Customer_Status_Code) FROM Customers GROUP BY Customer_Status_Code
+Visualize LINE SELECT No , Price FROM wine GROUP BY No ORDER BY Price ASC
+
+Visualize BAR SELECT Sex , count(*) FROM Student GROUP BY Sex ORDER BY Sex DESC
+Visualize BAR SELECT date_of_birth , COUNT(*) FROM Guests GROUP BY date_of_birth ORDER BY date_of_birth ASC
+
+Visualize BAR SELECT Rank, COUNT(StuID) FROM Student WHERE Sex = 'male' GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Competition_ID , count(*) FROM competition GROUP BY Competition_ID
+Visualize BAR SELECT date_account_opened , COUNT(date_account_opened) FROM Accounts GROUP BY other_account_details BIN date_account_opened BY WEEKDAY ORDER BY COUNT(date_account_opened) ASC
+Visualize BAR SELECT gender_code, COUNT(guest_id) FROM Guests WHERE gender_code = "M" GROUP BY gender_code
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank ORDER BY Rank ASC
+1. Select Residents from (Residents, Residents_Services)             UNION             SELECT Residents_Services from (Residents, Residents_Services)             UNION             SELECT Customer_Event_Notes from (Customer_Events, Customer_Event_Notes) 2. Select ID as date_moved_in , Count as Count from (1) GROUP by date_moved_in , (2) GROUP by date_moved_in , (3) GROUP by date_moved_in , (4) 3. Select date_moved_in as x
+Visualize LINE SELECT Capacity FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize HISTOGRAM SELECT Openning_Year , AVERAGE(Capacity) FROM cinema GROUP BY Openning_Year ORDER BY AVERAGE(Capacity) DESC
+Visualize BAR SELECT customer_status_code , COUNT(customer_status_code) FROM customers GROUP BY customer_status_code ORDER BY COUNT(customer_status_code) DESC BIN customer_status_code BY WEEKDAY
+
+Visualize PIE SELECT Instructor , COUNT(CID) AS No_of_Courses FROM Course GROUP BY Instructor
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY Points DESC
+SELECT booking_status_code , COUNT(booking_status_code) as num_of_booking FROM bookings GROUP BY booking_status_code
+Visualize BAR SELECT gender_code,count(*) FROM Guests GROUP BY gender_code ORDER BY count(*) DESC
+Visualize BAR SELECT Openning_year , count(*) FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT Building , count(*) FROM Faculty GROUP BY Building ORDER BY count(*) ASC
+Visualize BAR SELECT Name , Operating_system FROM Web_client_accelerator ORDER BY Operating_system ASC
+Visualize BAR SELECT Year , COUNT(*) FROM wine GROUP BY Year BIN Year BY YEAR_INTERVAL ORDER BY COUNT(*) DESC
+Visualize LINE SELECT DNO , CID FROM Member_of JOIN Course JOIN Minor_in JOIN Enrolled_in JOIN Department ON (Department.DNO = Minor_in.DNO) JOIN Department ON (Department.DNO = Course.DNO) JOIN Department ON (Department.DNO = Enrolled_in.DNO) JOIN Department ON (Department.DNO = Member_of.DNO) WHERE (Course.CID = Minor_in.CID) AND (Minor_in.StuID = Enrolled_in
+Visualize BAR SELECT date_account_opened , COUNT(*) FROM accounts GROUP BY other_account_details , date_account_opened, weekday
+Visualize PIE SELECT Allergy , AllergyType FROM Allergy_Type
+
+Visualize BAR SELECT Gender , count(*) FROM player GROUP BY Gender ORDER BY count(*) DESC
+Visualize BAR SELECT Occupation , count(Occupation) FROM player GROUP BY Occupation ORDER BY count(Occupation) DESC
+Visualize BAR SELECT Rating_in_percent , COUNT(Channel_ID) FROM channel GROUP BY Channel_ID ORDER BY Channel_ID ASC
+Visualize BAR SELECT PAYMENT_METHOD_CODE , COUNT(PAYMENT_METHOD_CODE) FROM Customer_Payments
+Visualize PIE SELECT FacID , COUNT(fac_rank) FROM FACULTY GROUP BY FacID ORDER BY fac_rank
+Visualize BAR SELECT Drink , Cases FROM wine GROUP BY Grape ORDER BY Cases ASC
+
+1. Visualize SCATTER SELECT order_details.product_id , COUNT(order_details.product_id) FROM orders , invoices  GROUP BY order_details.product_id , order_details.order_id , date_order_placed , order_details.product_quantity , order_details.product_id , order_details.order_id , invoice_number , invoice_date , order_item_id  ORDER BY order_item_id ASC 2. Visualize SCATTER SELECT order_details.product_id , COUNT(order_
+CID, Credits from Course, Grade from Enrolled_in  Aggregate group by CID, Credits by Grade Visualize scatter(Credits, Grade)
+Visualize BAR SELECT Allergy , COUNT(Allergy) FROM allergy_type GROUP BY AllergyType ORDER BY Allergy ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Faculty.Fname , count(Faculty.Fname) FROM Faculty WHERE Faculty.Rank = 'Assistant' GROUP BY Faculty.Fname ASC
+Visualize BAR SELECT Film_ID , COUNT(Directed_by) FROM film GROUP BY Film_ID , Directed_by BIN Film_ID
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) DESC
+Visualize BAR SELECT Area , count(*) FROM appellations GROUP BY Area ORDER BY count(*) DESC
+Visualize BAR SELECT Apt_type_code , COUNT(apt_type_code) FROM Apartments GROUP BY Apt_type_code ORDER BY COUNT(apt_type_code) ASC
+*/
+Visualize BAR SELECT Sex , avg(Age) FROM Student GROUP BY Sex ORDER BY Sex ASC,Age DESC
+Visualize BAR SELECT gender_code , count(date_of_birth) FROM Guests GROUP BY gender_code
+Visualize BAR SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY COUNT(Studio) ASC
+Select Apps , Points FROM player WHERE Points < 30 GROUP BY Position ORDER BY Points DESC
+Visualize LINE SELECT AVG(price) , AVG(Score) FROM wine GROUP BY WINE_NAME
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown ASC
+1. Visualize SCALE SELECT order_id FROM Order_Items GROUP BY order_id 2. Visualize SCALE SELECT order_id FROM Invoice_Line_Items GROUP BY order_id
+Visualize BAR SELECT Sex , COUNT(Sex) FROM Faculty GROUP BY Sex ORDER BY Sex ASC
+Visualize BAR SELECT Location , COUNT(Cinema_ID) FROM cinema GROUP BY Location ORDER BY Y-Axis
+Visualize BAR SELECT distinct product_category , COUNT(mailshot_id) FROM Mailshot_Campaigns GROUP BY product_category ORDER BY COUNT(mailshot_id) DESC
+Visualize BAR SELECT Rank_in_series , count(Directed_by) FROM film GROUP BY Directed_by ORDER BY count(Directed_by) ASC
+1) Prepare a histogram SELECT Grape, COUNT(Grape) FROM grapes GROUP BY Grape ORDER BY Grape DESC
+Visualize BAR SELECT Country , Killed FROM perpetrator
+Visualize PIE SELECT Country , COUNT(Country) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT country , COUNT(Competition_ID) FROM competition GROUP BY country ORDER BY COUNT(Competition_ID) ASC
+Visualize STACKED_BAR SELECT Competition_type , COUNT(Year) FROM competition GROUP BY Country
+Visualize BAR SELECT apt_type_code , count(*) FROM Apartments GROUP BY apt_type_code ORDER BY count(*)
+Visualize BAR SELECT room_count , apt_number FROM Apartments ORDER BY room_count ASC
+Visualize SCATTER SELECT customer_id , GENDER FROM customers
+Visualize BAR SELECT brand , COUNT(brand) FROM camera_lens GROUP BY brand ORDER BY COUNT(brand) DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' GROUP BY cust_name ORDER BY acc_bal DESC
+Visualize BAR SELECT (CASE WHEN acc_type='Savings' THEN avg(acc_bal) WHEN acc_type='Checking' THEN avg(acc_bal) ELSE 0 END), COUNT(cust_ID) FROM customer WHERE credit_score < 50  GROUP BY acc_type ORDER BY COUNT(cust_ID) DESC, (CASE WHEN acc_type='Savings' THEN avg(acc_bal) ELSE 0 END)
+Visualize BAR SELECT Age , COUNT(StuID) FROM Student GROUP BY Age, Sex
+Visualize BAR SELECT Apartment_Bookings . , count(apt_booking_id) FROM Apartment_Bookings GROUP BY apt_booking_id ORDER BY Apartment_Bookings .,booking_end_date
+Visualize BAR SELECT Fname , AVG(Age) FROM Student GROUP BY Fname ORDER BY AVG(Age) DESC
+Visualize BAR SELECT account_id , COUNT(*) FROM Accounts GROUP BY account_id
+Visualize PIE SELECT Gender , COUNT(Faculty_ID) FROM Faculty GROUP BY Gender  Visualize BAR SELECT rank, COUNT(faculty_id) FROM Faculty GROUP BY rank  Visualize BAR SELECT faculty_id, faculty_name , count(*) FROM student JOIN faculty ON student.faculty_id = faculty.faculty_id GROUP BY faculty_id
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT Channel_ID , Sum(Rating_in_percent) FROM program,channel GROUP BY Channel_ID, Owner ORDER BY Channel_ID, Owner ASC
+Visualize BAR SELECT Premises_Type , COUNT(Premises_Type) FROM Premises GROUP BY Premises_Type ORDER BY Premises_Type DESC
+Visualize BAR SELECT transaction_type , COUNT(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(transaction_amount) ASC
+Visualize POINT SELECT Order_Details.Product_ID FROM Orders INNER JOIN Order_Items ON Orders.Order_ID = Order_Items.order_id INNER JOIN Invoices ON Orders.order_id = Invoices.order_id GROUP BY Order_Details.Product_ID ORDER BY Product_ID
+
+Visualize BAR SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions  GROUP BY transaction_type ORDER BY COUNT(transaction_type) ASC
+Visualize BAR SELECT Editor_ID , Age FROM editor ORDER BY Age ASC
+Visualize BAR SELECT Grape , COUNT(Wine_ID) FROM wine WHERE Winery != 'California' GROUP BY Grape ORDER BY Grape DESC
+Visualize BAR SELECT Openning_year , count(*) FROM cinema GROUP BY Openning_year  ORDER BY Openning_year ASC
+Visualize SCATTER SELECT Credits, Instructor FROM Course
+Visualize BAR SELECT outcome_code , COUNT(mailshot_id) FROM Mailshot_Customers GROUP BY outcome_code
+Visualize BAR SELECT premise_type , COUNT(*) FROM Premises GROUP BY premise_type
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize BAR SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM residents GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC
+Visualize PIE Select program.Program_ID , channel.Share_in_percent FROM program JOIN channel ON program.Program_ID = channel.Program_ID
+1) List the distinct Sex and gender, and distinct Major 2) Visualize stacked BAR SELECT Sex , count(*) FROM Student JOIN faculty on major 3) Visualize stacked BAR SELECT Sex , count(*) FROM Faculty JOIN Student on major 4) Visualize stacked BAR SELECT Sex , count(*) FROM Student GROUP BY Sex 5) Visualize stacked BAR SELECT Sex , count(*) FROM Faculty GROUP BY Sex 6) Visualize stacked BAR SELECT Sex , count(*) FROM Student JOIN faculty on major GROUP BY Sex 7) Visualize stacked BAR SELECT Sex
+Visualize LINE SELECT date_of_birth , COUNT(staff_address_id) FROM Staff JOIN Customers ON Staff.staff_address_id = Customers.customer_address_id AND staff_address_id = ( SELECT MIN(staff_address_id) FROM Staff JOIN Customers ON Staff.staff_address_id = Customers.customer_address_id WHERE customer_status_code = 'Good Customer') GROUP BY date_of_birth ORDER BY count(staff_address_id) DESC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Channel_ID , Rating_in_percent / Share_in_percent FROM program JOIN channel ON program.Owner = channel.Owner
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents_Services, Residents WHERE date_moved_in >= '2014-01-01' AND date_moved_in <= '2015-01-01' GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC , Visualize BAR SELECT Customer_Event_ID , COUNT(Customer_Event_ID) FROM Customer_Event_Notes, Customer_Events WHERE Customer_Event_ID >= '
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents_Services ORDER BY date_moved_in ASC
+Visualize BAR SELECT acc_type , (AVG(acct_bal)) AS avg_bal FROM customer GROUP BY acc_type ORDER BY avg_bal ASC
+Visualize BAR SELECT cust_name , AVG(acc_bal) FROM customer GROUP BY cust_name ORDER BY acc_bal ASC
+Visualize BAR SELECT transaction_type, SUM(transaction_amount) FROM Financial_Transactions  GROUP BY transaction_type ORDER BY SUM(transaction_amount) ASC BIN transaction_type
+Visualize BAR SELECT Allergy , COUNT(StuID) FROM Has_Allergy GROUP BY Allergy ORDER BY Allergy ASC
+Visualize BAR SELECT hand, COUNT(hand) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType
+SELECT COUNT(*) FROM competition GROUP BY Country
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT account_name , account_id , DATE_ACCOUNT_OPENED, SUM(account_number) FROM Accounts GROUP BY DATE_ACCOUNT_OPENED , other_account_details ORDER BY DATE_ACCOUNT_OPENED DESC , SUM(account_number) DESC
+Visualize BAR SELECT brand , COUNT(*) FROM camera_lens GROUP BY brand ORDER BY COUNT(*) ASC
+Visualize PIE SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize LINE SELECT Customer_Address_Id , COUNT(*) FROM Customers GROUP BY Customer_Address_Id  ORDER BY COUNT(*) DESC  Visualize BAR SELECT date_of_birth , date_became_customer FROM Customers WHERE Customer_Status_Code = 'Good Customer' GROUP BY date_of_birth ORDER BY date_of_birth DESC
+Visualize BAR SELECT Owner , Sum(Rating_in_percent) FROM program GROUP BY Owner ,  Sum(Rating_in_percent) ORDER BY Sum(Rating_in_percent) DESC
+Visualize BAR SELECT cust_name , sum(acc_bal) FROM customer WHERE cust_name LIKE '%a%' GROUP BY cust_name
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT date_of_birth FROM Guests WHERE GENDER_CODE = 'M' ORDER BY date_of_birth
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) ASC
+Visualize BAR SELECT date_moved_in , COUNT(*) FROM Residents_Services GROUP BY date_moved_in ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Wine , COUNT(Wine) FROM wine WHERE Price > 100 GROUP BY Wine ORDER BY Wine ASC
+Visualize BAR SELECT Sex , AVG(Age) FROM Student WHERE Sex = 'male' ORDER BY AVG(Age) DESC
+Visualize PIE SELECT room_count , APARTMENT_TYPE_CODE FROM Apartments GROUP BY APARTMENT_TYPE_CODE
+Visualize BAR SELECT Allergy , count(*) FROM Allergy_Type GROUP BY AllergyType ASC
+Visualize BAR SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT account_name , COUNT(account_name) FROM accounts GROUP BY other_account_details BIN account_name BY WEEKDAY
+Visualize BAR SELECT DISTINCT(booking_end_date) , DAY(booking_end_date) FROM Apartment_Bookings GROUP BY DAY(booking_end_date) BIN booking_end_date BY WEEKDAY
+Visualize BAR SELECT County , sum(no) FROM appellations GROUP BY County
+Visualize BAR SELECT gender_code , count(*) FROM Guests GROUP BY gender_code ORDER BY count(*) ASC
+Visualize BAR SELECT bulgarian_commander , COUNT(bulgarian_commander) FROM battle WHERE bulgarian_commander <> 'Boril' GROUP BY bulgarian_commander ORDER BY COUNT(bulgarian_commander) ASC
+Visualize GROUP LINE SELECT date_account_opened , COUNT(account_id) FROM Accounts GROUP BY account_name, other_account_details, date_account_opened ORDER BY Y DESC
+Visualize BAR SELECT Premise_ID , COUNT(*) FROM Premises GROUP BY premise_type_id ORDER BY COUNT(*) DESC
+Visualize SPARKLINE SELECT account_name , transaction_type FROM Financial_Transactions  GROUP BY account_id
+Visualize BAR SELECT other_account_details , count(*) FROM Accounts GROUP BY other_account_details  ORDER BY count(*) ASC BIN other_account_details BY WEEKDAY
+Visualize BAR SELECT SUM(amount_payment) , payment_method_code FROM Customer_Payments GROUP BY payment_method_code ORDER BY SUM(amount_payment) DESC
+Visualize BAR SELECT count(DISTINCT(color)) , name FROM photos GROUP BY name ORDER BY name ASC
+Visualize SCATTER SELECT order_id , COUNT(order_id) FROM Orders GROUP BY order_id  AND , SELECT invoice_number, COUNT(invoice_number) FROM Invoices GROUP BY invoice_number
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize LINE SELECT date_account_opened,count(*) FROM Accounts GROUP BY date_account_opened ORDER BY count(*) ASC
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT Competition_type , count(DISTINCT Year) FROM competition GROUP BY Competition_type ORDER BY count(DISTINCT Year)
+Visualize BAR SELECT Building, total FROM Faculty GROUP BY Building ORDER BY total DESC
+Visualize BAR SELECT area , COUNT(area) FROM appellations  GROUP BY area ORDER BY COUNT(area) ASC
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code  ORDER BY COUNT(booking_status_code) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Occupation FROM player ORDER BY Votes ASC
+Visualize SCATTER SELECT Year , max(Price) FROM wine GROUP BY Year ORDER BY Year
+Visualize BAR SELECT Year , COUNT(*) FROM competition GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Grape, COUNT(Grape) FROM Wine WHERE Price > 100 AND Year >= 2010 ORDER BY Year DESC, Grape ASC
+Visualize BAR SELECT Grape , COUNT(No) FROM wine GROUP BY Grape ORDER BY Grape ASC
+Visualize BAR SELECT Allergy, count(*) FROM has_allergy GROUP BY Allergy ORDER BY Allergy DESC
+Visualize BAR SELECT Grape , count(*) FROM wine GROUP BY Grape
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY count(*) DESC
+Visualize BAR SELECT competition_type , COUNT(Competition_type) FROM competition GROUP BY competition_type ORDER BY COUNT(Competition_type) ASC
+SQL: SELECT Major, Sex FROM Student JOIN Faculty ON Major = Advisor WHERE Sex = 'F' GROUP BY Major, Sex ORDER BY Sex
+Visualize BAR SELECT Year , COUNT(Year) FROM wine GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize PIE SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT status_code , COUNT(*) FROM customers GROUP BY status_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Name , Age FROM editor GROUP BY Age
+Visualize SCATTER SELECT player.Player_ID, player.Points FROM player WHERE Player_ID IN (SELECT PLAYER_ID FROM (SELECT PLAYER_ID FROM player WHERE Apps > 30) A) GROUP BY Position ORDER BY Points ASC
+
+Visualize BAR SELECT AllergyType , COUNT(Allergy) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType DESC
+Visualize BAR SELECT acc_type , acc_bal FROM customer WHERE cust_name LIKE 'A%' GROUP BY acc_type ORDER BY acc_bal DESC
+Visualize BAR SELECT Hometown , count(*) FROM teacher GROUP BY Hometown
+SELECT Rank, COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT No , Price FROM wine GROUP BY Price
+Visualize BAR SELECT  COUNT(battle.id) FROM battle GROUP BY result
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY Count(Gender) DESC
+1) Visualize SCATTER SELECT account_id , name FROM Accounts 2) Visualize SCATTER SELECT account_id , name FROM Financial_Transactions
+Visualize LIST SELECT tours , ranking_date FROM rankings
+Visualize BAR SELECT Area , COUNT(Area) FROM Appellations GROUP BY Area ORDER BY COUNT(Area) DESC
+Visualize SCATTER SELECT customer_id, count(*) FROM accounts GROUP BY customer_id
+Visualize BAR SELECT Time_of_day, sum(Program_ID) FROM broadcast GROUP BY Time_of_day ORDER BY Time_of_day ASC
+Visualize BAR SELECT date_moved_in, COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in
+Visualize BAR SELECT Age, Sex FROM Student GROUP BY Sex ,Order by Mean
+Visualize BAR SELECT Allergy FROM Has_Allergy GROUP BY Allergy ORDER BY Allergy DESC
+Visualize TABLE RATIO  SELECT Grape, COUNT(Grape) FROM wine GROUP BY Grape ORDER BY COUNT(Grape) DESC
+Visualize BAR SELECT Price FROM wine WHERE Price > 100  GROUP BY winery ORDER BY Price ASC  BIN Winery
+
+Visualize BAR SELECT DISTINCT product_category , COUNT(*) FROM Mailshot_Campaigns GROUP BY product_category ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Grape , Count(*) FROM wine WHERE Grape = 'Grape' BIN Grape BY YEAR
+1. Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC 2. Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents_Services GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC 3. Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Customer_Events GROUP BY date_m
+
+Visualize BAR SELECT cust_ID , acc_bal FROM customer WHERE cust_name LIKE 'A%'  ORDER BY acc_bal DESC
+Visualize BAR SELECT booking_start_date , YEAR(booking_start_date) FROM Apartment_Bookings
+Visualize LINE SELECT Openning_year , Capacity FROM cinema ORDER BY Capacity
+Visualize LINE SELECT DATE_OF_BIRTH FROM Guests GROUP BY GENDER_CODE
+Visualize BAR SELECT Grape , COUNT(*) FROM wine GROUP BY Grape  ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Channel_ID , Channel_Owner , Channel_Share_in_percent FROM channel   UNION   SELECT Channel_ID , Channel_Owner , Channel_Rating_in_percent FROM channel ORDER BY Channel_Owner ASC
+Visualize BAR SELECT city_code , count(*) FROM Student GROUP BY city_code ORDER BY count(*) DESC
+Visualize SCATTER SELECT order_id , COUNT(Order_Details) FROM Orders GROUP BY order_id , COUNT(Order_Details) ORDER BY COUNT(Order_Details)
+Visualize BAR SELECT booking_status_code , count(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY count(apt_booking_id) ASC
+Visualize BAR SELECT country , count(*) FROM perpetrator GROUP BY country ORDER BY count(*)
+Visualize LINE SELECT Type_of_Thing_Code, COUNT(Type_of_Thing_Code)  FROM Things GROUP BY Type_of_Thing_Code ORDER BY COUNT(Type_of_Thing_Code) ASC
+Visualize BAR SELECT city_code , COUNT(city_code) FROM Student GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT Allergy , count(*) FROM Allergy_Type GROUP BY Allergy ORDER BY count(*) ASC
+Visualize BAR SELECT city_code , COUNT(*) FROM Student GROUP BY city_code
+Visualize PIE SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Competition_type , count(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type DESC
+Visualize BAR SELECT Studio , COUNT(Film_ID) FROM film GROUP BY Studio ORDER BY COUNT(Film_ID) ASC
+Visualize BAR SELECT Time_of_day , COUNT(*) FROM broadcast GROUP BY Time_of_day
+Visualize BAR SELECT Owner , Count(*)/Count(Rating_in_percent) FROM channel GROUP BY Owner ORDER BY Count(*)/Count(Rating_in_percent) ASC
+Visualize BAR SELECT location, count(*) FROM cinema GROUP BY location
+Visualize BAR SELECT directed_by , COUNT(directed_by) FROM film GROUP BY directed_by ORDER BY COUNT(directed_by) ASC
+Visualize BAR SELECT Time_of_day , count(*) FROM broadcast GROUP BY Time_of_day ORDER BY count(*) ASC
+Visualize HISTOGRAM SELECT Country , COUNT(*) FROM competition GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date , COUNT(Date) FROM battle GROUP BY Date DESC
+Visualize BAR SELECT cust_name , COUNT(acc_bal) FROM customer WHERE cust_name LIKE '%a%' GROUP BY cust_name ORDER BY COUNT(acc_bal)
+Visualize PIE SELECT other_account_details , COUNT(other_account_details) FROM Accounts GROUP BY other_account_details ORDER BY COUNT(other_account_details) ASC
+Visualize HISTOGRAM Sex, mean(Age) FROM Students GROUP BY Sex
+Visualize SCATTER SELECT Year , MAX(Price) AS Price , Score FROM wine GROUP BY Year
+Visualize BAR SELECT year , COUNT(*) FROM matches GROUP BY year ORDER BY year DESC
+BAR SELECT Rank , count(*) FROM Faculty GROUP BY FacID ,  Rank ORDER BY count(*) DESC
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY COUNT(hand) DESC
+Visualize PIE SELECT cust_ID , acc_bal FROM customer GROUP BY acc_type , credit_score ORDER BY cust_ID DESC
+Visualize BAR SELECT Price , Wines.No FROM wine WHERE Price > 100 ORDER BY Price DESC
+Visualize BAR SELECT property_id , count(*) FROM Properties GROUP BY property_id
+Visualize BAR SELECT CUST_NAME , COUNT(CUST_NAME) FROM CUSTOMER  WHERE cust_name LIKE 'a%' ORDER BY CUST_NAME ASC
+Visualize BAR SELECT County , COUNT(*) FROM appellations GROUP BY County DESC
+Visualize BAR SELECT Wine.wine , Count(Grape.Grape) FROM wine GROUP BY Count(Grape.Grape) ORDER BY Count(Grape.Grape) DESC
+Visualize BAR SELECT Winery , COUNT(*) FROM wine GROUP BY Winery ORDER BY Winery DESC
+Visualize BAR SELECT allergy_type , count(allergy) FROM allergy_type GROUP BY allergy_type
+Visualize BAR SELECT LName , COUNT(LName) FROM Student WHERE Sex = 'F' GROUP BY LName ORDER BY COUNT(LName) DESC
+Visualize BAR SELECT apt_number , apt_count FROM apartments GROUP BY apt_number ORDER BY apt_count ASC
+Visualize BAR SELECT  Grape , count(*) FROM wine GROUP BY Grape
+Visualize BAR SELECT Sex , COUNT(Sex) FROM Student GROUP BY Sex ORDER BY Sex DESC
+Visualize BAR SELECT Hometown , count(*) FROM teacher GROUP BY Hometown ORDER BY Hometown DESC
+Visualize BAR SELECT Openning_Year , Capacity FROM cinema GROUP BY openning_year ORDER BY openning_year ASC
+Visualize BAR SELECT Editor_ID , Age FROM editor GROUP BY Editor_ID ORDER BY Editor_ID DESC
+Visualize BAR SELECT Sex, AVG(Age) FROM Student GROUP BY Sex ORDER BY Sex ASC
+Visualize BAR SELECT booking_end_date , COUNT(*) FROM apartment_bookings GROUP BY booking_end_date ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Employee_Sex , COUNT(Employee_Ssalary) FROM employee WHERE Salary<50000 GROUP BY Employee_Sex
+Visualize BAR SELECT Area , Appelation FROM appellations ORDER BY Appelation ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank DESC
+Visualize BAR SELECT Competition_type , count(*) FROM competition GROUP BY Competition_type ORDER BY count(*) DESC
+Visualize BAR SELECT Name , Age FROM editor
+Visualize BAR SELECT Points , Count(*) FROM player GROUP BY points  ORDER BY Count(*) ASC
+
+Visualize SCATTER SELECT Instructor , DNO FROM Course GROUP BY Instructor , DNO
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY Weekday , booking_end_date
+Visualize LINE SELECT Debate_ID, Num_of_Audience FROM debate ORDER BY Num_of_Audience ASC
+Visualize BAR SELECT Sales_billion , count(*) FROM Companies GROUP BY Industry , ID ORDER BY Industry ASC
+Visualize PIE SELECT directed_by , COUNT(directed_by) FROM film GROUP BY directed_by HAVING COUNT(directed_by) > 1
+Visualize BAR SELECT Location , COUNT(*) FROM cinema GROUP BY Location ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Appelation , Year , count(*) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT CUSTOMER_STATUS_CODE , COUNT(CUSTOMER_ID) FROM Customers GROUP BY CUSTOMER_STATUS_CODE
+Visualize BAR SELECT Editor_ID , Name , Age FROM editor GROUP BY Editor_ID ORDER BY Age DESC
+Visualize HISTOGRAM SELECT Grape , COUNT(*) FROM grapes GROUP BY Grape ORDER BY COUNT(*) DESC
+Visualize POINT SELECT order_id, SUM(product_quantity) FROM order_items GROUP BY order_id
+Visualize BAR SELECT OUTCOME_CODE , COUNT(*) FROM mailshot_customers GROUP BY OUTCOME_CODE ORDER BY COUNT(*) DESC
+Visualize BAR SELECT booking_status_code, COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code
+/* // This query is for generating the charts based on the database query. // The data to be rendered is specified with a pre-built // XData object and rendered to the canvas.  // Pre-built XData object used in the above var xdata = require('./questions_xdata.json'); var CanvasJS = require('canvasjs');  // The 'common' and 'overall' charts are created using CanvasJS's default // implementation. var chartCommon = new CanvasJS.Chart("chartCommon",
+Visualize BAR SELECT Directed_by , COUNT(*) FROM film GROUP BY Directed_by ORDER BY COUNT(*) DESC
+Visualize LINE SELECT AVG(Price) , No , Grape , Winery , Appelation , State , Name , Year , Price , Score , Cases , Drink FROM wine ORDER BY No ASC
+Visualize BAR SELECT Customer_Status_Code , COUNT(1) FROM Customers GROUP BY Customer_Status_Code
+Visualize BAR SELECT Gender , count(*) FROM player GROUP BY Gender ORDER BY count(*) ASC
+
+
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize PIE SELECT premises_type FROM Premises GROUP BY premises_type
+1. Visualize BAR SELECT Rank , COUNT(Gender) FROM Faculty GROUP BY Rank ORDER BY Rank ASC 2. Visualize BAR SELECT Gender , COUNT(Faculty_ID) FROM faculty GROUP BY Gender ORDER BY Gender ASC
+Visualize HISTOGRAM SELECT product_category , COUNT(*) FROM mailshot_campaigns GROUP BY product_category ORDER BY COUNT(*) DESC
+Visualize HISTOGRAM SELECT Age,Hometown FROM teacher GROUP BY Hometown ORDER BY Hometown DESC
+Visualize SCATTER SELECT Guest_ID , date_of_birth FROM Guests GROUP BY gender_code, date_of_birth
+Visualize BAR SELECT Position , AVG(points) FROM player GROUP BY Position ORDER BY AVG(points) DESC
+Select AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) DESC
+Visualize BAR SELECT AllergyType , count(*) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT apt_number ,count(*) FROM Apartments GROUP BY Apartments BIN apt_number BY room_count
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY COUNT(*) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY payment_method_code
+Visualize LINE SELECT payment_date , count(*) FROM payments GROUP BY payment_date ORDER BY payment_date ASC
+Visualize Bar SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT Rating_in_percent , COUNT(Rating_in_percent) FROM channel GROUP BY Rating_in_percent ORDER BY Rating_in_percent DESC
+Visualize BAR SELECT DISTINCT product_id , COUNT(*) FROM Order_Items GROUP BY product_id Visualize LINE SELECT * FROM Invoice_Line_Items WHERE product_id = ANY ( SELECT DISTINCT product_id FROM Order_Items ) GROUP BY product_id , product_title
+Visualize BAR SELECT Apartment_Number , Room_Count FROM Apartments GROUP BY Apartment_Number ORDER BY Apartment_Number ASC
+Visualize BAR SELECT acc_bal , AVG(acc_bal) FROM customer WHERE acc_type <> 'account' AND credit_score < 50 GROUP BY acc_bal ORDER BY AVG(acc_bal) DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) ASC Y
+Visualize BAR SELECT premise_details , COUNT(premise_details) FROM Premises GROUP BY premise_details  ORDER BY COUNT(premise_details) DESC
+Visualize BAR SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY COUNT(*) DESC
+Visualize SCATTER LENGTH, HEIGHT FROM roller_coaster ORDER BY LENGTH DESC, HEIGHT DESC
+Visualize BAR SELECT Director , count(*) FROM film GROUP BY Director ORDER BY count(*) ASC
+Visualize PIE SELECT AllergyType FROM Allergy_Type  ORDER BY AllergyType  ASC
+Visualize HISTOGRAM SELECT Competition_type , COUNT(Competition_type) FROM competition  GROUP BY Competition_type
+Visualize BAR SELECT Directed_by , COUNT(*) FROM film GROUP BY Directed_by  ORDER BY Count(*) DESC
+Visualize BAR SELECT brand , COUNT(brand) FROM camera_lens GROUP BY brand ORDER BY brand DESC
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age DESC
+``` SQL> SELECT District , count(People_ID) FROM people GROUP BY District ORDER BY count(People_ID) DESC     DISTRICT  | COUNT(PEOPLE_ID) --------------+-------------------        B      | 9        A      | 4        C      | 2        D      | 1        E      | 1 ```
+SELECT apt_id, apt_number, room_count FROM Apartments WHERE apt_number = 50 GROUP BY apt_number
+Visualize Scatter SELECT Credits , Instructor FROM Course
+
+Visualize BAR SELECT Grape , Count(*) FROM wine GROUP BY Grape , No ORDER BY Year ASC
+Visualize BAR SELECT brand , COUNT(*) FROM camera_lens GROUP BY brand ORDER BY brand ASC
+Visualize BAR SELECT Country , SUM(Killed) FROM perpetrator GROUP BY Country ORDER BY Country DESC
+1. Visualize PIE SELECT payment_method_code , COUNT(*) FROM Customer_Payments GROUP BY payment_method_code 2. Visualize PIE SELECT payment_method_code , SUM(amount_payment) FROM Customer_Payments GROUP BY payment_method_code
+Visualize BAR SELECT area , count(*) FROM appellations GROUP BY area ORDER BY area ASC
+visualize BAR SELECT Cases , Price FROM wine GROUP BY Cases
+Visualize LINE SELECT Year , MAX(Price) FROM wine GROUP BY Year DESC
+Visualize BAR SELECT Location , COUNT(Location) FROM cinema GROUP BY Location ORDER BY Capacity
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) ASC
+Visualize BAR SELECT  acc_bal , acc_type , credit_score FROM customer GROUP BY credit_score , acc_type ORDER BY credit_score DESC
+1. PIE SELECT booking_status_code , count(*) FROM Apartment_Bookings GROUP BY booking_status_code  2. PIE SELECT booking_status_code , count(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY count(*) ASC
+Visualize BAR SELECT Grape , Cases FROM Wine ORDER BY Grape ASC
+Visualize SCATTER SELECT Year , max(Price) FROM wine GROUP BY Year ORDER BY max(Price) ASC
+Visualize BAR SELECT transaction_type , sum(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT date_account_opened , COUNT(*) FROM Accounts GROUP BY date_account_opened ORDER BY COUNT(*) DESC
+Visualize SELECT Age, COUNT(Age) FROM Student GROUP BY Age ORDER BY COUNT(Age) ASC  Plot the bar chart .
+Visualize BAR SELECT Price , Year FROM wine ORDER BY Price DESC
+Visualize BAR SELECT Fname , Sex FROM Student GROUP BY Fname
+Visualize BAR SELECT premises_type , COUNT(premises_type) FROM Premises GROUP BY premises_type ORDER BY COUNT(premises_type) DESC
+Visualize BAR SELECT Grape , COUNT(*) FROM wine GROUP BY Grape ORDER BY COUNT(*) ASC
+Visualize LINE CHART SELECT Name , AVG(Capacity) FROM cinema GROUP BY Name, Openning_year
+Visualize BAR SELECT Name, Age,RANK() OVER (ORDER BY Age DESC) FROM editor
+Visualize BAR SELECT date_moved_in, COUNT(date_moved_in) FROM residents , customers_events GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) ASC
+Visualize BAR SELECT Gender_code , COUNT(Gender_code) FROM Guests GROUP BY Gender_code ORDER BY COUNT(Gender_code) DESC
+Visualize BAR SELECT AVG(Points) , Position FROM player GROUP BY position order by AVG(Points) asc
+Visualize BAR SELECT Allergy_Type, count(*) FROM Allergy_Type GROUP BY Allergy_Type ORDER BY count(*) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customer_Payments GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT Building, COUNT(Building) FROM Faculty GROUP BY Building ORDER BY Building DESC
+Visualize BAR SELECT Country , COUNT(*) FROM Perpetrator GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM artwork GROUP BY Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT building_id , COUNT(apt_number) FROM Apartments GROUP BY building_id ORDER BY COUNT(apt_number) ASC
+Visualize BAR SELECT Competition_type , count(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Location , count(*) FROM cinema GROUP BY Location ORDER BY count(*) ASC
+Visualize BAR SELECT customer_details , COUNT(customer_details) FROM Customers GROUP BY customer_details ORDER BY Count(customer_details) DESC
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in
+Visualize BAR SELECT Year , Price FROM wine WHERE Price BETWEEN 100 AND 110 ORDER BY Year DESC
+Visualize SCATTER SELECT Competition_type , Competition_ID FROM competition GROUP BY Competition_type
+Visualize BAR SELECT apt_type_code , MIN(room_count) FROM Apartments GROUP BY apt_type_code
+Visualize BAR SELECT Sex , SUM(Salary) FROM employee GROUP BY Sex ORDER BY SUM(Salary) DESC
+Visualize BAR SELECT Drink, Grape, Number_Wines FROM wine GROUP BY Grape ORDER BY Number_Wines DESC
+Visualize BAR SELECT ranking_date , COUNT(ranking_date) FROM rankings GROUP BY ranking_date
+Visualize BAR SELECT Year , Count(Competition_type) FROM competition GROUP BY Year
+Visualize BAR SELECT AllergyType , count(*) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT FacID , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY COUNT(FacID) DESC
+1. Visualize PIE SELECT Grape , COUNT(Cases) FROM Wine GROUP BY Grape ORDER BY Cases 2. Visualize BAR SELECT No , COUNT(Wine) FROM wine GROUP BY No BIN Year BY YEAR
+Visualize BAR SELECT apt_number , count(*) FROM Apartments GROUP BY apt_number
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Name ASC
+Visualize BAR SELECT brand , COUNT(name) FROM camera_lens GROUP BY brand
+Visualize SCATTER SELECT StuID,Age FROM Student GROUP BY Age
+Visualize BAR SELECT resident_id , sum(other_details) FROM Residents GROUP BY resident_id ASC
+
+Visualize BAR SELECT Time_of_day , COUNT(Program_ID) FROM broadcast GROUP BY Time_of_day ORDER BY Time_of_day
+Visualize SPARKLINE SELECT Price , Score FROM wine GROUP BY Appelation ORDER BY Price ASC , Score ASC
+visualize scatter SELECT order_id , count(order_id) FROM orders GROUP BY order_id ORDER BY count(order_id) DESC
+Visualize BAR SELECT Area , COUNT(Area) FROM appellations GROUP BY Area ORDER BY COUNT(Area) DESC
+Visualize BAR SELECT date_joined_staff , COUNT(customer_address_id) FROM Staff JOIN Customers ON Staff.staff_address_id = Customers.customer_address_id AND customer_status_code = "GOOD"  GROUP BY date_joined_staff  ORDER BY YEAR
+Visualize BAR SELECT Room , COUNT(Faculty_ID) FROM Faculty GROUP BY Room ORDER BY Count(Faculty_ID) DESC
+
+```sql -- show all allergy types Visualize BAR SELECT AllergyType FROM Allergy_Type -- show the number of allergies in each type Visualize BAR SELECT Count(*) FROM Allergy WHERE AllergyType = ? ```
+Visualize BAR SELECT  date_of_birth , COUNT(date_of_birth) FROM Guests GROUP BY date_of_birth , gender_code HAVING GENDER_CODE = "M"
+Visualize BAR SELECT Party , COUNT(People_ID) FROM people GROUP BY Party ORDER BY COUNT(People_ID) DESC
+
+Visualize BAR SELECT Channel_ID , COUNT(Channel_ID) FROM program  GROUP BY Owner ORDER BY COUNT(Channel_ID) ASC BIN Channel_ID BY YEAR
+Visualize SCATTER SELECT Film_ID , Low_Estimate FROM film_market_estimation  GROUP BY Film_ID
+Visualize BAR SELECT booking_status_code , COUNT(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(apt_booking_id) ASC
+Visualize BAR SELECT customer_details , count(*) FROM customers GROUP BY customer_details ORDER BY count(*) ASC
+Visualize BAR SELECT premise_type , COUNT(*) FROM Premises GROUP BY premise_type ORDER BY premise_type DESC
+Visualize BAR SELECT Age , COUNT(Age) FROM Student GROUP BY Age ORDER BY COUNT(Age) DESC
+Visualize PIE SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT No , Grape FROM wine GROUP BY Grape ORDER BY Grape DESC
+Visualize BAR SELECT Points , COUNT(Points) FROM player WHERE Points <= 30 GROUP BY Player_ID, Position, Club_ID ORDER BY Points ASC
+Visualize Scatter SELECT Length , Height FROM roller_coaster
+Visualize BAR SELECT acc_bal , COUNT(acc_bal) FROM customer GROUP BY acc_bal ORDER BY acc_bal ASC
+Visualize BAR SELECT Faculty.Faculty.Lname FROM Student WHERE Sex = 'F' ORDER BY Age DESC
+Visualize BAR SELECT LName , COUNT(*) FROM Student WHERE Sex = 'F' AND Age > 18 GROUP BY LName ORDER BY COUNT(*) DESC
+Visualize BAR SELECT AllergyType FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT Grape, count(*) FROM grapes GROUP BY Grape ORDER BY Grape DESC
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT Competition_type , count(*) FROM competition GROUP BY Competition_Type ASC
+Visualize BAR SELECT No , count(*) FROM appellations GROUP BY No ORDER BY count(*) DESC
+Visualize BAR SELECT Course.DNO , Minor_In.Minor_In.DNO FROM Member_of, Course, Minor_In WHERE Instructor = Member_of.FacID AND Course.CID = Minor_In.StuID GROUP BY DNO
+Visualize BAR SELECT Channel_ID , Rating_in_percent FROM channel WHERE Channel_ID != 1 GROUP BY Channel_ID ORDER BY Rating_in_percent DESC BIN channel_id BY year
+Visualize LINE SELECT payment_date , COUNT(payment_date) FROM Payments WHERE amount_paid_in_full_yn = 'N' GROUP BY payment_date ORDER BY payment_date ASC
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position , Position
+Visualize BAR SELECT apt_number , COUNT(apt_number) FROM Apartments GROUP BY apt_number ORDER BY apt_number ASC
+
+Visualize BAR SELECT hand, COUNT(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT Grapes , Count(Winery) FROM wine GROUP BY Grapes ORDER BY Count(Winery) DESC
+Visualize PIE SELECT premises_type , count(*) FROM premises GROUP BY premises_type
+Visualize BAR SELECT Major , COUNT(Major) FROM Student GROUP BY Major ORDER BY COUNT(Major)
+Visualize LINE SELECT date_of_birth , count(*) FROM Customer  GROUP BY date_of_birth  ORDER BY date_of_birth ASC BIN date_of_birth BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT Competition_type, COUNT(*) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT Openning_year , AVG(Capacity) FROM cinema GROUP BY Openning_year ORDER BY AVG(Capacity) ASC
+Visualize LINE SELECT booking_end_date , booking_end_date FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC
+Visualize BAR SELECT Points , Player_ID FROM player
+Visualize HISTOGRAM SELECT Points FROM player
+Visualize BAR SELECT Price , COUNT(Price) FROM wine WHERE Price>100 GROUP BY Winery ORDER BY Winery ASC
+Visualize BAR SELECT Fname , COUNT(*) FROM Student GROUP BY Sex ORDER BY COUNT(*) ASC
+Visualize BAR SELECT booking_start_date , booking_start_date FROM Apartment_Bookings ORDER BY booking_start_date DESC
+Visualize BAR SELECT booking_end_date , COUNT(*) FROM apartment_bookings GROUP BY booking_end_date  ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Rank , COUNT(FacID) FROM Faculty GROUP BY Rank ORDER BY COUNT(FacID) DESC
+Visualize BAR SELECT Time_of_day , Channel_ID FROM broadcast GROUP BY Time_of_day , Channel_ID ORDER BY Time_of_day ASC
+Visualize BAR SELECT Operating_system , Count(Operating_system) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT Capacity , COUNT(Capacity) FROM cinema GROUP BY Capacity ORDER BY COUNT(Capacity) ASC
+select party, count(*) from people group by party
+Visualize PIE SELECT bulgarian_commander , COUNT(name) FROM battle WHERE bulgarian_commander != 'Boril' GROUP BY bulgarian_commander
+Visualize BAR SELECT Openning_year, AVG(Capacity) FROM cinema GROUP BY Openning_year
+Visualize SCATTER SELECT Instructor, DNO FROM Course GROUP BY Instructor ,DNO
+SELECT customer_status_code , COUNT(*) FROM customers GROUP BY customer_status_code ORDER BY customer_status_code DESC
+Visualize BAR SELECT Name FROM editor GROUP BY Name
+Visualize BAR SELECT Building , COUNT(FacID) FROM Faculty GROUP BY Building ORDER BY COUNT(FacID) ASC
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC
+Visualize BAR SELECT hand , COUNT(*) FROM players GROUP BY hand ORDER BY COUNT(*) DESC
+Visualize BAR SELECT No , COUNT(*) FROM appellations GROUP BY Appelation ORDER BY Count(*) ASC
+Visualize BAR SELECT Year, COUNT(Year) FROM matches GROUP BY Year ORDER BY COUNT(Year) DESC
+SELECT COUNT(DISTINCT(Type)) FROM artwork GROUP BY Type ORDER BY Type
+Visualize SCATTER SELECT invoice_number , COUNT(transaction_id) FROM Financial_Transactions GROUP BY invoice_number, transaction_type
+Visualize HISTOGRAM SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY COUNT(hand) ASC
+Visualize PIE SELECT gender_code , COUNT(gender_code) FROM Guests GROUP BY gender_code ORDER BY COUNT(gender_code) DESC
+Visualize LINE SELECT Price , COUNT(Price) FROM wine GROUP BY Price ORDER BY COUNT(Price) DESC BIN Price BY YEAR
+SELECT Appelation , MAX(Score) AS 'Max Score' FROM wine GROUP BY Appelation ORDER BY MAX(Score)
+Visualize BAR SELECT property_id , COUNT(property_id) FROM Properties GROUP BY property_id ORDER BY COUNT(property_id) DESC
+
+Visualize BAR SELECT Country , count(*) FROM competition GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT Winery , Count(*) FROM wine WHERE Price > 100 GROUP BY Winery ORDER BY Count(*) ASC
+SELECT Gender , COUNT(Gender) FROM player WHERE occupation != "Researcher" GROUP BY Gender  ORDER BY Gender DESC
+Visualize BAR SELECT Year , COUNT(Price) FROM wine GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Number_in_season , directed_by , Film_ID , count(*) FROM film GROUP BY directed_by, Film_ID ORDER BY number_in_season ASC
+Visualize BAR SELECT Sex , COUNT(FacID) FROM Student GROUP BY Sex ORDER BY Sex DESC
+Visualize BAR SELECT PAYMENT_METHOD , COUNT(*) FROM Customer_Payments GROUP BY PAYMENT_METHOD ORDER BY COUNT(*) DESC
+Visualize BAR SELECT year , COUNT(year) FROM matches GROUP BY year DESC
+SELECT SUM(transaction_amount) , transaction_type FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Killed , Country FROM perpetrator GROUP BY Country ORDER BY Country ASC
+/* Visualize BAR SELECT Channel_ID , Count(Owner) FROM program GROUP BY Channel_ID , Owner ORDER BY Owner /*  */
+Visualize BAR SELECT Name , AVG(Age) FROM editor GROUP BY Name ORDER BY AVG(Age) ASC
+Visualize HISTOGRAM YEAR , COUNT(*) FROM matches
+Visualize BAR SELECT transaction_type , COUNT(*) FROM financial_transactions GROUP BY transaction_type ORDER BY transaction_type
+Visualize LINE SELECT Year_Open , Cinema_ID FROM cinema GROUP BY Year_Open ORDER BY Year_Open ASC
+
+Visualize PIE SELECT Age , AVG(Sex) FROM Student GROUP BY Age ORDER BY AVG(Sex) ASC
+SELECT Year , Competition_type , COUNT(Competition_type) FROM competition GROUP BY Year,Competition_type ORDER BY Competition_type DESC
+Visualize BAR SELECT Rank , Count(*) FROM Faculty GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT other_account_details , COUNT(other_account_details) FROM Accounts GROUP BY other_account_details ORDER BY COUNT(other_account_details) DESC
+Visualize BAR SELECT distinct Product_Category , COUNT(Product_Category) FROM Mailshot_Campaigns GROUP BY Product_Category ORDER BY COUNT(Product_Category) DESC
+Visualize BAR SELECT room_count , COUNT(room_count) FROM Apartments GROUP BY apt_type_code HAVING room_count >= 10
+Select Year , SUM(Cases) AS Total_Cases, Year FROM wine GROUP BY Year HAVING Price > 100 ORDER BY Total_Cases DESC
+Visualize BAR SELECT AGE , Teacher_ID FROM teacher GROUP BY Age ASC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT Outcome_Code , COUNT(Mailshot_Id) FROM Mailshot_Customers GROUP BY Outcome_Code ORDER BY Count(Mailshot_Id) DESC BIN Mailshot_Customer_Date BY Month
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) ASC
+Visualize BAR SELECT booking_status_code , count(DISTINCT booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code  ORDER BY count(DISTINCT booking_status_code)
+
+Visualize BAR SELECT COUNT(FacID) FROM Faculty GROUP BY Building
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by  ORDER BY Directed_by DESC
+Visualize BAR SELECT AllergyType , Allergy FROM Allergy_Type WHERE AllergyType = "mild" ORDER BY AllergyType
+Visualize PIE SELECT building , COUNT(building) FROM faculty GROUP BY building
+Visualize BAR SELECT Has_Allergy.StuID , Allergy FROM Has_Allergy JOIN Allergy_Type ON Allergy = Allergy_Type.Allergy WHERE Allergy != ''  GROUP BY StuID , Allergy ORDER BY StuID
+Visualize BAR SELECT loser_hand, SUM(loser_age) FROM matches WHERE loser_seed != null
+Visualize BAR SELECT resident_id , SUM(Other_Details) FROM Residents GROUP BY resident_id ORDER BY resident_id ASC
+Visualize LINE SELECT Capacity , AVG(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Capacity ASC,Openning_year DESC
+Visualize BAR SELECT Party , COUNT(People_ID) FROM people GROUP BY Party ORDER BY COUNT(People_ID) ASC
+Visualize BAR SELECT Fname , Fname FROM Student WHERE Sex = 'F' ORDER BY Fname DESC
+Visualize BAR SELECT AllergyType , count(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY count(*) ASC
+Visualize BAR SELECT Venue , count(*) FROM debate GROUP BY Venue ORDER BY count(*) ASC
+Visualize BAR SELECT date_account_opened , COUNT(date_account_opened) FROM Accounts GROUP BY date_account_opened ORDER BY date_account_opened ASC BIN date_account_opened BY MONTH
+
+Visualize BAR SELECT Date_of_birth , COUNT(date_of_birth) FROM Guests GROUP BY Gender_code ,  gender_code_Description
+
+Visualize BAR SELECT Apt_Number , COUNT(Apt_Number) FROM Apartments GROUP BY Apt_Number ORDER BY COUNT(Apt_Number) ASC
+Visualize BAR SELECT Sex , Count(FacID) FROM Faculty GROUP BY Sex ORDER BY Y_Axis ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM wine GROUP BY Year BIN Year BY Year.YEAR
+Visualize BAR SELECT acc_bal , acc_type FROM customer GROUP BY acc_type ORDER BY acc_type ASC
+Visualize BAR SELECT Area , COUNT(Area) FROM appellations GROUP BY Area ORDER BY COUNT(Area) ASC
+Select Student.StuID, Student.LName, Student.Fname, Advisor.LName, Advisor.Fname, Advisor.Age, Advisor.Sex, Advisor.Major, City.City_Name from Student inner join Advisor on Student.Advisor = Advisor.Advisor inner join City on Advisor.City = City.City_Code where Student.Advisor = 71
+Visualize BAR SELECT City_Code , count(*) FROM Student GROUP BY City_Code ORDER BY count(*)
+Visualize BAR SELECT name , sum(color) FROM photos GROUP BY name ORDER BY sum(color) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank ORDER BY Y
+Visualize PIE SELECT Venue FROM debate GROUP BY Venue
+Visualize BAR SELECT cust_name , AVG(credit_score) FROM customer WHERE cust_name LIKE 'a%' GROUP BY cust_name
+Visualize BAR SELECT Gender, COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize Bar SELECT Appelation , COUNT(Appelation) FROM appellations GROUP BY Appelation ORDER BY COUNT(Appelation) ASC
+Visualize BAR SELECT Year , MAX(Price) FROM wine GROUP BY Appelation
+SELECT Position , MIN(Points) AS mean FROM player GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name ORDER BY Count(Name) ASC
+Visualize BAR SELECT D.Film_ID, COUNT(Directed_by) AS Count_by FROM Film F JOIN Film_person D ON F.Film_ID = D.Film_ID WHERE F.Directed_by IS NOT NULL GROUP BY D.Film_ID , D.Directed_by  ORDER BY COUNT_by ASC
+Visualize BAR SELECT Occupation , Player_ID FROM player
+Visualize BAR SELECT Gender , COUNT(Player_ID) FROM player GROUP BY Gender    /*      Supporting files:     - MultipleBarChart.html     - MultipleBarChart.js */  /* Below files are optional, but I recommend you to use the 'Three Bar Chart' as an example to understand how to implement Bar Chart */ /* - MultipleBarChart.html */  <!doctype html> <html> <head>     <meta charset="utf-8">     <title>Sample VQL Query</title
+Visualize BAR SELECT FacID , COUNT(FacID) FROM Faculty GROUP BY FacID ORDER BY FacID ASC
+Visualize PIE SELECT Owner , sum(Share_in_percent) FROM program GROUP BY Owner ORDER BY sum(Share_in_percent) ASC
+Visualize BAR SELECT payment_type_code , count(*) FROM payments WHERE amount_paid_in_full_yn = 'N' GROUP BY payment_type_code ORDER BY count(*) ASC
+Visualize BAR SELECT Days , credit FROM Course GROUP BY Days ORDER BY credit ASC
+Visualize BAR SELECT Competition_type , COUNT(Competition_ID) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT FacID , COUNT(FacID) FROM Faculty  GROUP BY FacID ORDER BY COUNT(FacID) DESC
+Visualize XY SELECT Age , COUNT(*) FROM Student GROUP BY Age
+Visualize BAR SELECT AllergyType , count(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY count(*) ASC
+
+Visualize BAR SELECT wine.cased, Grape , grape.color FROM wine , grape GROUP BY wine.cased , grape.color ORDER BY wine.cased DESC
+Visualize LINE SELECT transaction_type, transaction_amount FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_amount DESC
+Visualize BAR SELECT Occupation, COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC RANK BY COUNT(Occupation) DESC BIN Occupation BY DAY
+Visualize BAR SELECT Type , count(*) FROM artwork GROUP BY Type ORDER BY count(*) DESC
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by ORDER BY COUNT(Directed_by) ASC
+Visualize BAR SELECT booking_start_date , COUNT(*) FROM Apartment_Bookings GROUP BY booking_start_date
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Occupation , sum(votes) FROM player GROUP BY Occupation ORDER BY sum(votes) DESC
+Visualize HISTOGRAM SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize BAR SELECT Allergy_Type , COUNT(*) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType_Count DESC
+Visualize BAR SELECT Studio , count(*) FROM film GROUP BY Studio ORDER BY count(*) ASC
+Visualize BAR SELECT hand , COUNT(hand) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT account_id , COUNT(other_account_details) FROM Accounts GROUP BY account_id ORDER BY COUNT(other_account_details) ASC
+Visualize BAR SELECT Area , COUNT(*) FROM appellations GROUP BY Area ORDER BY Count(*) DESC
+Visualize BAR SELECT transaction_type , count(DISTINCT transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT date_became_customer , COUNT(DATE_BECAM_CUSTOMER) FROM Customers WHERE status_code = 'Good Customer' GROUP BY DATE_BECAM_CUSTOMER ORDER BY COUNT(DATE_BECAM_CUSTOMER) ASC
+Visualize BAR SELECT YEAR(booking_start_date) , FLOOR(booking_end_date) / 365.25 AS YEAR_OF_BOOKING_END FROM apartment_bookings GROUP BY YEAR(booking_start_date)
+Visualize BAR SELECT date , COUNT(date) FROM battle GROUP BY date ORDER BY COUNT(date)
+Visualize PIE SELECT sex , avg(age) FROM student GROUP BY sex ORDER BY sex ASC
+Visualize BAR SELECT Latin_commander , COUNT(*) FROM battle GROUP BY Latin_commander ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Area , COUNT(Area) FROM appellations GROUP BY Area ORDER BY COUNT(Area) ASC
+Visualize BAR SELECT Allergy , COUNT(*) FROM Has_Allergy GROUP BY Allergy ORDER BY Allergy ASC
+
+Visualize BAR SELECT Grapes_ID , count(Cases) FROM wine GROUP BY Grapes_ID ORDER BY count(Cases) DESC
+Visualize BAR SELECT studio , count(films) FROM film GROUP BY studio ORDER BY count(films) DESC
+Visualize BAR SELECT outcome_code , count(*) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize PIE SELECT customer_id , COUNT(payment_method_code) FROM Customer_Payments GROUP BY customer_id ,payment_method_code
+1. Visualize STACKED BAR SELECT Year , SUM(Price) FROM wine GROUP BY grapes,year BIN Year 2. Visualize BAR SELECT Year , Price FROM wine GROUP BY Year BIN Year
+Visualize BAR SELECT Rank, COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize BAR SELECT tourney_date , COUNT(*) FROM matches GROUP BY tourney_date ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM Cinema GROUP BY Year ORDER BY Year ASC
+
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age DESC
+Visualize TENDENCY SELECT Appelation , Year , Price FROM Wine GROUP BY Appelation , Year , Price
+Visualize COLUMN SELECT ID , COUNT(*) FROM wine GROUP BY Grape
+Visualize BAR SELECT transaction_type, count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type DESC
+Visualize BAR SELECT county , COUNT(COUNTY) FROM appellation GROUP BY county ORDER BY County
+1. Visualize BAR SELECT Competition_type, count(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC 2. Visualize BAR SELECT Competition_type, sum(competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown DESC
+Visualize BAR SELECT Gender, COUNT(*) FROM player GROUP BY Gender ORDER BY COUNT(*) DESC
+SELECT count(DISTINCT invoice_number) as invoice_count, invoice_number FROM invoices WHERE invoice_number IN (SELECT order_id FROM invoices GROUP BY order_id)
+Visualize BAR SELECT Studio , AVG(Gross_in_dollar) FROM film GROUP BY Studio ORDER BY AVG(Gross_in_dollar) DESC
+Visualize BAR SELECT player_id , COUNT(player_id) FROM players GROUP BY player_id
+Visualize BAR SELECT AllergyType , count(*) FROM AllergyType GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT SUM(transaction_amount) , transaction_type FROM Financial_Transactions GROUP BY transaction_type ORDER BY SUM(transaction_amount) DESC
+Visualize BAR HISTOGRAM SELECT Teacher_ID , AVG(Age) FROM teacher GROUP BY Teacher_ID ORDER BY AVG(Age) ASC BIN AGE BY 10
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by
+Visualize PIE SELECT  FROM Student WHERE Sex = 1 AND Age > 22 ORDER BY Age DESC
+Visualize TABLE SELECT age FROM Student GROUP BY age, Sex ORDER BY age, Sex ASC
+Visualize BAR SELECT No , Appelation , COUNT(*) FROM appellations GROUP BY Appelation , COUNT(*)
+Visualize BAR SELECT Country , COUNT(*) FROM competition GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Channel_ID , Share_in_percent FROM channel GROUP BY Channel_ID ORDER BY Share_in_percent ASC
+Visualize LINE SELECT DATE(payment_date) , COUNT(*) FROM payments WHERE amount_paid_in_full_yn != 1 OR payment_type_code != 'CHECK' GROUP BY DATE(payment_date) ORDER BY COUNT(*) ASC
+Visualize HISTOGRAM SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Age , Hometown FROM teacher GROUP BY Hometown
+Visualize BAR SELECT District , COUNT(District) FROM people GROUP BY Party ORDER BY COUNT(District) ASC
+Visualize BAR SELECT camera_lens_id , COUNT(camera_lens_id) FROM photos GROUP BY camera_lens_id ORDER BY COUNT(camera_lens_id) ASC
+Visualize STACKED BAR SELECT Winery , Count(Grape) , Color , No FROM Wine GROUP BY Winery , Grape , Color , No ORDER BY Grape
+Visualize SCATTER SELECT CID , Credits FROM Course GROUP BY CID ORDER BY Credits ASC
+Visualize BAR SELECT apt_type_code , MIN(room_count) FROM apartments GROUP BY apt_type_code
+Visualize BAR SELECT Venue , Num_of_Audience FROM debate ORDER BY Num_of_Audience DESC
+Visualize PIE SELECT DNO , COUNT(CID) FROM Course WHERE Days = 'Mon' GROUP BY DNO ,Days
+Visualize BAR SELECT booking_status_code, count(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize SCATTER SELECT StuID , count(*) FROM Student GROUP BY StuID
+Visualize BAR SELECT Venue , COUNT(Venue) FROM debate GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) ASC
+Visualize BAR SELECT County , count(*) FROM appellations GROUP BY County
+Visualize SCATTER SELECT Headquarters , Market_Value_billion FROM Companies GROUP BY Sales_billion DESC
+Visualize BAR SELECT Channel_ID , Owner , SUM(Channel_ID) FROM program JOIN channel ON Program_ID = Channel_ID GROUP BY Channel_ID , Owner  ORDER BY Channel_ID , Owner ASC
+Visualize LINE SELECT transaction_type , sum(transaction_amount) AS total_amount FROM Financial_Transactions GROUP BY transaction_type
+Select Production_code, COUNT(Film_ID) FROM film GROUP BY Production_code
+Visualize SCATTER SELECT Allergy , AllergyType FROM Allergy_Type GROUP BY Allergy , AllergyType ORDER BY AllergyType DESC
+Visualize PIE SELECT Venue, COUNT(Venue) FROM debate GROUP BY Venue ORDER BY Venue ASC
+Visualize BAR SELECT allergy_type, count(*) FROM Allergy_Type GROUP BY allergy_type ORDER BY count(*) ASC
+Visualize SELECT COUNT(*) FROM competition GROUP BY Competition_type , Country ASC
+Visualize BAR SELECT Player_ID , Points FROM player WHERE Points < 30 ORDER BY Points ASC
+
+Visualize BAR SELECT Film_ID , count(*) FROM film GROUP BY Studio ORDER BY Film_ID ASC
+Visualize BAR SELECT Brand , COUNT(Brand) FROM camera_lens GROUP BY Brand ORDER BY COUNT(Brand) ASC
+Visualize LINE SELECT Year, AVG(Price) FROM wine GROUP BY Year, AVG(Price) ORDER BY Year
+Visualize BAR SELECT hand , COUNT(hand) FROM player GROUP BY hand ORDER BY COUNT(hand) ASC
+Visualize BAR SELECT Price > 100 , COUNT(Price > 100) FROM wine BIN Year BY WEEKDAY ORDER BY COUNT(Price > 100) DESC
+Visualize SCATTER SELECT account_name, account_id FROM Accounts WHERE customer_id IN (SELECT customer_id FROM Financial_Transactions) AND account_id IN (SELECT account_id FROM Accounts)
+Visualize SELECT Customer_Status_Code , Count(Customer_Status_Code) FROM Customers GROUP BY Customer_Status_Code ORDER BY Customer_Status_Code ASC
+Visualize BAR SELECT Hometown , AVG(Age) FROM teacher GROUP BY hometown
+Visualize LINE SELECT staff_address_id , COUNT(*) FROM Customers WHERE customer_status_code = 'Good Customer' AND date_of_birth < '2002-01-01' GROUP BY staff_address_id ORDER BY staff_address_id DESC
+Visualize BAR SELECT country , count(*) FROM perpetrator GROUP BY country ORDER BY count(*) DESC  ← Querying Data Finding Data →
+Visualize BAR SELECT Rank, COUNT(*) FROM Faculty, Faculty FULL JOIN Student ON Student.Advisor = Faculty.FacID GROUP BY Rank, Sex ORDER BY Rank DESC
+Visualize BAR SELECT resident_id, resident_address FROM Properties GROUP BY resident_id ORDER BY resident_id ASC
+Visualize BAR SELECT Year , Max(Score) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT Type_of_Thing_Code , COUNT(Type_of_Thing_Code) FROM Things GROUP BY Type_of_Thing_Code ORDER BY COUNT(Type_of_Thing_Code) DESC
+Visualize HISTOGRAM SELECT hand, COUNT(hand) FROM players GROUP BY hand
+Visualize BAR SELECT Faculty.FacID , count(*) FROM Faculty  GROUP BY Faculty.FacID,Faculty.Rank ORDER BY count(*) ASC
+Visualize BAR SELECT Sex , count(*) FROM Student WHERE Faculty.Faculty_ID IN FORMAT (faculty)  GROUP BY Sex ORDER BY count(*) ASC
+Visualize BAR SELECT Type_of_Thing_Code , COUNT(Type_of_Thing_Code) FROM Things GROUP BY Type_of_Thing_Code ORDER BY Type_of_Thing_Code DESC
+Visualize SCATTER SELECT customer_id , COUNT(*) FROM Orders
+Visualize BAR SELECT city_code , count(*) FROM Student GROUP BY city_code ORDER BY city_code DESC
+Visualize BAR SELECT Name , COUNT(Location) FROM perpetrator GROUP BY country ORDER BY Location DESC
+Visualize BAR SELECT APT_TYPE_CODE , MIN(ROOM_COUNT) FROM Apartments GROUP BY APT_TYPE_CODE ORDER BY min(room_count)
+
+
+Visualize BAR SELECT Competition_Type , COUNT(*) FROM competition GROUP BY Competition_Type ORDER BY Competition_Type DESC
+Visualize BAR SELECT city_code , count(*) FROM student GROUP BY city_code ORDER BY city_code
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank
+Table Scatter, columns = [*,customer_id, count(*) FROM Customers, custom_id, count(*) FROM Orders]
+Visualize BAR SELECT Venue , count(DISTINCT Date) FROM debate GROUP BY Venue ORDER BY count(DISTINCT Date) ASC
+Visualize BAR SELECT Appellation , Count(Appellation) FROM appellations GROUP BY Appellation ORDER BY No DESC Visualize STACK SELECT ID , Appellation , COUNT(*) FROM appellations WHERE Score >= 93 GROUP BY Appellation Visualize STACK SELECT ID , Appellation , COUNT(*) FROM wine GROUP BY Appellation
+Visualize BAR SELECT Directed_by , count(*) FROM film GROUP BY Directed_by ORDER BY count(*) ASC
+Visualize BAR SELECT name, Position , count(Position) FROM player GROUP BY name, Position ORDER BY name ASC
+
+Visualize PIE SELECT payment_method_code , COUNT(payment_method_code) FROM Customer_Payments GROUP BY payment_method_code
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT Name , avg(Capacity) FROM cinema GROUP BY Name ORDER BY Capacity ASC BIN Name BY WEEKDAY
+Visualize BAR SELECT Capacity , AVG(Capacity) FROM cinema GROUP BY Capacity ORDER BY AVG(Capacity)
+SELECT customer_status_code , COUNT(*) AS cnt FROM Customers GROUP BY customer_status_code ORDER BY customer_status_code DESC
+Visualize HISTOGRAM SELECT Competition_ID , Year, Competition_type , COUNT(*) FROM competition GROUP BY Competition_ID , Year, Competition_type ,  COUNT(*) ORDER BY Y ASC
+Visualize BAR SELECT hand, COUNT(*) FROM players GROUP BY hand ORDER BY hand
+Visualize BAR SELECT outcome_code, count(mailshot_customer_date) FROM Mailshot_Customers GROUP BY outcome_code ORDER BY outcome_code ASC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT Appelation , Price FROM wine GROUP BY Appelation ORDER BY Price ASC
+Visualize BAR SELECT APT_TYPE_CODE , MIN(room_count) FROM APARTMENTS GROUP BY apt_type_code
+Visualize LINE SELECT date_account_opened , COUNT(date_account_opened) FROM Accounts GROUP BY date_account_opened ORDER BY COUNT(date_account_opened) ASC
+Visualize BAR SELECT date_account_opened , COUNT(account_id) FROM Accounts GROUP BY customer_id BIN date_account_opened BY WEEKDAY
+Visualize BAR SELECT Name , AVG(Capacity) FROM cinema GROUP BY Name ORDER BY AVG(Capacity) DESC
+Visualize PIE SELECT premises_type , COUNT(*) FROM Premises
+Visualize BAR SELECT Customer_status_code , COUNT(*) FROM Customers GROUP BY Customer_status_code ORDER BY Customer_status_code ASC
+Visualize BAR SELECT Faculty_id, Rank, Sex FROM Faculty GROUP BY Faculty_id, Rank, Sex ORDER BY Rank, Sex
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+Visualize PIE SELECT Building FROM Faculty GROUP BY Building
+
+Visualize PIE SELECT Competition_type , COUNT(Competition_type) FROM Competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT Building , COUNT(Building) FROM Faculty GROUP BY Building ORDER BY COUNT(Building) DESC
+Visualize SCATTER SELECT DNO , Count(Instructor) FROM Course GROUP BY DNO
+Visualize LINE SELECT booking_end_date FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC
+Visualize BAR SELECT Name , Age FROM editor GROUP BY Name , Age ORDER BY count(*) DESC
+Visualize BAR SELECT brand , COUNT(brand) FROM camera_lens GROUP BY brand ORDER BY brand DESC
+Visualize BAR SELECT CName , Days , COUNT(CID) FROM Course GROUP BY Days ORDER BY CName ASC
+Visualize PIE SELECT Count(Rank) , "A" AS 2 , "B" AS 1 FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Age , Advisor , city_code , Student_ID FROM Student GROUP BY Student_ID ORDER BY Student_ID ASC BIN Advisor BY YEAR
+Visualize BAR SELECT COUNT(*) FROM appellations
+Visualize BAR SELECT StuID, count(Allergy) FROM Has_Allergy GROUP BY StuID
+Visualize BAR SELECT bin(Date_moved_in , 1) , COUNT(1) FROM Residents GROUP BY bin(Date_moved_in , 1) Visualize BAR SELECT bin(Date_requested , 1) , COUNT(1) FROM Residents_Services GROUP BY bin(Date_requested , 1) Visualize BAR SELECT bin(Date_moved_in , 1) , COUNT(1) FROM Customer_Event_Notes GROUP BY bin(Date_moved_in , 1)
+
+Visualize HISTOGRAM SELECT color FROM grapes HAVING color = 'GRAPE' GROUP BY color ORDER BY color ASC
+Visualize BAR SELECT hand , COUNT(hand) FROM players ORDER BY hand ASC
+Visualize BAR SELECT Country , count(*) FROM Perpetrator GROUP BY Country ORDER BY Country ASC
+Visualize SCATTER SELECT gender , COUNT(customer_id) FROM Customers GROUP BY gender
+Visualize BAR SELECT Building , count(*) FROM Faculty GROUP BY Building
+Visualize BAR SELECT Studio , COUNT(Studio) FROM Film GROUP BY Studio ORDER BY COUNT(Studio) ASC
+Visualize BAR SELECT Winery , COUNT(Price) FROM wine GROUP BY Winery ORDER BY Winery DESC
+Visualize PIE SELECT Allergy , count(Allergy) FROM Allergy_Type GROUP BY Allergy
+Visualize LINE SELECT Openning_year , AVG(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT Fname , AVG(Age) FROM Student WHERE Sex = "F" GROUP BY Fname ORDER BY AVG(Age)
+Visualize BAR SELECT Year , Country , COUNT(*) FROM competition GROUP BY Year , Country ORDER BY Country DESC , Year ASC
+
+Visualize BAR SELECT premises_type , COUNT(premises_type) FROM Premises GROUP BY premises_type ORDER BY premises_type ASC
+Visualize BAR SELECT gender_code, COUNT(*) FROM Guests GROUP BY gender_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_moved_in , count(*) FROM Residents BIN date_moved_in BY YEAR
+Visualize BAR SELECT property_id , COUNT(resident_id) FROM Residents , Residents_Services WHERE property_id = ? GROUP BY property_id, COUNT(resident_id) , SELECT property_id , COUNT(customer_event_id) FROM Customer_Events , Customer_Event_Notes WHERE property_id = ? GROUP BY property_id, COUNT(customer_event_id)
+Visualize BAR SELECT Capacity , CINEMA_ID FROM cinema GROUP BY CINEMA_ID ORDER BY Capacity DESC
+Visualize HISTOGRAM SELECT Grape , COUNT(grape) FROM grapes GROUP BY Grape ORDER BY COUNT(Grape)
+
+Visualize BAR SELECT Name , Age FROM editor  ORDER BY Age ASC
+Select major , count(*) from Student GROUP BY major ORDER BY major ASC
+Visualize SCATTER SELECT Gender, Total FROM Customers
+Visualize BAR SELECT No, Price FROM wine WHERE Price > 100 GROUP BY No ORDER BY No ASC
+Visualize STACKED BAR SELECT date_account_opened, COUNT(date_account_opened) FROM Accounts GROUP BY date_account_opened, other_account_details
+1. Visualize BAR SELECT booking_start_date , YEAR(booking_start_date) FROM Apartment_Bookings GROUP BY booking_start_date  ORDER BY booking_start_date DESC, YEAR(booking_start_date) DESC 2. Visualize BAR SELECT booking_start_date , YEAR(booking_start_date) FROM Apartment_Bookings GROUP BY booking_start_date  ORDER BY YEAR(booking_start_date) DESC 3. Visualize BAR SELECT booking_start_date
+Visualize BAR SELECT color , COUNT(*) FROM photos GROUP BY color ORDER BY color
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT apt_number , room_count FROM Apartments ORDER BY apt_number ASC
+Visualize BAR SELECT Year, Count(Year) FROM Wine GROUP BY Year ORDER BY Year ASC
+Visualize SCATTER SELECT order_items.order_id , COUNT(order_items.order_id) FROM Invoices JOIN Order_Items USING(order_id) GROUP BY order_items.order_id
+Visualize BAR SELECT date_moved_in , COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in, bin(date_moved_in,interval 'day of week',1) ORDER BY date_moved_in
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY Occupation DESC
+
+
+Visualize BAR SELECT Openning_year , avg(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize PIE SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by
+Visualize BAR SELECT Name , Age , Hometown FROM teacher  ORDER BY Age DESC  BIN Name  BY WEEKDAY
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY COUNT(Competition_type) DESC
+Visualize BAR SELECT Year , COUNT(Drink) FROM wine WHERE Price > 100 GROUP BY Grape, Year
+Visualize LINE SELECT Year , AVG(Price) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT Channel_ID,Owner, COUNT(Channel_ID)/COUNT(Owner) FROM channel WHERE Owner= Program_ID
+Visualize BAR SELECT Year , COUNT(Year) FROM matches GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Name , Age FROM editor GROUP BY Name ORDER BY Age ASC
+Visualize BAR SELECT Owner , Channel_ID , sum(rating_in_percent) FROM channel GROUP BY Channel_ID
+Visualize PIE SELECT Competition_type , count(*) FROM competition GROUP BY Competition_type ORDER BY count(*) ASC
+Visualize BAR SELECT Channel_ID , count(Program_ID) FROM broadcast GROUP BY Channel_ID
+Visualize BAR SELECT AllergyType , COUNT(Allergy) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT product_category , count(*) FROM mailshot_campaigns GROUP BY product_category
+Visualize STACKED BAR SELECT Competition_type , SUM(Year) FROM competition GROUP BY Competition_type, Country
+Visualize BAR SELECT apt_type_code , MIN(room_count) FROM Apartments GROUP BY apt_type_code ORDER BY MIN(room_count) ASC
+Visualize BAR SELECT resident_id , count(*) FROM properties GROUP BY resident_id ORDER BY resident_id DESC
+SELECT Openning_year FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM matches GROUP BY Year ORDER BY Count(Year) ASC
+Visualize BAR SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings GROUP BY booking_end_date BIN booking_end_date BY WEEKDAY
+Visualize LINE SELECT Year,Price,Name FROM wine GROUP BY Year
+Select * from ( select [account_id], [invoice_number], [transaction_type], [transaction_date], [transaction_amount], [transaction_comment],  case when transaction_type = 'Income' then 1 else 0 end as [Income],  case when transaction_type = 'Expense' then 1 else 0 end as [Expense],  [other_transaction_details] as [Other_Details], [other_transaction_details_count] as [Other_Details_Count] from Financial_Transactions order
+Visualize BAR SELECT count(*) FROM apartment_bookings GROUP BY booking_status_code
+Visualize BAR SELECT apt_type_code , ROOM_COUNT FROM apartments GROUP BY apt_type_code ORDER BY ROOM_COUNT DESC
+Visualize PIE SELECT Grape, Price/100 FROM wine GROUP BY Grape ORDER BY Year ASC
+
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY Count(Occupation) ASC
+Visualize LINE SELECT date_of_birth , count(*) FROM Staff WHERE staff_status_code='Good' JOIN Customers WHERE customers_status_code='Good' GROUP BY date_of_birth ORDER BY date_of_birth ASC
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) ASC
+SELECT Name , Age , Hometown FROM teacher GROUP BY Name , Age , Hometown
+Visualize BAR SELECT apt_number , room_count FROM apartments GROUP BY apt_number ORDER BY apt_number ASC
+Visualize BAR SELECT apt_number , COUNT(*) FROM apartments GROUP BY apt_number ORDER BY apt_number DESC
+Visualize SCATTER SELECT Instructor, DNO FROM Course GROUP BY Instructor, DNO
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM Player GROUP BY Occupation ORDER BY COUNT(*) ASC
+Visualize BAR SELECT account_day FROM accounts GROUP BY account_day ORDER BY account_day ASC
+Visualize LINE SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type , Country ORDER BY Count(*) DESC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize PIE SELECT DISTINCT product_category , COUNT(*) FROM mailshot_campaigns GROUP BY product_category ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Grape , COUNT(ID) FROM grapes GROUP BY Grape
+Visualize PIE SELECT Building , COUNT(Faculty.FacID) FROM Faculty GROUP BY Building ,  COUNT(Faculty.FacID)
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age ASC
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers GROUP BY gender ORDER BY count(*) ASC
+Visualize BAR SELECT directed_by , count(*) FROM film GROUP BY directed_by ORDER BY count(*) ASC
+Visualize BAR SELECT Appelation, COUNT(Appelation) FROM appellations GROUP BY Appelation ORDER BY Appelation ASC
+Visualize BAR SELECT time_of_day , COUNT(Program_ID) FROM broadcast GROUP BY time_of_day ORDER BY COUNT(Program_ID) ASC
+Visualize BAR SELECT Country, Killed FROM perpetrator GROUP BY Country ORDER BY Killed DESC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name ,  COUNT(Name) ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Operating_system, COUNT(Client) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY COUNT(Client) DESC
+Visualize BAR SELECT booking_start_date , COUNT(booking_start_date) FROM Apartment_Bookings GROUP BY booking_start_date  ORDER BY booking_start_date ASC
+Visualize PIE SELECT Film_ID , Count(Film_ID) FROM film GROUP BY Film_ID ORDER BY Count(Film_ID) ASC
+Visualize BAR SELECT AllergyType , COUNT(Allergy) FROM Allergy_Type ORDER BY AllergyType ASC
+Visualize BAR SELECT fac_rank , COUNT(*) FROM faculty GROUP BY fac_rank
+Visualize BAR SELECT date_moved_in , count(*) FROM Residents_Services  GROUP BY YEAR(date_moved_in)
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age ASC
+1. Visualize BAR SELECT customer_status_code , date_became_customer , count(*) FROM customers WHERE  customer_status_code = 'Good Customer' GROUP BY customer_status_code, date_became_customer 2. Visualize LINE SELECT date_of_birth , COUNT(date_of_birth) FROM customers WHERE customer_status_code = 'Good Customer' GROUP BY date_of_birth 3. Visualize BY ASCENDING DATE_OF_BIRTH FROM customers WHERE customer_status_code = 'Good Customer'
+Visualize BAR SELECT Name , Capacity FROM Cinema GROUP BY location ORDER BY location
+Visualize SCATTER SELECT Age , count(*) FROM Student GROUP BY Age
+Visualize LINE SELECT account_id , count(*) FROM Accounts WHERE date_account_opened is not null AND date_account_opened > '1/1/1900' GROUP BY account_id ORDER BY count(*) DESC
+Visualize BAR SELECT Gender_Code , COUNT(guest_id) FROM Guests GROUP BY Gender_Code ORDER BY count(guest_id) asc
+Visualize BAR SELECT Studio , COUNT(Film_ID) FROM film
+Visualize BAR SELECT Position , SUM(points) FROM player GROUP BY Position , SUM(points) ORDER BY SUM(points) DESC
+Visualize BAR SELECT Name , Capacity FROM cinema ORDER BY Name ASC
+Visualize BAR SELECT Hometown , count(*) FROM teacher GROUP BY Hometown ORDER BY count(*) DESC
+Visualize BAR SELECT COUNT(*) FROM (Table Residents) AS Table A , Table Residents_Services AS Table B , Table Customer_Events AS Table C , Table Customer_Event_Notes AS Table D GROUP BY Date_moved_in BIN (Date_moved_in BY WEEKDAY) ORDER BY Date_moved_in ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE 'a%' ORDER BY acc_bal DESC
+Visualize LINESELECT Capacity , Openning_year FROM cinema GROUP BY Openning_year
+Visualize BAR SELECT Name , Total_Rating FROM channel WHERE Owner = 'Discovery' GROUP BY Name, Total_Rating ORDER BY Total_Rating DESC
+Visualize BAR SELECT other_details , AVG(resident_id) FROM Properties GROUP BY other_details ORDER BY AVG(resident_id) ASC
+Visualize BAR SELECT Name , Capacity FROM cinema GROUP BY Name  ORDER BY Capacity ASC
+Visualize STACKED BAR SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type DESC
+Visualize BAR SELECT date_of_birth , COUNT(date_of_birth) FROM Guests GROUP BY date_of_birth ORDER BY date_of_birth
+Visualize BAR SELECT Days , AVG(Credits) FROM Course GROUP BY Days
+Visualize PIE SELECT cust_name, SUM(acc_bal) FROM customer GROUP BY cust_name WITH RADIUS = 200,PERCENTAGE = 25
+Visualize BAR SELECT booking_start_date, COUNT(*) FROM Apartment_Bookings GROUP BY booking_start_date ORDER BY COUNT(*) DESC
+Visualize BAR SELECT DISTINCT(Product_Category) , COUNT(*) FROM Products , Mailshot_Campaigns GROUP BY Product_Category ORDER BY Product_Category
+Visualize BAR SELECT premises_type , COUNT(*) FROM Premises GROUP BY premises_type ORDER BY COUNT(*) DESC
+Visualize TABLE SELECT Price , Winery FROM wine ORDER BY Price ASC
+Visualize BAR SELECT Debate_ID, Venue FROM debate GROUP BY Debate_ID ORDER BY Venue ASC
+Visualize BAR SELECT booking_start_date , count(*) FROM Apartment_Bookings GROUP BY booking_start_date
+Visualize PIE SELECT Grape , COUNT(Grape) FROM wine WHERE Year>=1990 AND Price>100 AND Year<=1999 AND Score>60 GROUP BY Grape
+Visualize BAR SELECT Country , count(*) FROM Perpetrator GROUP BY Country
+Visualize BAR SELECT Year , avg(Price) FROM wine GROUP BY Year ORDER BY avg(Price) DESC
+Visualize BAR SELECT channel_id , COUNT(channel_id) FROM channel GROUP BY channel_id ORDER BY COUNT(channel_id)
+Visualize BAR SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Sex
+Visualize bar SELECT Type_of_Thing_Code , COUNT(*) FROM Things GROUP BY Type_of_Thing_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Fname, count(Fname) FROM Student WHERE Sex = F GROUP BY Fname ORDER BY Fname ASC
+Visualize PIE SELECT Building, COUNT(*) FROM Faculty GROUP BY Building ORDER BY Building
+
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT credit_score , avg(account_balance) FROM customer WHERE credit_score<50 GROUP BY account_balance, credit_score ORDER BY credit_score ASC
+Visualize LINE SELECT Openning_year , Count(Openning_year) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+
+Visualize BAR SELECT Country , COUNT(*) FROM competition GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT master_customer_id , COUNT(*) FROM Customer_Master_Index GROUP BY master_customer_id ORDER BY master_customer_id DESC
+Visualize BAR SELECT winery , COUNT(winery) FROM wine WHERE Price > 100 GROUP BY winery ORDER BY winery ASC
+Visualize BAR SELECT hand , COUNT(*) FROM players GROUP BY hand ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Building , count(*) FROM Faculty GROUP BY Building ORDER BY Building ASC
+Visualize LINE SELECT Cinema_ID , year(Openning_year) FROM cinema GROUP BY Cinema_ID ORDER BY year(Openning_year) DESC
+Visualize BAR SELECT openning_year , CAPACITY FROM cinemas GROUP BY openning_year ORDER BY CAPACITY ASC
+
+Visualize BAR SELECT name , AVG(points) FROM player GROUP BY position ORDER BY name ASC
+Visualize LINE SELECT payment_date , amount_paid , count(*) FROM Payments WHERE payment_type_code='Check' AND amount_paid > 300 GROUP BY payment_date , amount_paid
+Visualize BAR SELECT camera_lens_id , count(*) FROM photos group by camera_lens_id order by camera_lens_id DESC
+1. create a table named '%' under 'visualization' using select * from photos 2. use 'SHOW TABLES' to make sure you have this table in your view, then it will appear in the select statement in the top bar 3. use 'SHOW COLUMNS' to make sure the table has the necessary columns. 4. use 'SHOW VALUES' to see what the values are and then type the SELECT statement in the top bar and pick the appropriate field to visualize, then click the 'Apply' button to apply the rules and chart title.
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(booking_status_code) DESC
+Visualize BAR SELECT FNAME , COUNT(RANK) FROM Faculty WHERE Rank >= 'Professor' GROUP BY FNAME ORDER BY COUNT(Rank) ASC
+Visualize SPOT SELECT Film_ID , Low_Estimate FROM film_market_estimation GROUP BY Film_ID
+SELECT Name, sum(Capacity) from cinema GROUP BY Name order by Name ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM perpetrator GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age
+Visualize BAR SELECT Age , COUNT(Age) FROM teacher WHERE Hometown = 'California' BIN Age BY WEEKDAY
+Visualize PIE SELECT Name, Party , count(name) FROM people GROUP BY Party , name
+Visualize PIE SELECT apt_type_code , AVG(room_count) FROM Apartments GROUP BY apt_type_code
+Visualize BAR SELECT Allergy_Type , COUNT(*) FROM Allergy_Type GROUP BY Allergy_Type ORDER BY count(*) DESC
+
+Visualize BAR SELECT studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY Studio DESC
+Visualize BAR SELECT Openning_year , COUNT(*) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT Fname , COUNT(Fname) FROM Student WHERE Sex = 'F'  ORDER BY COUNT(Fname) ASC
+Visualize LINE SELECT Days , AVG(Instructor) FROM Course GROUP BY Days
+Visualize BAR SELECT Grape , COUNT(Grape) FROM grapes GROUP BY Grape ORDER BY COUNT(Grape) DESC
+1.Visualize BAR SELECT acc_bal, credit_score FROM customer WHERE credit_score<50 GROUP BY acc_type ORDER BY credit_score
+Visualize OPENINGYEAR SELECT * FROM cinema GROUP BY OPENING_YEAR ORDER BY OPENING_YEAR ASC
+Visualize BAR SELECT date_account_opened , (count(date_account_opened)) AS count FROM Accounts GROUP BY date_account_opened ORDER BY count DESC,date_account_opened ASC   Visualize BAR SELECT date_account_opened , (count(date_account_opened)) AS count FROM Accounts GROUP BY weekday(date_account_opened) ORDER BY count DESC,date_account_opened ASC
+Visualize BAR SELECT product_category , COUNT(*) FROM mailshot_campaigns GROUP BY product_category ORDER BY COUNT(*) ASC
+
+Visualize BAR SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions GROUP BY transaction_type
+BAR SELECT Days , AVG(Instructor) FROM Course GROUP BY Days
+Visualize BAR SELECT grape , count(*) FROM wine WHERE Grape IN ('Merlot','Cabernet Sauvignon','Chardonnay','Pinot Noir','Cabernet Franc','Marsanne','Sangiovese','Malbec','Pinot Blanc','Riesling','Pinot Gris','Chenin Blanc','Syrah') GROUP BY grape ORDER BY Grape ASC
+Visualize BAR SELECT booking_status_code , COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by ORDER BY COUNT(Directed_by) DESC
+Visualize LINE SELECT AVG(Capacity) FROM cinema GROUP BY Openning_year ORDER BY AVG(Capacity) DESC
+Visualize STATISTICS SELECT AVG(Price) , AVG(Score) FROM wine
+Visualize BAR SELECT Apt_Number , Count(Bathroom_Count) FROM Apartments ORDER BY Count(Bathroom_Count) ASC
+Visualize BAR SELECT Grape , COUNT(Grape) FROM wine GROUP BY Grape ORDER BY Grape ASC
+Visualize BAR SELECT salary , ESSN FROM employee WHERE salary < 50000 GROUP BY ESSN ORDER BY salary DESC
+Visualize PIE SELECT Building , COUNT(*) FROM Faculty GROUP BY Building
+Visualize BAR SELECT Grape , COUNT(no) FROM grapes , wine GROUP BY Grape ORDER BY Grape ASC
+SELECT Booking_start_date, COUNT(*) FROM Apartment_bookings GROUP BY weekday order by total_number ASC
+Visualize Histogram(Competition_type , count(*) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize SCATTER SELECT mailshot_category , count(*) FROM Mailshot_campaigns GROUP BY mailshot_category
+Visualize BAR SELECT  color , sum(count(*)) FROM photos GROUP BY color ORDER BY sum(count(*)) ASC
+Visualize BAR SELECT apt_number , COUNT(apt_number) FROM Apartments GROUP BY apt_number ORDER BY COUNT(apt_number) DESC
+Visualize SCATTER SELECT Year , MAX(Score) FROM wine GROUP BY Year
+Visualize BAR SELECT Sex , AVG(Age) FROM Student GROUP BY Sex ORDER BY AVG(Age) DESC
+Visualize BAR SELECT Days , AVG(Instructor) FROM Course GROUP BY Days , Instructor
+Visualize BAR SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type DESC
+Visualize BAR SELECT customer_status_code , count(*) FROM Customers GROUP BY customer_status_code ORDER BY count(*) ASC
+Visualize BAR SELECT Days , AVG(Credits) FROM Course GROUP BY Days ORDER BY AVG(Credits) ASC
+Visualize BAR SELECT tourney_date , COUNT(draw_size) FROM matches GROUP BY tourney_date ORDER BY COUNT(draw_size) ASC
+Visualize LINE SELECT max(Score) , Year FROM wine GROUP BY Year
+
+Visualize BAR SELECT appellation, COUNT(*) FROM appellations GROUP BY appellation ORDER BY COUNT(*)
+Visualize BAR SELECT city_code , COUNT(StuID) FROM Student GROUP BY city_code ORDER BY COUNT(StuID)
+
+1. Select DATE(DATE_OF_BIRTH) FROM Staff , JOIN Customers ON Staff.staff_id = Customers.customer_id WHERE Customers.date_became_customer > '2015-03-01' AND Customers.customer_status_code = 'Good Customer' GROUP BY DATE(DATE_OF_BIRTH) BIN DATE_OF_BIRTH BY YEAR 2. Select COUNT(*) FROM Customer where date_became_customer > '2015-03-01' AND customer_status_code
+SELECT transaction_type , COUNT(transaction_type) AS total_transactions FROM Financial_Transactions GROUP BY transaction_type ORDER BY total_transactions
+Visualize BAR SELECT Openning_year , AVG(Capacity) FROM cinema  ORDER BY AVG(Capacity) DESC BIN Openning_year BY YEAR
+Visualize BAR SELECT Type_of_Thing_Code , count(*) FROM things GROUP BY Type_of_Thing_Code ORDER BY count(*) ASC
+Visualize SCATTER SELECT Roller_Coaster_ID , sum(height) FROM roller_coaster GROUP BY Roller_Coaster_ID
+Visualize BAR SELECT * FROM appellations GROUP BY No
+Visualize PIE SELECT hand, COUNT(hand) FROM players GROUP BY hand
+/*	Visualize BAR SELECT Points , Position FROM player GROUP BY Position HAVING Points<30 */
+Visualize BAR SELECT Points FROM player WHERE Points < 30 ORDER BY Points ASC
+Visualize BAR SELECT Directed_by , count(*) FROM film GROUP BY directed_by ORDER BY count(*) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM editor GROUP BY Name ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT Fname , COUNT(*) FROM Student WHERE sex = 'F' GROUP BY Fname ORDER BY Fname ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Directed_by , COUNT(*) FROM film GROUP BY Directed_by
+
+Visualize BAR SELECT payment_date , count(*) FROM Payments WHERE amount_paid > 300 OR amount_paid_in_full_yn IS NULL  GROUP BY payment_date ORDER BY payment_date DESC
+Visualize BAR SELECT Studio , COUNT(*) FROM Film GROUP BY Studio ORDER BY Count(*) DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_ID) FROM competition GROUP BY Competition_type
+Visualize BAR SELECT Country , COUNT(Country) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT product_category , COUNT(*) FROM Mailshot_Campaigns GROUP BY product_category ORDER BY product_category
+Visualize SCATTER SELECT Major , Count(StuID) FROM Student GROUP BY Major ORDER BY Count(StuID) DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer GROUP BY cust_name HAVING UPPER(cust_name) LIKE UPPER('A')
+Visualize BAR SELECT year , competition_type FROM competition GROUP BY year , competition_type ORDER BY competition_type ASC
+Visualize BAR SELECT LName , AVG(Age) FROM Student WHERE Sex='Female' GROUP BY LName ORDER BY Age DESC
+
+Visualize BAR SELECT date_moved_in , COUNT(resident_id) FROM Residents GROUP BY date_moved_in ORDER BY date_moved_in ASC
+Visualize HISTOGRAM SELECT Competition_ID , COUNT(Competition_ID) FROM competition GROUP BY Year  ORDER BY COUNT(Competition_ID)
+Visualize HISTOGRAM SELECT Competition_ID , COUNT(Competition_ID) FROM competition GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Sex , count(*) FROM Student GROUP BY Sex , count(*) FROM Faculty GROUP BY Sex , count(*) FROM Student
+Visualize BAR SELECT date_moved_in, COUNT(date_moved_in) FROM Residents GROUP BY date_moved_in ORDER BY COUNT(date_moved_in) DESC
+Visualize PIE SELECT payment_method_code , COUNT(payment_method_code) FROM Customer_Payments GROUP BY payment_method_code ORDER BY COUNT(payment_method_code)
+Visualize BAR SELECT name , assets FROM Companies ORDER BY name ASC
+Visualize BAR SELECT booking_status_code, COUNT(booking_status_code) FROM Apartment_Bookings GROUP BY booking_status_code
+Visualize BAR SELECT Party , COUNT(*) FROM people GROUP BY Party ORDER BY Party ASC
+Visualize BAR SELECT Operating_system , COUNT(Operating_system) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY COUNT(Operating_system) DESC
+Visualize BAR SELECT gender, count(*) FROM player GROUP BY gender ORDER BY count(*)
+Visualize BAR SELECT city_code , count(*) FROM Student GROUP BY city_code ORDER BY count(*) ASC
+Visualize LINE SELECT Year , max(Score) FROM wine ORDER BY Year DESC
+Visualize BAR SELECT city_code FROM Student GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT customer_status_code , COUNT(customer_address_id) FROM Customers GROUP BY customer_status_code ORDER BY COUNT(customer_address_id) DESC
+Visualize BAR SELECT channel.Owner, channel.Rating_in_percent , Channel_ID FROM channel WHERE Owner != "NULL" GROUP BY channel.Owner  ORDER BY Rating_in_percent DESC
+Visualize BAR SELECT Position , AVG(Points) FROM player GROUP BY Position ORDER BY AVG(Points) DESC
+Visualize SCATTER SELECT advisor , COUNT(advisor) FROM student GROUP BY advisor ORDER BY city_code DESC
+Visualize BAR SELECT capacity , Cinema_ID FROM cinema GROUP BY capacity ORDER BY capacity DESC
+Visualize BAR SELECT Date , COUNT(Date) FROM battle GROUP BY Date ORDER BY Date ASC
+Visualize SCATTER SELECT acc_bal , cust_name FROM customer WHERE acc_type = 'Checking' AND cust_name LIKE '%A%' AND acc_bal > 0 ORDER BY acc_bal ASC
+Visualize PIE SELECT Rank , COUNT(FacID) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT Name , Age FROM editor ORDER BY Age ASC
+Visualize PIE SELECT Competition_type , COUNT(*) FROM competition GROUP BY Competition_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT LName , Sex FROM Student WHERE Sex = 'F' GROUP BY LName ORDER BY Sex ASC
+Visualize LINE SELECT date_account_opened , COUNT(*) FROM Accounts GROUP BY date_account_opened ORDER BY date_account_opened ASC
+Visualize HISTOGRAM SELECT Teacher_ID , Age, Hometown FROM teacher ORDER BY Teacher_ID, Age, Hometown
+Visualize BAR SELECT date_account_opened , COUNT(date_account_opened) FROM accounts GROUP BY date_account_opened BIN date_account_opened BY WEEKDAY
+Visualize BAR SELECT Year , Cases FROM wine WHERE State = 'Oregon' ORDER BY Year DESC
+Visualize BAR SELECT Year , COUNT(Year) FROM wine GROUP BY Year
+Pie SELECT birth_date , COUNT(birth_date) FROM players GROUP BY birth_date
+Visualize BAR SELECT Age , COUNT(Age) FROM Teachers GROUP BY Age
+Visualize BAR SELECT Type_of_Thing_Code , COUNT(Type_of_Thing_Code) FROM Things GROUP BY Type_of_Thing_Code
+Visualize STACKED BAR SELECT city_code, COUNT(*) FROM Student GROUP BY city_code, Sex ORDER BY city_code , sex ASC
+Visualize BAR SELECT Type , Name FROM artwork ORDER BY Name
+Visualize BAR SELECT city_code , COUNT(*) FROM Student GROUP BY city_code ORDER BY city_code DESC
+Visualize BAR SELECT Rank_in_series , Number_in_season , Title , Directed_by , Original_air_date , Production_code FROM film GROUP BY Rank_in_series ORDER BY Number_in_season ASC
+Visualize BAR SELECT winery , SUM(Price) FROM wine WHERE Price >= 100 GROUP BY winery, grape
+Visualize BAR SELECT Rank, COUNT(FacID) FROM Faculty GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Age , COUNT(Age) FROM teacher GROUP BY Hometown, Teacher_ID ORDER BY Hometown DESC, Teacher_ID DESC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT COUNT(*) , Appelation FROM appellations GROUP BY Appelation ORDER BY COUNT(*) DESC
+Visualize BINNED HISTOGRAM SELECT Age , Sex FROM Student GROUP BY Age, Sex ORDER BY Sex ASC
+Visualize BAR SELECT customer_status_code, COUNT(*) FROM Customers GROUP BY customer_status_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Year , sum(Count), COUNT(*) FROM competition GROUP BY Year
+/* SELECT cust_name , acc_bal FROM customer GROUP BY cust_name HAVING acc_name LIKE "a%") */ Visualize PIE SELECT cust_name , acc_bal FROM customer GROUP BY cust_name HAVING acc_name LIKE "a%"
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Faculty ORDER BY count(*) ASC
+Visualize BAR SELECT Openning_year , COUNT(*) FROM cinema GROUP BY Openning_year ORDER BY COUNT(*) DESC
+Visualize BAR SELECT other_account_details , count(*) FROM accounts WHERE other_account_details <> '' GROUP BY other_account_details
+Select * FROM Council_Tax WHERE cmi_cross_ref_id IN( SELECT cmi_cross_ref_id FROM CMI_Cross_References WHERE master_customer_id = 903966) GROUP BY council_tax_id
+Visualize PIE Select Assets_billion , Industry FROM Companies
+Visualize LINE SELECT transaction_type , AVG(amount) FROM Financial_Transactions GROUP BY transaction_type , ORDER BY AVG(amount) DESC
+Visualize HISTOGRAM SELECT Studio , Count(Film_ID) FROM film GROUP BY Studio ORDER BY Studio DESC
+Visualize BAR SELECT brand , count(*) FROM camera_lens GROUP BY brand ORDER BY brand ASC
+Visualize BAR SELECT other_account_details , count(*) FROM accounts GROUP BY other_account_details ORDER BY count(*) DESC
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM Competition GROUP BY Competition_type ORDER BY Competition_type DESC
+Visualize BAR SELECT building , count(*) FROM Faculty GROUP BY building ORDER BY count(*) DESC
+Visualize PIE SELECT other_account_details , COUNT(other_account_details) FROM Accounts GROUP BY other_account_details
+Visualize BAR SELECT PAYMENT_DATE , COUNT(*) FROM Payments GROUP BY PAYMENT_DATE ORDER BY COUNT(*) DESC
+
+Visualize BAR SELECT Name, Age FROM editor ORDER BY Age DESC
+Visualize BAR SELECT date_of_birth , COUNT(date_of_birth) FROM guests WHERE gender_code = 'male' GROUP BY date_of_birth ORDER BY date_of_birth ASC
+Visualize BAR SELECT apt_id , room_count FROM Apartments ORDER BY room_count DESC
+Visualize BAR SELECT Grape , count(*) FROM Wine GROUP BY Grape ORDER BY count(*) DESC
+Visualize BAR SELECT Age , count(*) FROM Student GROUP BY Age ORDER BY Age DESC
+Visualize BAR SELECT party , count(*) FROM people GROUP BY party ORDER BY party
+
+Visualize SCATTER SELECT price , CASES FROM wine WHERE price BETWEEN 100 AND 200  ORDER BY CASES DESC
+Visualize PIE SELECT Booking_Status_Code, COUNT(*) FROM Apartment_Bookings GROUP BY Booking_Status_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Building, COUNT(*) FROM Faculty GROUP BY Building  ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Grape , COUNT(Grape) FROM wine GROUP BY Grape ORDER BY Grape ASC
+Visualize BAR SELECT Rank , count(*) FROM Faculty GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT LName , COUNT(LName) FROM Student GROUP BY LName ,Age DESC
+
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player WHERE Occupation != 'Researcher' GROUP BY Residence ORDER BY COUNT(Residence) ASC
+Visualize BAR SELECT Location , Count(*) FROM cinema GROUP BY Location
+Visualize BAR SELECT booking_end_date , COUNT(booking_end_date) FROM Apartment_Bookings WHERE booking_status_code = '1' GROUP BY booking_end_date BIN BY YEAR
+Visualize BAR SELECT Studio , AVG(Gross_in_dollar) FROM film GROUP BY Studio ORDER BY AVG(Gross_in_dollar) DESC
+Visualize BAR SELECT Lname , Building FROM Faculty GROUP BY Lname , Building ORDER BY Building DESC
+Visualize BAR SELECT appellation , count(*) FROM appellations
+Visualize BAR SELECT premise_type , COUNT(premise_type) FROM premises GROUP BY premise_type
+Visualize BAR SELECT AllergyType , COUNT(StuID) FROM Has_Allergy GROUP BY AllergyType ORDER BY COUNT(StuID) DESC
+Visualize BAR SELECT Outcome_Code , Count(Outcome_Code) FROM Mailshot_Customers GROUP BY Outcome_Code ORDER BY Outcome_Code ASC
+Visualize STACKED BAR SELECT COUNT(*) FROM Student GROUP BY sex , LName , Fname , Sex
+Visualize BAR SELECT competition_type , COUNT(*) FROM competition GROUP BY competition_type
+Visualize BAR SELECT date_moved_in , count(*) FROM Residents GROUP BY date_moved_in ORDER BY count(*) DESC
+
+Visualize BAR SELECT Year, COUNT(Year) FROM wine WHERE Price BETWEEN 50 AND 5000 BIN Year BY Year DESC
+Visualize  BAR SELECT Lname , Sex , COUNT(*) FROM Faculty GROUP BY Lname , Sex
+Visualize BAR SELECT Directed_by , COUNT(Directed_by) FROM film GROUP BY Directed_by ORDER BY Directed_by ASC
+Visualize BAR SELECT Year, COUNT(Year) FROM wine GROUP BY Year BIN Year BY WEEKDAY
+Visualize BAR SELECT Location , count(*) FROM cinema GROUP BY Location ORDER BY count(*) ASC
+SELECT Grape, Count( * ) FROM grapes GROUP BY Grape ORDER BY Count( * ) DESC
+
+Visualize BAR SELECT Competition_type , COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type ASC
+Visualize PIE SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*)
+Visualize BAR SELECT Year , Price FROM wine GROUP BY Year ORDER BY Price ASC
+Visualize SCATTER SELECT order_item_id , product_quantity FROM Order_Items GROUP BY order_item_id
+Visualize BAR SELECT Competition_type, COUNT(Competition_type) FROM competition GROUP BY Competition_type ORDER BY Competition_type
+Visualize BAR SELECT Building , COUNT(Building) FROM Faculty GROUP BY Building ORDER BY COUNT(Building) DESC
+Visualize BAR SELECT Teacher_ID , AVG(Age), AVG(Hometown) FROM teacher GROUP BY Teacher_ID ORDER BY Teacher_ID DESC
+
+Visualize BAR SELECT Year , COUNT(Competition_ID) FROM competition GROUP BY Competition_type ASC
+Visualize BAR SELECT Total , Count(Cinema_ID) FROM cinema GROUP BY Location ORDER BY Total DESC
+Visualize BAR SELECT Allergy , COUNT(StuID) FROM Has_Allergy GROUP BY StuID , Allergy ORDER BY Allergy
+Visualize BAR SELECT booking_status_code , COUNT(apt_booking_id) FROM Apartment_Bookings ORDER BY booking_status_code ASC
+Visualize BAR SELECT Year , COUNT(Price) FROM wine WHERE Price > 100 GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT gender_mf , count(*) FROM Customers GROUP BY gender_mf ORDER BY gender_mf ASC
+Visualize BAR SELECT city_code , COUNT(city_code) FROM Student GROUP BY city_code ORDER BY city_code DESC
+Visualize BAR SELECT Channel_ID , sum(rating_in_percent) FROM channel GROUP BY Channel_ID ORDER BY sum(rating_in_percent) DESC
+Visualize BAR SELECT Year , count(*) FROM wine GROUP BY Year ORDER BY count(*) DESC
+
+Visualize BAR SELECT booking_end_date , count(*) FROM Apartment_Bookings GROUP BY booking_end_date ORDER BY booking_end_date ASC
+Visualize BAR SELECT apt_number, room_count FROM Apartments GROUP BY apt_number ORDER BY room_count
+Visualize HISTOGRAM SELECT Age , Hometown FROM teacher
+Visualize BAR SELECT customer_id , COUNT(other_account_details) FROM accounts GROUP BY customer_id ORDER BY COUNT(other_account_details) DESC
+Visualize BAR SELECT Allergy , Count(Allergy) FROM Has_Allergy GROUP BY Allergy
+Visualize BAR SELECT customer_id , COUNT(customer_details) FROM Customers GROUP BY customer_id
+Visualize BAR SELECT Party , count(*) FROM people GROUP BY Party ORDER BY Party
+Visualize BAR SELECT other_account_details , COUNT(other_account_details) FROM Accounts GROUP BY other_account_details
+
+Visualize BAR SELECT Rank , COUNT(Rank) FROM Faculty GROUP BY Rank ORDER BY Count(Rank)
+Visualize STACKED BAR SELECT F.Rank , Count(*) FROM Student LEFT JOIN Faculty ON (F.FacID = Student.Advisor) GROUP BY F.Rank ORDER BY Count(*) DESC
+Visualize BAR SELECT premises_type, COUNT(*) FROM Premises GROUP BY premises_type
+Visualize BAR SELECT Year,Count(*) FROM wine GROUP BY Year
+Visualize SCATTER SELECT Openning_year , SUM(Capacity) FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Select AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY AllergyType ASC
+Visualize BAR SELECT Allergy , count(*) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT Position , count(*) FROM player WHERE Points < 30 GROUP BY Position ORDER BY Points DESC
+
+Visualize BAR SELECT AllergyType , COUNT(Allergy) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(Allergy) DESC
+Visualize LINE SELECT Year , avg(Price) FROM wine GROUP BY Year ORDER BY Year DESC
+
+Visualize BAR SELECT YEAR , TOTAL(CASES) FROM wine GROUP BY YEAR BIN YEAR BY WEEKDAY
+Visualize PIE SELECT customer_status_code , COUNT(*) FROM Customers GROUP BY customer_status_code ORDER BY customer_status_code ASC
+Visualize BAR SELECT invoice_id , order_id FROM invoices GROUP BY order_id ORDER BY invoice_id ASC
+Visualize BAR SELECT Grape , count(*) FROM wine GROUP BY Grape ORDER BY count(*) desc
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize LINE SELECT gender_code, COUNT(*) FROM Guests GROUP BY gender_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT COUNT(*) , account_name, other_account_details FROM accounts GROUP BY other_account_details , account_name
+Visualize BAR SELECT Studio , COUNT(*) FROM film GROUP BY Studio ORDER BY Studio
+Visualize LINE SELECT Max(Price), Year, AVG(Score) FROM wine
+Visualize HISTOGRAM SELECT city_code , COUNT(*) FROM Student GROUP BY city_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Age , Hometown FROM teacher GROUP BY Age , Hometown ORDER BY Age ASC
+Visualize PIE SELECT Year , Max(Price), Avg(Score) FROM wine GROUP BY Year ORDER BY Year
+Visualize HISTOGRAM SELECT booking_start_date  FROM Apartment_Bookings GROUP BY booking_start_date
+Visualize PIE SELECT gender_code , count(*) FROM Guests GROUP BY gender_code ORDER BY count(*)
+Visualize BAR SELECT Advisor , COUNT(Advisor) FROM Student GROUP BY Advisor ORDER BY Advisor DESC
+Visualize BAR SELECT Rank , count(Faculty_ID) FROM Faculty GROUP BY Rank
+Visualize BAR SELECT city_code , COUNT(*) FROM Student GROUP BY city_code ORDER BY city_code ASC
+Visualize BAR SELECT gender_mf , first_name FROM customers GROUP BY first_name ORDER BY gender_mf ASC
+Visualize BAR SELECT Studio , COUNT(Film_ID) FROM Film GROUP BY Studio
+Visualize BAR SELECT Competition_type FROM competition GROUP BY Competition_type
+
+Visualize BAR SELECT * FROM Student UNION ALL SELECT * FROM Faculty
+Visualize Line SELECT State , AVG(Price) FROM wine GROUP BY State ORDER BY AVG(Price) ASC
+Visualize SPARKLINE SELECT * FROM mountain WHERE Range != "Aberdare Range" GROUP BY Height, Prominence
+Visualize BAR SELECT bulgarian_commander , COUNT(bulgarian_commander) FROM battle WHERE bulgarian_commander <> 'Boril' GROUP BY bulgarian_commander ORDER BY bulgarian_commander ASC
+Visualize BAR SELECT premises_type , COUNT(premise_id) FROM Premises GROUP BY premises_type , premises_type ORDER BY COUNT(premise_id) ASC
+Visualize BAR SELECT Club_ID , avg(points) FROM player GROUP BY Club_ID ORDER BY avg(points) DESC
+Visualize BAR SELECT AllergyType , AVG(Allergy) FROM Allergy_Type GROUP BY AllergyType
+Visualize BAR SELECT Film_ID , Total_From Studio FROM film
+Visualize BAR SELECT Building , COUNT(Building) FROM Faculty GROUP BY Building ORDER BY Building DESC
+Visualize BAR SELECT booking_status_code , COUNT(*) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date , VENUE FROM debate GROUP BY Venue ASC BIN Venue BY DAY
+Visualize BAR SELECT Building , COUNT(Building) FROM Faculty GROUP BY Building ORDER BY COUNT(Building) DESC
+Visualize BAR SELECT Age FROM editor WHERE Name LIKE 'Richard% ' OR Name LIKE 'Velentina%' OR Name LIKE 'Victoria% ' ORDER BY Age ASC
+Visualize BAR SELECT Apt_number , room_count FROM apartments GROUP BY Apt_number ORDER BY room_count ASC
+Visualize LINE SELECT Price , Year FROM wine GROUP BY Year, Price ASC, Year
+Visualize BAR SELECT price , COUNT(price) FROM wine WHERE price > 100  ORDER BY COUNT(price) ASC BIN price BY DUPLEX
+Visualize BAR SELECT city_code , COUNT(city_code) FROM Student GROUP BY city_code ORDER BY city_code
+
+Visualize BAR SELECT Age , Sex FROM Student GROUP BY Sex ORDER BY Age ASC
+Visualize LINE SELECT Year, MAX(Price) FROM wine GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT booking_status_code , count(*) FROM apartment_bookings GROUP BY booking_status_code ORDER BY count(*) ASC
+Visualize BAR SELECT date_account_opened , count(*) FROM Accounts GROUP BY date_account_opened ORDER BY count(*) ASC
+Visualize BAR SELECT outcome_code , COUNT(*) FROM Mailshot_Customers GROUP BY outcome_code
+Visualize BAR SELECT  FACID , count(*) FROM Faculty GROUP BY FACID
+Visualize LINE SELECT No , max(Price) FROM wine GROUP BY Year
+Visualize BAR SELECT AllergyType , COUNT(*) FROM allergy_type GROUP BY AllergyType ORDER BY COUNT(*) DESC
+1. GROUP BY cust_name  2. Visualize PIE SELECT cust_name , acc_bal FROM customer
+Visualize HISTOGRAM SELECT Age , Hometown FROM teacher GROUP BY Age, Hometown
+Visualize BAR SELECT bulgarian_commander , COUNT(bulgarian_commander) FROM battle GROUP BY bulgarian_commander ORDER BY COUNT(bulgarian_commander) ASC
+Visualize BAR SELECT Capacity , AVG(Capacity) FROM cinema BIN Capacity BY Openning_year ORDER BY AVG(Capacity) ASC
+Visualize BAR SELECT Studio , count(*) FROM film GROUP BY Studio ORDER BY count(*) ASC
+Visualize BAR SELECT apt_number , room_count FROM Apartments ORDER BY room_count
+Visualize BAR SELECT Appelation , COUNT(*) FROM appellations GROUP BY Appelation ORDER BY Appelation ASC
+Visualize BAR SELECT customer_details , COUNT(*) FROM Customers GROUP BY customer_details ORDER BY customer_details ASC
+Visualize BAR SELECT AllergyType , COUNT(AllergyType) FROM Allergy_Type GROUP BY AllergyType ORDER BY COUNT(AllergyType) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM customer_payments GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT Building FROM Faculty GROUP BY Building ORDER BY Building DESC BIN Building BY YEAR
+Visualize BAR SELECT Customer_Event_Notes.Customer_Event_Note_ID,count(*) FROM Residents, Residents_Services, Customer_Events, Customer_Event_Notes  GROUP BY Customer_Event_Notes.Customer_Event_Note_ID  BIN Customer_Event_Notes.date_requested  BY YEAR ORDER BY count(*) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM Faculty GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT city_code , COUNT(*) FROM student GROUP BY city_code ORDER BY city_code DESC
+Visualize BAR SELECT Studio , COUNT(Studio) FROM film GROUP BY Studio ORDER BY Studio ASC
+Visualize Histogram SELECT city_code , count(*) FROM student GROUP BY city_code
+Visualize HISTOGRAM SELECT Apps FROM player GROUP BY Player_ID
+Visualize BAR SELECT booking_status_code, COUNT(apt_booking_id) FROM Apartment_Bookings GROUP BY booking_status_code ORDER BY booking_status_code ASC
+Visualize BAR SELECT No , Grape , COUNT(*) FROM wine GROUP BY Grape ,  No ORDER BY COUNT(*) DESC
+Visualize BAR SELECT city_code , COUNT(*) FROM Student GROUP BY city_code
+Visualize BAR SELECT Sex , AVG(Age) FROM Student  GROUP BY Sex ORDER BY sum(Stud_ID) DESC
+Visualize LINE SELECT date_of_birth , count(*) FROM Guests WHERE gender_code = 'M' GROUP BY date_of_birth  ORDER BY count(*) DESC
+Visualize SCATTER SELECT transaction_type , SUM(transaction_amount) FROM Financial_Transactions GROUP BY transaction_type
+Visualize HISTOGRAM SELECT count(*) FROM Products GROUP BY product_category
+Visualize BAR SELECT Capacity , Openning_year FROM cinema GROUP BY Openning_year ORDER BY Openning_year ASC
+Visualize BAR SELECT transaction_type, count(transaction_type) FROM financial_transactions GROUP BY transaction_type
+Visualize BAR SELECT Type , COUNT(*) FROM artwork GROUP BY Type ORDER BY Type ASC

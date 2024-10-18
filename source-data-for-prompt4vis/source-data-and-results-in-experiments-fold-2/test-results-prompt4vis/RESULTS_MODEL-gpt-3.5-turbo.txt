@@ -1,0 +1,977 @@
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY Investor ASC
+Visualize BAR SELECT Result FROM music_festival ORDER BY Result DESC
+Visualize BAR SELECT billing_country , COUNT(billing_country) FROM invoices GROUP BY billing_country ORDER BY COUNT(billing_country) DESC LIMIT 5
+Visualize BAR SELECT Citizenship , count(*) FROM singer GROUP BY citizenship
+Visualize HISTOGRAM SELECT billing_country , COUNT(invoice_id) FROM invoices GROUP BY billing_country ORDER BY COUNT(invoice_id) DESC LIMIT 5
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize PIE SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize PIE SELECT billing_country , COUNT(invoice_id) FROM invoices GROUP BY billing_country ORDER BY COUNT(invoice_id) DESC LIMIT 5
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY Last_year ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) ASC
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state ORDER BY COUNT(*) ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY Class DESC
+Visualize BAR SELECT billing_country , SUM(total) FROM invoices GROUP BY billing_country ORDER BY SUM(total) DESC LIMIT 8
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry DESC
+Visualize BAR SELECT Class , COUNT(Captain_ID) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff GROUP BY date_from ORDER BY COUNT(date_from) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) DESC
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision HAVING COUNT(date_of_latest_revision) > 1 BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT catalog_entry_name , catalog_level_name FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name ASC
+Visualize PIE SELECT Category , COUNT(*) FROM music_festival GROUP BY Category
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY Investor ASC
+Visualize SCATTER SELECT organisation_id , SUM(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize BAR SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize PIE SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize PIE SELECT Result , COUNT(*) FROM music_festival GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY Class DESC
+Visualize LINE SELECT yearid , count(*) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 1 AND 5 ORDER BY catalog_level_name DESC
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize LINE SELECT date_from FROM Project_Staff WHERE role_code = 'researcher' ORDER BY date_from ASC BIN date_from BY YEAR
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = 'US' GROUP BY billing_state ORDER BY COUNT(*) ASC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game GROUP BY year ORDER BY year DESC
+Visualize SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT yearid , COUNT(yearid) FROM hall_of_fame GROUP BY yearid ORDER BY COUNT(yearid) ASC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'USA' GROUP BY Main_Industry
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) ASC BIN Last_year BY WEEKDAY
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize BAR SELECT Investor , COUNT(DISTINCT Company) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(DISTINCT Company) ASC
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY date_to ASC BIN date_to BY YEAR
+Visualize BAR SELECT Investor , count(*) FROM Entrepreneur GROUP BY Investor ORDER BY count(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize PIE SELECT Main_Industry , sum(Market_Value) FROM company GROUP BY Main_Industry
+Visualize LINE SELECT YEAR(date_from) AS Year, COUNT(*) FROM Project_Staff WHERE role_code = "researcher" GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT billing_country , COUNT(*) FROM invoices GROUP BY billing_country ORDER BY COUNT(*) DESC LIMIT 5
+Visualize BAR SELECT Category , count(*) FROM music_festival GROUP BY category
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid ORDER BY yearid ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Result DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM catalogs WHERE COUNT(date_of_latest_revision) > 1 ORDER BY date_of_latest_revision DESC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue ASC
+Visualize LINE SELECT year , avg(attendance) FROM home_game GROUP BY year
+Visualize LINE SELECT YEAR(date_to) AS Year, COUNT(*) FROM Project_Staff WHERE role_code = 'researcher' GROUP BY Year ORDER BY Year DESC
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision HAVING COUNT(date_of_latest_revision) > 1 BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT staff_details , COUNT(staff_details) FROM Research_Staff GROUP BY staff_details ORDER BY staff_details ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff WHERE role_code = 'researcher' BIN date_to BY YEAR
+Visualize LINE SELECT year, AVG(attendance) FROM home_game GROUP BY year
+Visualize PIE SELECT Country , count(*) FROM climber GROUP BY country
+Visualize BAR SELECT Name , Level_of_membership FROM visitor WHERE Level_of_membership > 4
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM catalogs GROUP BY date_of_latest_revision HAVING COUNT(date_of_latest_revision) > 1 ORDER BY COUNT(date_of_latest_revision) DESC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY Country DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY avg(age) ASC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision HAVING COUNT(date_of_latest_revision) > 1 BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Citizenship , MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY MAX(Net_Worth_Millions) DESC
+Visualize LINE SELECT date_from , COUNT(date_from) FROM Project_Staff WHERE role_code = 'researcher' BIN date_from BY YEAR
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize LINE SELECT yearid , COUNT(yearid) FROM all_star ORDER BY yearid DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Venue , count(*) FROM workshop GROUP BY Venue ORDER BY count(*) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT Name, SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize PIE SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank ASC
+Visualize PIE SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Country , COUNT(*) FROM mountain GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY Investor ASC
+Visualize BAR SELECT Result , COUNT(*) FROM music_festival GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'USA' GROUP BY Main_Industry
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Music_Festival ASC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT Company, Rank FROM company ORDER BY Sales_billion DESC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game BIN year BY YEAR
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) DESC
+Visualize BAR SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'USA' GROUP BY Main_Industry ORDER BY COUNT(Main_Industry) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT Manager_Name , COUNT(*) FROM gas_station GROUP BY Manager_Name ORDER BY Manager_Name DESC
+Visualize BAR SELECT year , AVG(attendance) FROM home_game GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize BAR SELECT Main_Industry , COUNT(*) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Name , COUNT(Venue) FROM workshop GROUP BY Name
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank , Class ORDER BY COUNT(Class) ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class
+Visualize BAR SELECT catalog_entry_name , catalog_level_name FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Music_Festival , COUNT(Result) FROM music_festival GROUP BY Music_Festival
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT Last_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN Last_year BY WEEKDAY ORDER BY COUNT(First_year) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff GROUP BY date_from
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) ASC
+Visualize LINE SELECT YEAR(date_from) AS Year, COUNT(*) FROM Project_Staff WHERE role_code = "researcher" GROUP BY Year
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices GROUP BY billing_state ORDER BY billing_state DESC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 AND Rank = 'Captain' GROUP BY Rank
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision ORDER BY COUNT(date_of_latest_revision) DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY nationality ORDER BY count(*) DESC
+Visualize BAR SELECT COUNT(year) FROM all_star GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Manager_Name , COUNT(*) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize BAR SELECT billing_country , AVG(total) FROM invoices GROUP BY billing_country ORDER BY AVG(total) DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) ASC BIN Last_year BY WEEKDAY
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country WHERE LifeExpectancy < 72 GROUP BY Continent ORDER BY Continent DESC
+Visualize BAR SELECT DAYOFWEEK(yearid) , COUNT(yearid) FROM hall_of_fame GROUP BY DAYOFWEEK(yearid) ORDER BY COUNT(yearid) ASC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY count(*) ASC
+Visualize BAR SELECT Class , COUNT(*) FROM captain c JOIN ship s ON c.Ship_ID = s.Ship_ID GROUP BY Class ORDER BY Class DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices WHERE billing_country = "US" GROUP BY billing_state ORDER BY COUNT(id) DESC
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag ORDER BY COUNT(*) ASC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(First_year) DESC BIN First_year BY YEAR
+Visualize BAR SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) DESC
+Visualize PIE SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize PIE SELECT Country , COUNT(*) FROM mountain GROUP BY Country
+Visualize BAR SELECT Main_Industry , COUNT(*) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff WHERE role_code = "researcher" ORDER BY COUNT(date_from) ASC BIN date_from BY WEEKDAY
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY Flag ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT YEAR , COUNT(YEAR) FROM all_star ORDER BY COUNT(YEAR) DESC BIN YEAR BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(Country) FROM climber GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'USA' GROUP BY Main_Industry ORDER BY COUNT(Main_Industry) DESC
+Visualize BAR SELECT Name, SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) DESC
+Visualize BAR SELECT name , COUNT(name) FROM artists GROUP BY name ORDER BY name ASC
+Visualize LINE SELECT year , avg(attendance) FROM home_game GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize LINE SELECT YEAR(date_to) AS Year, COUNT(*) FROM Project_Staff WHERE role_code = "researcher" GROUP BY Year
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Submission_ID, Result ORDER BY COUNT(Result) DESC
+Visualize BAR SELECT Famous_Title , Age FROM artist ORDER BY Age DESC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame GROUP BY yearid ORDER BY yearid DESC BIN yearid BY YEAR
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank , Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY COUNT(date_from) DESC BIN date_from BY WEEKDAY
+Visualize BAR SELECT year, COUNT(year) FROM home_game BIN year BY WEEKDAY
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY Result DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Class , Rank ORDER BY Rank DESC
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff GROUP BY date_to ORDER BY date_to DESC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game ORDER BY year ASC BIN year BY YEAR
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) DESC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Class , COUNT(*) FROM captain GROUP BY Class ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Class , COUNT(*) FROM captain GROUP BY Class ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid ORDER BY yearid ASC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_to , COUNT(date_to) FROM Project_Staff WHERE role_code = 'researcher' BIN date_to BY WEEKDAY
+Visualize BAR SELECT yearid , COUNT(yearid) FROM hall_of_fame ORDER BY COUNT(yearid) DESC BIN yearid BY WEEKDAY
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location DESC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) DESC
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN Last_year BY WEEKDAY
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY nationality ORDER BY count(*) ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize PIE SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY COUNT(Result) DESC
+Visualize PIE SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY COUNT(Result) ASC
+Visualize LINE SELECT year, AVG(attendance) FROM home_game GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 1 AND 5 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT Company, Rank FROM company WHERE Main_Industry = 'Banking' ORDER BY Sales_billion DESC, Profits_billion DESC
+Visualize PIE SELECT Result, COUNT(*) FROM music_festival GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT billing_state , COUNT(billing_state) FROM invoices GROUP BY billing_state
+Visualize BAR SELECT Company , Rank FROM company ORDER BY Sales_billion DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT date_to , COUNT(date_to) FROM Project_Staff GROUP BY date_to
+Visualize PIE SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Result ASC
+Visualize PIE SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Name , Level_of_membership FROM visitor WHERE Level_of_membership > 4 ORDER BY Level_of_membership ASC
+Visualize PIE SELECT Investor , count(DISTINCT Entrepreneur_ID) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) DESC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival GROUP BY Category ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) ASC
+Visualize BAR SELECT Main_Industry , sum(Market_Value) FROM company GROUP BY Main_Industry ORDER BY sum(Market_Value) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) ASC
+Visualize BAR SELECT Venue , count(*) FROM workshop GROUP BY Venue ORDER BY count(*) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY Country ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) DESC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game ORDER BY year DESC BIN year BY YEAR
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize PIE SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) ASC
+Visualize PIE SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize PIE SELECT Location , COUNT(*) FROM party GROUP BY Location
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize PIE SELECT Result , COUNT(*) FROM music_festival GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) DESC
+Visualize BAR SELECT yearid, COUNT(yearid) FROM hall_of_fame BIN yearid BY WEEKDAY
+Visualize LINE SELECT year , AVG(attendance) FROM home_game GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize LINE SELECT year , COUNT(year) FROM all_star ORDER BY year DESC BIN year BY WEEKDAY
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY COUNT(Last_year) DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT billing_state , COUNT(*) as total_invoices FROM invoices GROUP BY billing_state ORDER BY total_invoices DESC
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) ASC
+Visualize LINE SELECT date_to FROM Project_Staff WHERE role_code = "researcher" BIN date_to BY YEAR ORDER BY date_to ASC
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Investor , COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology"
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT date_of_transaction , COUNT(date_of_transaction) FROM TRANSACTIONS ORDER BY COUNT(date_of_transaction) ASC BIN date_of_transaction BY WEEKDAY
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Company , Market_Value FROM company WHERE Main_Industry = 'banking'
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT Famous_Title , Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize PIE SELECT Author , COUNT(*) FROM submission GROUP BY Author
+Visualize PIE SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor
+Visualize PIE SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY Flag DESC
+Visualize SELECT Headquarters, COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Class , COUNT(*) FROM captain JOIN ship ON captain.Ship_ID = ship.Ship_ID GROUP BY Class
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag ORDER BY Flag DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Flag , COUNT(Flag) FROM Ship GROUP BY Flag ORDER BY COUNT(Flag) DESC
+Visualize BAR SELECT Venue , Name FROM workshop ORDER BY Name ASC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY Last_year DESC
+Visualize SCATTER SELECT organisation_id , sum(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY count(*) ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY count(*) ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize PIE SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT Citizenship , count(*) FROM singer GROUP BY Citizenship ORDER BY count(*) ASC
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize LINE SELECT yearid , COUNT(*) FROM hall_of_fame GROUP BY yearid ORDER BY yearid ASC
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Result ASC
+Visualize SELECT catalog_level_name , catalog_level_number FROM catalog_structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location ASC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize LINE SELECT date_from, COUNT(date_from) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY date_from ASC BIN date_from BY YEAR
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices GROUP BY billing_state ORDER BY COUNT(*) DESC
+Visualize LINE SELECT yearid , COUNT(*) FROM hall_of_fame GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize PIE SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame WHERE inducted = "Y" GROUP BY yearid ORDER BY yearid ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country WHERE LifeExpectancy < 72 GROUP BY Continent
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY count(*) DESC
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff GROUP BY date_from ORDER BY COUNT(date_from) ASC
+Visualize BAR SELECT staff_details , COUNT(staff_details) FROM Research_Staff GROUP BY staff_details ORDER BY staff_details ASC
+Visualize BAR SELECT Main_Industry , sum(Market_Value) FROM company GROUP BY Main_Industry ORDER BY sum(Market_Value) DESC
+Visualize LINE SELECT year , COUNT(year) FROM all_star BIN year BY WEEKDAY
+Visualize BAR SELECT Result FROM music_festival
+Visualize BAR SELECT Venue FROM workshop
+Visualize BAR SELECT billing_country , avg(total) FROM invoices GROUP BY billing_country ORDER BY avg(total) DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) ASC
+Visualize PIE SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision HAVING COUNT(date_of_latest_revision) > 1 ORDER BY date_of_latest_revision ASC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY Country DESC
+Visualize PIE SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank ORDER BY COUNT(Class) ASC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize LINE SELECT date_from , COUNT(date_from) FROM Project_Staff ORDER BY date_from ASC BIN date_from BY YEAR
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY avg(age) DESC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY YEAR
+Visualize PIE SELECT Rank , COUNT(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) DESC
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Company) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Name, Level_of_membership FROM visitor WHERE Level_of_membership > 4 ORDER BY Name ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists ORDER BY name ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) ASC
+Visualize BAR SELECT name , COUNT(name) FROM artists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY Category ASC
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY year ASC
+Visualize PIE SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = 'US' GROUP BY billing_state ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT Rank , Market_Value FROM company WHERE Main_Industry = 'Banking'
+Visualize SCATTER SELECT Rank , Market_Value FROM company WHERE Main_Industry = 'Banking' GROUP BY Company
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize PIE SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices GROUP BY billing_state
+Visualize PIE SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Company) ASC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) DESC
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY Population ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize BAR SELECT Year , COUNT(Year) FROM all_star ORDER BY COUNT(Year) ASC BIN Year BY WEEKDAY
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY rank
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class ORDER BY COUNT(Class) ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT name , COUNT(name) FROM artists GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize LINE SELECT year , COUNT(year) FROM all_star ORDER BY year ASC BIN year BY YEAR
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY country ORDER BY count(*) DESC
+Visualize BAR SELECT Name, Level_of_membership FROM visitor WHERE Level_of_membership > 4 ORDER BY Name DESC
+Visualize BAR SELECT Workshop_ID , COUNT(Venue) FROM workshop GROUP BY Workshop_ID ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT name , COUNT(name) FROM artists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize PIE SELECT Music_Festival , COUNT(*) FROM music_festival GROUP BY Music_Festival
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY Investor DESC
+Visualize BAR SELECT Citizenship , count(*) FROM singer GROUP BY Citizenship ORDER BY Citizenship ASC
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT billing_country , SUM(total) FROM invoices GROUP BY billing_country ORDER BY SUM(total) DESC LIMIT 8
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) ASC
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY Class
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category DESC
+Visualize PIE SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship
+Visualize LINE SELECT yearid , COUNT(*) FROM hall_of_fame GROUP BY yearid ORDER BY yearid DESC
+Visualize PIE SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY COUNT(year) ASC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff GROUP BY date_to ORDER BY date_to ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) ASC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY Manager_Name ASC
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Category , COUNT(Category) FROM music_festival WHERE Result = 'Awarded' GROUP BY Category
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY investor ORDER BY count(*) DESC
+Visualize LINE SELECT yearid , count(*) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT LAST_YEAR , COUNT(LAST_YEAR) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(LAST_YEAR) DESC BIN LAST_YEAR BY WEEKDAY
+Visualize BAR SELECT name , COUNT(*) FROM artists GROUP BY name
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) DESC
+Visualize PIE SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize PIE SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize PIE SELECT Rank , COUNT(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Investor, COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Entrepreneur_ID) ASC
+Visualize LINE SELECT date_from , COUNT(date_from) FROM Project_Staff GROUP BY date_from
+Visualize PIE SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize PIE SELECT catalog_entry_name , capacity FROM catalog_contents WHERE price_in_dollars > 700
+Visualize PIE SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff GROUP BY date_to
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM ship GROUP BY Class
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT Company, Sales_billion, Profits_billion, Market_Value FROM company WHERE Main_Industry = 'Banking' ORDER BY Sales_billion DESC, Profits_billion DESC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 1 AND 5 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Class , Rank
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices GROUP BY billing_state ORDER BY COUNT(id) DESC
+Visualize BAR SELECT billing_state, COUNT(*) FROM invoices GROUP BY billing_state ORDER BY COUNT(*) DESC
+Visualize LINE SELECT year, COUNT(year) FROM home_game BIN year BY WEEKDAY
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT date_from , COUNT(date_from) FROM Project_Staff WHERE role_code = "researcher" BIN date_from BY WEEKDAY
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Result , Music_Festival FROM music_festival ORDER BY Result DESC
+Visualize BAR SELECT Rank , count(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize HISTOGRAM SELECT billing_state , COUNT(*) FROM invoices GROUP BY billing_state ORDER BY COUNT(*) ASC
+Visualize LINE SELECT yearid, COUNT(player_id) FROM hall_of_fame WHERE inducted = "Y" GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT Investor , COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor ORDER BY Investor ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame GROUP BY yearid
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY COUNT(Category) ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Class , Rank ORDER BY Rank ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize PIE SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists ORDER BY COUNT(name) DESC
+Visualize LINE SELECT year, AVG(attendance) FROM home_game BIN year BY YEAR
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs WHERE COUNT(date_of_latest_revision) > 1 ORDER BY COUNT(date_of_latest_revision) ASC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(First_year) ASC BIN First_year BY WEEKDAY
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize PIE SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize LINE SELECT year , COUNT(year) FROM all_star ORDER BY year ASC BIN year BY WEEKDAY
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author
+Visualize HISTOGRAM SELECT billing_state , COUNT(invoice_id) FROM invoices GROUP BY billing_state ORDER BY billing_state ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize PIE SELECT Rank , count(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Result FROM music_festival ORDER BY Result DESC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 AND Rank = 'Captain' GROUP BY Rank ORDER BY count(*) DESC
+Visualize PIE SELECT Rank , COUNT(*) FROM captain GROUP BY Rank
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize PIE SELECT Category , COUNT(Category) FROM music_festival WHERE Result = 'Awarded' GROUP BY Category
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY First_year ORDER BY First_year ASC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY COUNT(date_of_latest_revision) ASC BIN date_of_latest_revision BY YEAR
+Visualize BAR SELECT date_to , COUNT(date_to) FROM Project_Staff GROUP BY date_to ORDER BY COUNT(date_to) ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) DESC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY Country DESC
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize LINE SELECT yearid , COUNT(yearid) FROM all_star GROUP BY yearid ORDER BY yearid ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Company) ASC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize PIE SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT Name, Level_of_membership FROM visitor WHERE Level_of_membership > 4 ORDER BY Level_of_membership DESC
+Visualize PIE SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 1 AND 5
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices GROUP BY billing_state ORDER BY billing_state ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Company , Rank FROM company WHERE Main_Industry = 'Banking' ORDER BY Sales_billion DESC, Profits_billion DESC
+Visualize PIE SELECT Music_Festival , COUNT(Result) FROM music_festival GROUP BY Music_Festival
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize LINE SELECT year, AVG(attendance) FROM home_game GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY count(*) DESC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country
+Visualize SCATTER SELECT sum(grant_amount) , organisation_id FROM grants GROUP BY organisation_id
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT catalog_level_name , COUNT(catalog_level_name) FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 GROUP BY catalog_level_name ORDER BY COUNT(catalog_level_name) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY Category ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY avg(age) DESC
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game ORDER BY year ASC BIN year BY YEAR
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize LINE SELECT date_from , COUNT(date_from) FROM Project_Staff GROUP BY date_from ORDER BY date_from DESC
+Visualize BAR SELECT Investor , COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Entrepreneur_ID) DESC
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY COUNT(Result) DESC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) DESC
+Visualize BAR SELECT Citizenship , MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY MAX(Net_Worth_Millions) DESC
+Visualize PIE SELECT billing_country, COUNT(*) FROM invoices GROUP BY billing_country ORDER BY COUNT(*) DESC LIMIT 5
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize PIE SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize PIE SELECT Country , COUNT(*) FROM climber GROUP BY Country
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank ORDER BY Class DESC
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices GROUP BY billing_state ORDER BY COUNT(id) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state ORDER BY COUNT(*) DESC
+Visualize BAR SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY COUNT(year) DESC
+Visualize LINE SELECT year , COUNT(year) FROM home_game ORDER BY year DESC BIN year BY WEEKDAY
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid ORDER BY yearid ASC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize PIE SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category
+Visualize BAR SELECT Music_Festival , COUNT(*) FROM music_festival GROUP BY Music_Festival
+Visualize BAR SELECT Citizenship , count(*) FROM singer GROUP BY Citizenship ORDER BY Citizenship DESC
+Visualize BAR SELECT billing_state , count(*) FROM invoices GROUP BY billing_state ORDER BY count(*) DESC
+Visualize BAR SELECT Music_Festival FROM music_festival ORDER BY X DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize LINE SELECT year , COUNT(year) FROM all_star GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY Citizenship DESC
+Visualize PIE SELECT Nationality , count(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue ASC
+Visualize PIE SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Category , count(*) FROM music_festival GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY COUNT(Manager_Name) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE Rank IS NOT NULL GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY investor
+Visualize BAR SELECT billing_state , count(*) FROM invoices GROUP BY billing_state
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC
+Visualize LINE SELECT yearid , COUNT(*) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid ORDER BY yearid ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name
+Visualize BAR SELECT Class , COUNT(DISTINCT Captain_ID) FROM captain GROUP BY Class ORDER BY COUNT(DISTINCT Captain_ID) DESC
+Visualize BAR SELECT Main_Industry , COUNT(*) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize PIE SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(First_year) DESC BIN First_year BY WEEKDAY
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY class
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY Manager_Name ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY Citizenship ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Investor , COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor
+Visualize LINE SELECT yearid, COUNT(yearid) FROM all_star GROUP BY yearid
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT span_first , COUNT(span_first) FROM home_game ORDER BY COUNT(span_first) DESC BIN span_first BY WEEKDAY
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT Citizenship , MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY MAX(Net_Worth_Millions) DESC
+Visualize LINE SELECT yearid, COUNT(yearid) FROM all_star GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank ASC
+Visualize BAR SELECT year , AVG(attendance) FROM home_game GROUP BY year
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT Author, COUNT(Author) FROM submission GROUP BY Author ORDER BY Author DESC
+Visualize PIE SELECT Flag , count(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Category , count(*) FROM music_festival GROUP BY Category ORDER BY count(*) DESC
+Visualize BAR SELECT Citizenship , MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY MAX(Net_Worth_Millions) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry DESC
+Visualize BAR SELECT Main_Industry , sum(Market_Value) FROM company GROUP BY Main_Industry ORDER BY sum(Market_Value) DESC
+Visualize BAR SELECT Company , Rank FROM company ORDER BY Sales_billion DESC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" ORDER BY COUNT(Category) ASC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain JOIN Ship ON captain.Ship_ID = Ship.Ship_ID GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank ORDER BY COUNT(Class) DESC BIN Class BY WEEKDAY
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY COUNT(*) ASC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY Last_year ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize SELECT Headquarters, COUNT(*) FROM company GROUP BY Headquarters
+Visualize PIE SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY Rank DESC
+Visualize PIE SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize SCATTER SELECT organisation_id , SUM(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize LINE SELECT year, AVG(attendance) FROM home_game GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN First_year BY WEEKDAY
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY class
+Visualize BAR SELECT Result FROM music_festival ORDER BY Result ASC
+Visualize BAR SELECT Manager_Name , COUNT(Manager_Name) FROM gas_station GROUP BY Manager_Name ORDER BY Manager_Name ASC
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) ASC
+Visualize PIE SELECT Name , Level_of_membership FROM visitor WHERE Level_of_membership > 4
+Visualize BAR SELECT Citizenship , count(*) FROM singer GROUP BY citizenship ORDER BY count(*) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize PIE SELECT Category , count(*) FROM music_festival GROUP BY Category
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = 'US' GROUP BY billing_state ORDER BY billing_state ASC
+Visualize LINE SELECT year , avg(attendance) FROM home_game GROUP BY year ORDER BY year ASC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY Investor ASC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY count(*) DESC
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Rank , COUNT(Class) FROM captain GROUP BY Rank , Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT organisation_id , sum(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize BAR SELECT Main_Industry , COUNT(*) FROM company WHERE Headquarters != "USA" GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue ORDER BY Venue ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize PIE SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Company, Market_Value FROM company WHERE Main_Industry = 'Banking' ORDER BY Sales_billion, Profits_billion DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category
+Visualize BAR SELECT Main_Industry , COUNT(Main_Industry) FROM company WHERE Headquarters != 'United States' GROUP BY Main_Industry ORDER BY COUNT(Main_Industry) DESC
+Visualize PIE SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT Party_Theme , MAX(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Party_Theme
+Visualize BAR SELECT Rank , COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Investor , COUNT(Entrepreneur_ID) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Entrepreneur_ID) ASC
+Visualize BAR SELECT yearid , COUNT(yearid) FROM hall_of_fame GROUP BY yearid
+Visualize BAR SELECT Flag , COUNT(*) FROM Ship GROUP BY Flag ORDER BY COUNT(*) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT Category , COUNT(*) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs WHERE COUNT(date_of_latest_revision) > 1 ORDER BY date_of_latest_revision DESC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Category , count(*) FROM music_festival GROUP BY category ORDER BY Category ASC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT YEAR , COUNT(YEAR) FROM all_star ORDER BY YEAR ASC BIN YEAR BY WEEKDAY
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY Category ASC
+Visualize BAR SELECT Class , COUNT(*) FROM captain GROUP BY Class ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Result , COUNT(*) FROM music_festival GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT billing_state , COUNT(billing_state) FROM invoices GROUP BY billing_state ORDER BY COUNT(billing_state) ASC
+Visualize BAR SELECT Main_Industry , COUNT(*) FROM company WHERE Headquarters != "USA" GROUP BY Main_Industry ORDER BY COUNT(*) ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY Country ASC
+Visualize PIE SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result
+Visualize LINE SELECT yearid, COUNT(yearid) FROM all_star GROUP BY yearid ORDER BY yearid DESC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize SELECT catalog_entry_name, capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY Citizenship DESC
+Visualize BAR SELECT Rank, COUNT(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank , Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT catalog_entry_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 1 AND 5 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank , Class ORDER BY Class ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Rank ORDER BY Class ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize PIE SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize PIE SELECT Class , COUNT(Class) FROM captain GROUP BY Class
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT catalog_level_name , COUNT(catalog_level_name) FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 GROUP BY catalog_level_name ORDER BY COUNT(catalog_level_name) DESC
+Visualize PIE SELECT Flag , count(*) FROM Ship GROUP BY Flag
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize PIE SELECT Rank , COUNT(*) FROM captain GROUP BY Rank
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs WHERE COUNT(date_of_latest_revision) > 1 ORDER BY date_of_latest_revision ASC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue
+Visualize PIE SELECT Citizenship , count(*) FROM singer GROUP BY Citizenship
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) ASC
+Visualize PIE SELECT Country , count(*) FROM climber GROUP BY country
+Visualize LINE SELECT yearid , count(*) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid
+Visualize SCATTER SELECT Continent , AVG(LifeExpectancy) , SUM(Population) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72
+Visualize SCATTER SELECT organisation_id , sum(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Rank , count(*) FROM captain WHERE age < 50 AND Rank = 'Captain' GROUP BY Rank
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY Author DESC
+Visualize LINE SELECT year , AVG(attendance) FROM home_game GROUP BY year ORDER BY year DESC
+Visualize BAR SELECT staff_details , COUNT(staff_details) FROM Research_Staff GROUP BY staff_details ORDER BY staff_details ASC
+Visualize BAR SELECT staff_details , COUNT(staff_details) FROM Research_Staff GROUP BY staff_details ORDER BY staff_details ASC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY Rank DESC
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize BAR SELECT Last_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN Last_year BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(*) FROM mountain GROUP BY Country
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Rank , count(*) FROM captain WHERE age < 50 GROUP BY Rank ORDER BY count(*) DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT yearid , COUNT(yearid) FROM hall_of_fame GROUP BY yearid ORDER BY COUNT(yearid) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize LINE SELECT year , COUNT(year) FROM all_star ORDER BY year ASC BIN year BY WEEKDAY
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize PIE SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) ASC
+Visualize BAR SELECT Class , avg(age) FROM captain GROUP BY Class ORDER BY avg(age) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Class , COUNT(Class) FROM captain GROUP BY Class
+Visualize BAR SELECT billing_country , SUM(total) FROM invoices GROUP BY billing_country ORDER BY SUM(total) DESC LIMIT 8
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Result DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs GROUP BY date_of_latest_revision ORDER BY date_of_latest_revision DESC
+Visualize PIE SELECT Nationality , count(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT billing_state , COUNT(id) FROM invoices GROUP BY billing_state ORDER BY billing_state ASC
+Visualize PIE SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT Name , COUNT(Venue) FROM workshop GROUP BY Name ORDER BY COUNT(Venue) ASC
+Visualize PIE SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize PIE SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) ASC
+Visualize LINE SELECT yearid , COUNT(*) FROM hall_of_fame GROUP BY yearid
+Visualize BAR SELECT date_to , COUNT(date_to) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY COUNT(date_to) ASC BIN date_to BY WEEKDAY
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM acceptance GROUP BY Result ORDER BY COUNT(Result) ASC
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame GROUP BY yearid
+Visualize PIE SELECT Investor , COUNT(*) FROM entrepreneur GROUP BY Investor
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state ORDER BY billing_state ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize PIE SELECT catalog_level_name , COUNT(catalog_level_name) FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 GROUP BY catalog_level_name
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location DESC
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) DESC
+Visualize PIE SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) DESC
+Visualize BAR SELECT Nationality , count(*) FROM host GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY Citizenship DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country WHERE LifeExpectancy < 72 GROUP BY Continent ORDER BY Continent ASC
+Visualize PIE SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor
+Visualize PIE SELECT catalog_level_name , catalog_level_number FROM catalog_structure WHERE catalog_level_number BETWEEN 5 AND 1
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category
+Visualize BAR SELECT year , COUNT(year) FROM all_star BIN year BY YEAR
+Visualize BAR SELECT Rank , COUNT(Rank) FROM captain GROUP BY Rank ORDER BY COUNT(Rank) ASC
+Visualize SCATTER SELECT organisation_id , SUM(grant_amount) FROM Grants GROUP BY organisation_id
+Visualize PIE SELECT Class , COUNT(*) FROM captain GROUP BY Class
+Visualize BAR SELECT Result , COUNT(Result) FROM music_festival GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT Rank , COUNT(*) FROM captain GROUP BY Class , Rank ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Music_Festival , Result FROM music_festival ORDER BY Result ASC
+Visualize PIE SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY SUM(Market_Value) ASC
+Visualize PIE SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry ORDER BY Main_Industry ASC
+Visualize BAR SELECT Flag , count(*) FROM Ship GROUP BY Flag ORDER BY Flag ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM host GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT billing_country, COUNT(*) FROM invoices GROUP BY billing_country ORDER BY COUNT(*) DESC LIMIT 5
+Visualize PIE SELECT Main_Industry , SUM(Market_Value) FROM company GROUP BY Main_Industry
+Visualize LINE SELECT yearid , COUNT(player_id) FROM hall_of_fame WHERE inducted = 'Y' GROUP BY yearid
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Category , count(*) FROM music_festival GROUP BY Category ORDER BY count(*) ASC
+Visualize BAR SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Class , AVG(age) FROM captain GROUP BY Class ORDER BY AVG(age) DESC
+Visualize BAR SELECT Investor , COUNT(Company) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Company) DESC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) ASC
+Visualize PIE SELECT Workshop_ID , COUNT(Venue) FROM workshop GROUP BY Workshop_ID
+Visualize SCATTER SELECT avg(age) , min(age) FROM captain GROUP BY class
+Visualize LINE SELECT date_from , COUNT(date_from) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY date_from DESC BIN date_from BY YEAR
+Visualize BAR SELECT Company, Rank FROM company ORDER BY Sales_billion DESC
+Visualize PIE SELECT Company , Market_Value FROM company WHERE Main_Industry = 'Banking'
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) DESC
+Visualize BAR SELECT Citizenship , COUNT(*) FROM singer GROUP BY Citizenship ORDER BY Citizenship ASC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) ASC
+Visualize BAR SELECT Category , COUNT(Category) FROM music_festival WHERE Result = "Awarded" GROUP BY Category ORDER BY COUNT(Category) DESC
+Visualize BAR SELECT Investor , count(*) FROM entrepreneur GROUP BY Investor ORDER BY count(*) ASC
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY Country ORDER BY Country ASC
+Visualize PIE SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT billing_state , COUNT(*) FROM invoices WHERE billing_country = "US" GROUP BY billing_state ORDER BY billing_state DESC
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Investor , COUNT(Investor) FROM entrepreneur GROUP BY Investor ORDER BY COUNT(Investor) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Citizenship , max(Net_Worth_Millions) FROM singer GROUP BY Citizenship ORDER BY max(Net_Worth_Millions) DESC
+Visualize SCATTER SELECT sum(population) , avg(lifeexpectancy) FROM country GROUP BY Continent
+Visualize LINE SELECT year , avg(attendance) FROM home_game GROUP BY year
+Visualize BAR SELECT name , COUNT(name) FROM playlists GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Class , Rank , COUNT(Rank) FROM captain JOIN ship ON captain.Ship_ID = ship.Ship_ID GROUP BY Class , Rank ORDER BY Class ASC
+Visualize LINE SELECT date_to , COUNT(date_to) FROM Project_Staff WHERE role_code = 'researcher' ORDER BY date_to DESC BIN date_to BY YEAR

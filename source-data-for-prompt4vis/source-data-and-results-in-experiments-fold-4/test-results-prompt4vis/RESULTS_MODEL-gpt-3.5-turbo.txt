@@ -1,0 +1,860 @@
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY COUNT(Fate) ASC
+Visualize BAR SELECT Country , count(*) FROM singer GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT candidate_details , COUNT(candidate_details) FROM Candidates GROUP BY candidate_details ORDER BY COUNT(candidate_details) ASC
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Away_team , COUNT(*) FROM game GROUP BY Away_team ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY LastName ASC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY home_team ORDER BY Season ASC
+Visualize BAR SELECT Minister , count(*) FROM party GROUP BY Minister ORDER BY count(*) ASC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) ASC
+Visualize BAR SELECT LEFT_OFFICE , COUNT(LEFT_OFFICE) FROM party ORDER BY COUNT(LEFT_OFFICE) ASC BIN LEFT_OFFICE BY YEAR, SPLIT BY MINISTER
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Payment_Made , sum(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' GROUP BY Date_Payment_Made
+Visualize PIE SELECT Away_team , COUNT(*) FROM game GROUP BY Away_team
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled ORDER BY COUNT(Date_Claim_Settled) DESC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims ORDER BY Date_Claim_Settled ASC BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize STACKED BAR SELECT Away_team, COUNT(*) FROM game GROUP BY Home_team, Away_team ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate
+Visualize PIE SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize PIE SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party ORDER BY COUNT(Left_office) DESC BIN Left_office BY WEEKDAY
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize PIE SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize PIE SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Minister , COUNT(*) FROM party GROUP BY Minister ORDER BY Minister ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name ASC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season ASC BIN Season BY YEAR
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM payments WHERE Payment_Method_Code = "Visa" ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize BAR SELECT Type , count(*) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Nationality, Type, COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Nationality , count(*) FROM pilot GROUP BY Nationality ORDER BY count(*) ASC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season DESC BIN Season BY YEAR
+Visualize BAR SELECT Age , Hometown FROM teacher
+Visualize PIE SELECT Country , count(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) ASC
+Visualize BAR SELECT Age , Hometown FROM teacher
+Visualize SELECT Name, Seating FROM track WHERE Year_Opened > 2000
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY COUNT(section_description) ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize LINE SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Minister , COUNT(Left_office) FROM party GROUP BY Minister , Left_office ORDER BY COUNT(Left_office) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != 'Progress Party' GROUP BY Minister
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize PIE SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team, Away_team
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Away_team
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type
+Visualize BAR SELECT Nationality , COUNT(DISTINCT Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(DISTINCT Nationality) ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Age, Hometown FROM teacher
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Home_team ORDER BY Season ASC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party ORDER BY COUNT(Took_office) ASC BIN Took_office BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) DESC
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system ASC
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Nationality , COUNT(DISTINCT Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(DISTINCT Nationality) DESC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Away_team ORDER BY Season ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) ASC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Away_team ORDER BY Season ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) DESC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) DESC
+Visualize BAR SELECT Took_office , COUNT(*) FROM party GROUP BY Took_office, Minister ORDER BY COUNT(*) DESC BIN Took_office BY YEAR
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) ASC BIN Date_Claim_Settled BY WEEKDAY
+Visualize LINE SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY Phone ASC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY Home_team ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled
+Visualize SCATTER SELECT sum(population) , avg(lifeexpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Nationality , COUNT(DISTINCT Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality ASC
+Visualize LINE SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Minister , COUNT(Left_office) FROM party GROUP BY Left_office , Minister ORDER BY COUNT(Left_office) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Home_team , Away_team ORDER BY COUNT(Away_team) DESC
+Visualize STACKED BAR SELECT Home_team, COUNT(*) FROM game GROUP BY Home_team, Away_team ORDER BY Home_team DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY Type ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims BIN Date_Claim_Made BY YEAR
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season
+Visualize LINE SELECT Season, COUNT(Season) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team ORDER BY COUNT(Away_team) ASC
+Visualize BAR SELECT Away_team , COUNT(*) FROM game GROUP BY Away_team ORDER BY Away_team ASC
+Visualize BAR SELECT Minister , count(*) FROM party GROUP BY Minister ORDER BY count(*) DESC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Away_team , count(*) FROM game GROUP BY Away_team ORDER BY count(*) DESC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) DESC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY COUNT(Date_Claim_Made) DESC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize LINE SELECT Date_Claim_Made , COUNT(*) FROM Claims GROUP BY Date_Claim_Made ORDER BY Date_Claim_Settled DESC
+Visualize BAR SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team ORDER BY Home_team ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY count(*) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Nationality , COUNT(Type) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(Type) ASC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister
+Visualize PIE SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Type , AVG(Tonnage) FROM ship GROUP BY Type ORDER BY AVG(Tonnage) ASC
+Visualize BAR SELECT Age, Hometown FROM teacher ORDER BY Hometown ASC
+Visualize PIE SELECT course_name , COUNT(course_name) FROM courses GROUP BY course_name
+Visualize PIE SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party BIN Took_office BY WEEKDAY
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Home_team , Away_team ORDER BY COUNT(Away_team) ASC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) DESC
+Visualize BAR SELECT Country , count(*) FROM singer GROUP BY Country
+Visualize PIE SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize LINE SELECT Home_team , COUNT(Season) FROM game GROUP BY Season , Home_team ORDER BY Home_team ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Home_team, COUNT(Away_team) FROM game GROUP BY Home_team, Away_team ORDER BY COUNT(Away_team) DESC
+Visualize PIE SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team
+Visualize LINE SELECT Season, COUNT(*) FROM game GROUP BY Away_team, Season ORDER BY Season ASC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality ORDER BY COUNT(Nationality) DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made ORDER BY COUNT(Date_Claim_Made) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize SCATTER SELECT Payment_ID , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize PIE SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM ship GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) ASC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize PIE SELECT Country , COUNT(Country) FROM singer GROUP BY Country
+Visualize BAR SELECT Payment_Method_Code , sum(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize PIE SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister , Took_office ORDER BY COUNT(Took_office) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY Phone DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled ORDER BY COUNT(Date_Claim_Settled) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm
+Visualize LINE SELECT Season, COUNT(*) FROM game GROUP BY Home_team, Season ORDER BY Season ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class
+Visualize LINE SELECT Home_team , COUNT(Season) FROM game GROUP BY Home_team ORDER BY COUNT(Season) DESC
+Visualize BAR SELECT Name , Age FROM singer ORDER BY Age DESC
+Visualize BAR SELECT Hometown , Age FROM teacher
+Visualize BAR SELECT Nationality , COUNT(DISTINCT Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled ORDER BY COUNT(Date_Claim_Settled) ASC
+Visualize BAR SELECT Nationality , count(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT Type , count(*) FROM ship GROUP BY Type ORDER BY count(*) ASC
+Visualize LINE SELECT Home_team , COUNT(*) FROM game GROUP BY Season , Home_team
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY Fate ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY Minister DESC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) DESC
+Visualize BAR SELECT Name , Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating
+Visualize BAR SELECT Name , Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating ASC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) DESC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY Fate ASC
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party GROUP BY Left_office
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown ASC
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team ORDER BY Away_team DESC
+Visualize SCATTER SELECT Continent , AVG(LifeExpectancy) , SUM(Population) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize STACKED BAR SELECT Away_team , COUNT(*) FROM game GROUP BY Home_team ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Name, Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating ASC
+Visualize BAR SELECT Country , COUNT(Singer_ID) FROM singer GROUP BY Country ORDER BY COUNT(Singer_ID) DESC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize LINE SELECT Season , COUNT(Season) FROM game ORDER BY Season DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT Type , AVG(Tonnage) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party ORDER BY COUNT(Left_office) ASC BIN Left_office BY WEEKDAY SPLIT BY Minister
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made ORDER BY COUNT(Date_Claim_Made) DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Operating_system , count(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY count(*) DESC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot WHERE Position = 'Pilot' GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize PIE SELECT Type , count(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Away_team ORDER BY Season DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister , Took_office
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize PIE SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment ASC
+Visualize STACKED BAR SELECT Home_team, COUNT(*) FROM game GROUP BY Home_team ORDER BY Home_team ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize PIE SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != 'Progress Party' GROUP BY Minister
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Number_of_matches , COUNT(*) FROM injury_accident WHERE Injury != 'Knee problem' GROUP BY Number_of_matches ORDER BY Number_of_matches ASC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY COUNT(Fate) ASC
+Visualize BAR SELECT Name , Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating ASC
+Visualize BAR SELECT candidate_details , COUNT(candidate_details) FROM Candidates GROUP BY candidate_details
+Visualize BAR SELECT * FROM Students ORDER BY last_name DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize PIE SELECT Position , COUNT(Position) FROM pilot GROUP BY Position
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate
+Visualize LINE SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made ORDER BY Date_Claim_Settled ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft ORDER BY COUNT(Description) ASC BIN Description BY LENGTH(Description)
+Visualize BAR SELECT COUNT(Phone) FROM Employee
+Visualize SCATTER SELECT Payment_ID , Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa"
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY Fate DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY Continent ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize PIE SELECT payment_method_code , sum(amount_payment) FROM Payments GROUP BY payment_method_code
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize PIE SELECT Name , Seating FROM track WHERE Year_Opened > 2000
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) ASC
+Visualize LINE SELECT Season , COUNT(id) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize PIE SELECT track.Name , track.Seating FROM race JOIN track ON race.Track_ID = track.Track_ID WHERE track.Year_Opened > 2000
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(Nationality) ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality , Type ORDER BY Nationality DESC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY YEAR
+Visualize PIE SELECT Position , COUNT(Position) FROM pilot GROUP BY Position
+Visualize PIE SELECT Name , Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY LastName DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize PIE SELECT Class , COUNT(Class) FROM race GROUP BY Class
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) DESC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Away_team , Home_team
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister ORDER BY COUNT(Took_office) DESC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY YEAR ORDER BY COUNT(Date_Payment_Made) ASC
+Visualize BAR SELECT candidate_details , COUNT(candidate_details) FROM Candidates GROUP BY candidate_details ORDER BY candidate_details ASC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Age FROM singer ORDER BY Age DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY YEAR
+Visualize LINE SELECT Away_team , COUNT(*) FROM game GROUP BY Season , Away_team ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY Minister ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team ORDER BY COUNT(*) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize PIE SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) ASC
+Visualize BAR SELECT Nationality, Type, COUNT(*) FROM ship GROUP BY Nationality, Type
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY Class DESC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM CLAIMS BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize STACKED BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type, Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT * FROM Students ORDER BY last_name DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) ASC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season DESC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Home_team , Season ORDER BY Season DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize LINE SELECT Season, COUNT(Season) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Age, Hometown FROM teacher
+Visualize BAR SELECT Type, Nationality, COUNT(*) FROM ship GROUP BY Type, Nationality
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Home_team ORDER BY Season DESC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM Party ORDER BY COUNT(Left_office) ASC BIN Left_office BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY Nationality ASC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Home_team, Season ORDER BY Season DESC
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) DESC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate
+Visualize BAR SELECT candidate_details.last_name , COUNT(candidate_details.last_name) FROM Candidates GROUP BY candidate_details.last_name ORDER BY candidate_details.last_name ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY BIN Date_Payment_Made BY YEAR, Payment_Method_Code ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Age , Hometown FROM teacher
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Nationality, Type, COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize STACKED BAR SELECT Nationality, Type, COUNT(Type) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(Type) ASC
+Visualize LINE SELECT Home_team , COUNT(Season) FROM game GROUP BY Home_team ORDER BY Season DESC
+Visualize BAR SELECT Type , count(*) FROM ship GROUP BY Type ORDER BY count(*) DESC
+Visualize BAR SELECT Type , count(*) FROM ship GROUP BY Type ORDER BY count(*) ASC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality ORDER BY COUNT(Nationality) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY Class DESC
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system DESC
+Visualize BAR SELECT Number_of_matches , COUNT(*) FROM injury_accident WHERE Injury != "Knee problem" GROUP BY Number_of_matches ORDER BY Number_of_matches ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(Nationality) ASC
+Visualize PIE SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY COUNT(section_description) DESC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY count(*) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT Operating_system , count(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY count(*) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY COUNT(Fate) DESC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY section_description ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) ASC
+Visualize BAR SELECT Position , count(*) FROM Pilot GROUP BY Position ORDER BY Position DESC
+Visualize LINE SELECT Away_team , count(*) FROM game GROUP BY Season , Away_team ORDER BY Away_team ASC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team , Away_team ORDER BY Home_team ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT candidate_details , COUNT(candidate_details) FROM Candidates GROUP BY candidate_details ORDER BY candidate_details DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY Minister DESC
+Visualize PIE SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) DESC
+Visualize SELECT LEFT_OFFICE, COUNT(LEFT_OFFICE) FROM party BIN LEFT_OFFICE BY YEAR SPLIT BY MINISTER
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Nationality, COUNT(Nationality) FROM ship GROUP BY Type, Nationality ORDER BY COUNT(Nationality) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name DESC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY Fate ASC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Away_team, Season
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made ORDER BY COUNT(Date_Claim_Made) ASC
+Visualize BAR SELECT Country , avg(Age) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize PIE SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Hometown , Age FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Nationality , count(*) FROM pilot GROUP BY Nationality ORDER BY Nationality ASC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Away_team ORDER BY Season DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize STACKED BAR SELECT Nationality, COUNT(DISTINCT Nationality) FROM ship GROUP BY Nationality, Type ORDER BY Nationality ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description ASC
+Visualize BAR SELECT EmployeeId, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM SHIP GROUP BY Type ORDER BY COUNT(Type) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Payment_Method_Code , sum(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) DESC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Description , COUNT(*) FROM aircraft GROUP BY Description ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Payment_Method_Code , count(*) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize PIE SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize PIE SELECT Name , Seating FROM race JOIN track ON race.Track_ID = track.Track_ID WHERE Year_Opened > 2000
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY last_name DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT EmployeeId, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Took_office
+Visualize BAR SELECT Date_Payment_Made, SUM(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY GROUP BY Payment_Method_Code
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season DESC BIN Season BY YEAR
+Visualize BAR SELECT Nationality , Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY COUNT(Type) DESC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Season, Away_team
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) DESC
+Visualize BAR SELECT Age, Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY Nationality ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY Nationality DESC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team BIN Season BY YEAR
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season
+Visualize PIE SELECT Class , COUNT(Class) FROM race GROUP BY Class
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT LastName, FirstName, COUNT(Phone) FROM Employee GROUP BY LastName, FirstName ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Type , AVG(Tonnage) FROM ship GROUP BY Type ORDER BY AVG(Tonnage) ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY Type ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) DESC
+Visualize STACKED BAR SELECT Type, Nationality, COUNT(*) FROM ship GROUP BY Type, Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT YEAR(Date_Payment_Made) , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' GROUP BY YEAR(Date_Payment_Made) ORDER BY SUM(Amount_Payment) DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY COUNT(Fate) ASC
+Visualize PIE SELECT Description , COUNT(*) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT YEAR(Date_Payment_Made) , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' GROUP BY YEAR(Date_Payment_Made)
+Visualize SELECT Left_office, Minister, COUNT(Left_office) FROM party ORDER BY COUNT(Left_office) DESC BIN Left_office BY WEEKDAY
+Visualize BAR SELECT Operating_system , count(*) FROM Web_client_accelerator GROUP BY Operating_system
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY COUNT(section_description) DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Took_office ORDER BY COUNT(Took_office) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country
+Visualize PIE SELECT Minister , count(*) FROM party GROUP BY Minister
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) ASC
+Visualize STACKED BAR SELECT Away_team, COUNT(*) FROM game GROUP BY Home_team, Away_team ORDER BY Away_team DESC
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team ORDER BY COUNT(Away_team) ASC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Home_team , Season ORDER BY Season DESC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT Home_team , COUNT(Away_team) FROM game GROUP BY Home_team ORDER BY COUNT(Away_team) ASC
+Visualize LINE SELECT Home_team , count(*) FROM game GROUP BY Season , Home_team ORDER BY Home_team ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY COUNT(Type) DESC
+Visualize LINE SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize LINE SELECT Season , count(*) FROM game GROUP BY Home_team ORDER BY Season ASC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party BIN Left_office BY WEEKDAY GROUP BY Minister
+Visualize PIE SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY Class DESC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Description , count(*) FROM aircraft GROUP BY Description ORDER BY count(*) ASC
+Visualize PIE SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made BIN Date_Payment_Made BY YEAR ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Position , COUNT(*) FROM pilot GROUP BY Position
+Visualize LINE SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code, Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize LINE SELECT Season, COUNT(*) FROM game GROUP BY Home_team, Season ORDER BY Season ASC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Nationality , count(*) FROM ship GROUP BY Nationality ORDER BY count(*) ASC
+Visualize BAR SELECT Fate , COUNT(*) FROM mission GROUP BY Fate ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize BAR SELECT Country , COUNT(Singer_ID) FROM singer GROUP BY Country ORDER BY COUNT(Singer_ID) DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY Amount_Payment ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa"
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister ORDER BY COUNT(Took_office) ASC
+Visualize LINE SELECT Season , COUNT(Season) FROM game ORDER BY Season DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize LINE SELECT Season, COUNT(*) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Description , COUNT(Description) FROM Aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister , Took_office ORDER BY COUNT(Took_office) ASC
+Visualize BAR SELECT YEAR(Date_Payment_Made) , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' GROUP BY YEAR(Date_Payment_Made) ORDER BY AVG(Amount_Payment) DESC
+Visualize BAR SELECT Age , COUNT(*) FROM teacher GROUP BY Age ORDER BY Age ASC
+Visualize STACKED BAR SELECT Type, Nationality, COUNT(*) FROM ship GROUP BY Type, Nationality ORDER BY Name DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY FirstName, LastName ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party GROUP BY Minister , Left_office
+Visualize BAR SELECT Operating_system , count(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY count(*) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize PIE SELECT Type , avg(Tonnage) FROM ship GROUP BY Type
+Visualize BAR SELECT Nationality , COUNT(Type) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Country , avg(Age) FROM singer GROUP BY Country ORDER BY avg(Age) DESC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) ASC
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party GROUP BY Minister , Left_office
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season ASC BIN Season BY YEAR
+Visualize LINE SELECT Season, COUNT(*) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY count(*) ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality , Type
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Home_team BIN Season BY YEAR
+Visualize BAR SELECT Country , count(*) FROM singer GROUP BY Country ORDER BY count(*) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY Minister ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone
+Visualize BAR SELECT Away_team , COUNT(*) FROM game GROUP BY Away_team
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Payment_Method_Code , sum(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY sum(Amount_Payment) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Description , COUNT(*) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT Home_team , COUNT(Home_team) FROM game GROUP BY Home_team ORDER BY COUNT(Home_team) DESC
+Visualize BAR SELECT Minister, COUNT(*) FROM party WHERE Left_office IS NOT NULL GROUP BY Minister, Left_office ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY Phone ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY count(*) DESC
+Visualize BAR SELECT Left_office , COUNT(*) FROM party GROUP BY Left_office ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Number_of_matches , COUNT(*) FROM injury_accident WHERE Injury != 'Knee problem' GROUP BY Number_of_matches ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements BIN Date_Claim_Settled BY WEEKDAY
+Visualize PIE SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize STACKED BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type, Nationality
+Visualize BAR SELECT Age , Hometown FROM teacher
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made, Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(Nationality) DESC
+Visualize PIE SELECT Description , COUNT(*) FROM aircraft GROUP BY Description
+Visualize PIE SELECT Class , count(*) FROM race GROUP BY Class
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) ASC
+Visualize STACKED BAR SELECT Home_team, COUNT(*) FROM game GROUP BY Home_team ORDER BY COUNT(*) ASC
+Visualize STACKED BAR SELECT Home_team, COUNT(*) FROM game GROUP BY Home_team ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class
+Visualize BAR SELECT last_name , COUNT(last_name) FROM PEOPLE GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY count(*) DESC
+Visualize PIE SELECT Payment_Method_Code , sum(Amount_Payment) FROM payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system ORDER BY Operating_system DESC
+Visualize BAR SELECT Nationality , COUNT(DISTINCT Nationality) FROM SHIP
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Nationality , count(*) FROM pilot GROUP BY Nationality ORDER BY count(*) DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Nationality , count(*) FROM pilot GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize PIE SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party BIN Left_office BY WEEKDAY
+Visualize BAR SELECT Type , AVG(Tonnage) FROM ship GROUP BY Type ORDER BY AVG(Tonnage) DESC
+Visualize PIE SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY Amount_Payment ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY COUNT(*) ASC
+Visualize LINE SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY Date_Claim_Made ASC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY Position DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party ORDER BY COUNT(Took_office) DESC BIN Took_office BY WEEKDAY
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) DESC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY COUNT(*) DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY Fate DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY Minister ASC
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY FirstName, LastName
+Visualize PIE SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT Class , COUNT(*) FROM race GROUP BY Class ORDER BY Class ASC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = "Visa"
+Visualize PIE SELECT Type , COUNT(Type) FROM ship GROUP BY Type
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality ORDER BY COUNT(Nationality) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season
+Visualize BAR SELECT Country , count(*) FROM singer GROUP BY Country
+Visualize LINE SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY Date_Claim_Made DESC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY Class DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY Description DESC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission GROUP BY Fate ORDER BY COUNT(Fate) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type ORDER BY Type ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY section_description ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY LastName ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Payment_Method_Code , sum(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY sum(Amount_Payment) ASC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Description , COUNT(*) FROM aircraft GROUP BY Description
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY COUNT(Type) DESC
+Visualize BAR SELECT candidate_details.last_name , COUNT(candidate_details.last_name) FROM Candidates GROUP BY candidate_details.last_name ORDER BY COUNT(candidate_details.last_name) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY Position ASC
+Visualize PIE SELECT Class , count(*) FROM race GROUP BY Class
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Type , COUNT(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims ORDER BY Date_Claim_Made DESC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Number_of_matches , count(*) FROM injury_accident WHERE Injury != "Knee problem" GROUP BY Number_of_matches ORDER BY count(*) DESC
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description
+Visualize BAR SELECT Left_office , COUNT(Left_office) FROM party GROUP BY Left_office ORDER BY COUNT(Left_office) DESC
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY COUNT(section_description) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM ship GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team ORDER BY COUNT(Away_team) DESC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age ASC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY SUM(Population) ASC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Away_team ORDER BY Season DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize PIE SELECT Country , COUNT(*) FROM singer GROUP BY Country
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY EmployeeId ASC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY Minister DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Away_team ORDER BY Season ASC
+Visualize PIE SELECT Type , count(*) FROM ship GROUP BY Type
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown ASC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY AVG(LifeExpectancy) ASC
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY Class ORDER BY count(*) ASC
+Visualize PIE SELECT Class , COUNT(*) FROM race GROUP BY Class
+Visualize STACKED BAR SELECT Away_team, COUNT(*) FROM game GROUP BY Home_team, Away_team ORDER BY Away_team DESC
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT section_description , count(*) FROM Sections GROUP BY section_description ORDER BY count(*) ASC
+Visualize BAR SELECT Operating_system , COUNT(*) FROM Web_client_accelerator GROUP BY Operating_system
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Nationality ORDER BY COUNT(Nationality) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR GROUP BY Payment_Method_Code
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description
+Visualize BAR SELECT GovernmentForm , SUM(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party ORDER BY COUNT(Took_office) DESC BIN Took_office BY WEEKDAY SPLIT BY Minister ORDER BY COUNT(Took_office) DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party ORDER BY COUNT(Took_office) ASC BIN Took_office BY WEEKDAY GROUP BY Minister
+Visualize LINE SELECT Home_team , COUNT(Season) FROM game GROUP BY Home_team ORDER BY COUNT(Season) ASC
+Visualize PIE SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize STACKED BAR SELECT Nationality, COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(*) ASC
+Visualize LINE SELECT Season , COUNT(*) FROM game GROUP BY Away_team ORDER BY Season DESC
+Visualize PIE SELECT Position , COUNT(*) FROM pilot GROUP BY Position
+Visualize BAR SELECT Nationality , COUNT(Nationality) FROM ship GROUP BY Type , Nationality
+Visualize BAR SELECT Nationality , count(*) FROM ship GROUP BY Nationality ORDER BY count(*) DESC
+Visualize STACKED BAR SELECT Away_team, COUNT(*) FROM game GROUP BY Home_team ORDER BY Away_team ASC
+Visualize PIE SELECT Class , COUNT(Class) FROM race GROUP BY Class
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY LastName DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type
+Visualize BAR SELECT Home_team , COUNT(*) FROM game GROUP BY Home_team ORDER BY Home_team DESC
+Visualize BAR SELECT YEAR(Date_Payment_Made) , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" GROUP BY YEAR(Date_Payment_Made) ORDER BY AVG(Amount_Payment) ASC
+Visualize PIE SELECT Type , count(*) FROM ship GROUP BY Type
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Season ORDER BY Season DESC
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Fate , COUNT(Fate) FROM mission ORDER BY COUNT(Fate) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country WHERE LifeExpectancy > 72 GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown ASC
+Visualize BAR SELECT Number_of_matches , count(*) FROM injury_accident WHERE Injury != 'Knee problem' GROUP BY Number_of_matches
+Visualize STACKED BAR SELECT Home_team, COUNT(*) FROM game GROUP BY Home_team ORDER BY Home_team DESC
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent ORDER BY AVG(LifeExpectancy) DESC
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY COUNT(Position) ASC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY avg(Amount_Payment) DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) DESC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) DESC
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) ASC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country
+Visualize BAR SELECT Class , count(*) FROM race GROUP BY class ORDER BY count(*) ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims GROUP BY Date_Claim_Made ORDER BY COUNT(Date_Claim_Made) DESC
+Visualize BAR SELECT Type , count(*) FROM ship GROUP BY Type ORDER BY count(*) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Type
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party BIN Took_office BY YEAR GROUP BY Minister
+Visualize BAR SELECT section_description , COUNT(section_description) FROM Sections GROUP BY section_description ORDER BY COUNT(section_description) DESC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality ORDER BY COUNT(Type) DESC
+Visualize LINE SELECT Season , COUNT(Season) FROM game GROUP BY Away_team ORDER BY Season ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) DESC
+Visualize BAR SELECT Minister , COUNT(Left_office) FROM party GROUP BY Minister , Left_office ORDER BY COUNT(Left_office) ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Name , Seating FROM track WHERE Year_Opened > 2000 ORDER BY Seating ASC
+Visualize BAR SELECT COUNT(DISTINCT candidate_id) FROM Candidates
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Took_office ORDER BY Took_office ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY avg(Tonnage) DESC
+Visualize LINE SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister BIN Took_office BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made DESC
+Visualize GROUP LINE SELECT Season , count(*) FROM game GROUP BY Home_team
+Visualize BAR SELECT Continent , AVG(LifeExpectancy) FROM country GROUP BY Continent HAVING AVG(LifeExpectancy) < 72 ORDER BY Continent DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = "Visa" ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Name DESC
+Visualize BAR SELECT Nationality , COUNT(Type) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(Type) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Claims GROUP BY Date_Claim_Settled ORDER BY COUNT(Date_Claim_Settled) DESC
+Visualize BAR SELECT Class , COUNT(Class) FROM race GROUP BY Class ORDER BY COUNT(Class) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT YEAR(Date_Payment_Made) , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = "Visa" GROUP BY YEAR(Date_Payment_Made) ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT Age, Hometown FROM teacher ORDER BY Hometown DESC
+Visualize BAR SELECT Nationality, Type, COUNT(*) FROM ship GROUP BY Nationality, Type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Type , avg(Tonnage) FROM ship GROUP BY Type ORDER BY Type DESC
+Visualize LINE SELECT Season , COUNT(DISTINCT Home_team) FROM game GROUP BY Season ORDER BY Season ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM pilot GROUP BY Nationality
+Visualize BAR SELECT Position , COUNT(Position) FROM pilot GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) DESC
+Visualize BAR SELECT Payment_Method_Code , avg(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM singer GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Type , COUNT(Type) FROM ship GROUP BY Nationality , Type ORDER BY Type DESC
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY FirstName, LastName
+Visualize BAR SELECT Country , COUNT(*) FROM singer GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Description , COUNT(Description) FROM aircraft GROUP BY Description ORDER BY COUNT(Description) ASC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT Away_team , COUNT(Away_team) FROM game GROUP BY Away_team ORDER BY COUNT(Away_team) ASC
+Visualize BAR SELECT LEFT_OFFICE , COUNT(*) FROM party BIN LEFT_OFFICE BY YEAR GROUP BY MINISTER ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone
+Visualize BAR SELECT Minister , COUNT(Minister) FROM party WHERE Party_name != "Progress Party" GROUP BY Minister ORDER BY COUNT(Minister) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM singer GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Claims BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT EmployeeId, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY Phone DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment ASC
+Visualize PIE SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC
+Visualize BAR SELECT Took_office , COUNT(Took_office) FROM party GROUP BY Minister ORDER BY COUNT(Took_office) ASC BIN Took_office BY YEAR
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Hometown ASC
+Visualize BAR SELECT Age , Hometown FROM teacher ORDER BY Age DESC

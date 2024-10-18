@@ -1,0 +1,1694 @@
+Visualize BAR SELECT Arrival , COUNT(Train_ID) FROM train GROUP BY Arrival ORDER BY COUNT(Train_ID) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM courses GROUP BY course_name ORDER BY course_name ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY YEAR
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Country, COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Name ASC
+Visualize SCATTER SELECT card_number , card_id FROM Customers_Cards
+Visualize BAR SELECT Arrival , COUNT(Arrival) FROM train GROUP BY Arrival
+Visualize LINE SELECT Creation , avg(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Industry ORDER BY Headquarters DESC
+Visualize BAR SELECT Country , count(*) FROM perpetrator GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages DESC
+Visualize BAR SELECT name , count(*) FROM train GROUP BY name ORDER BY name ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY name ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize PIE SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize PIE SELECT Card_Type_Code , count(*) FROM Customers_Cards GROUP BY Card_Type_Code
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) DESC
+Visualize BAR SELECT Address, COUNT(*) FROM member GROUP BY Address
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY MONTH
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT product_type_code, avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize PIE SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY Phone ASC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT County , sum(Enrollment) FROM School GROUP BY County ORDER BY sum(Enrollment) DESC
+Visualize BAR SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue ORDER BY Venue ASC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY COUNT(*) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT County , sum(Enrollment) FROM School GROUP BY County ORDER BY sum(Enrollment) DESC
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY product_type_code DESC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Year_Join , COUNT(Name) FROM artist WHERE Country != "USA" GROUP BY Year_Join ORDER BY Year_Join ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code
+Visualize PIE SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Status , avg(Population) FROM city GROUP BY Status
+Visualize This question does not require a VQL query as it is not clear what information is being requested.
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT Age , Time_of_purchase FROM member
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name
+Visualize BAR SELECT Industry , COUNT(*) FROM company GROUP BY Industry ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Status, AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender'
+Visualize PIE SELECT Position , COUNT(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) DESC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) DESC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) DESC
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = route.train_id AND station.id = route.station_id GROUP BY local_authority ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats
+Visualize BAR SELECT services , COUNT(*) FROM station GROUP BY services ORDER BY COUNT(*) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY services , local_authority ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) ASC
+Visualize BAR SELECT Workshop_ID, COUNT(*) FROM Acceptance GROUP BY Workshop_ID ORDER BY COUNT(*) DESC
+Visualize PIE SELECT formats , count(*) FROM files GROUP BY formats
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY log_entry_description ASC
+Visualize BAR SELECT Theme , COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme ORDER BY Year ASC
+Visualize BAR SELECT COUNT(r.name) FROM races AS r WHERE r.year BETWEEN 2009 AND 2011 ORDER BY COUNT(r.name) DESC BIN r.name
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY COUNT(*) ASC
+Visualize BAR SELECT workshop.Name , COUNT(*) FROM workshop INNER JOIN Acceptance ON workshop.Workshop_ID = Acceptance.Workshop_ID GROUP BY workshop.Name ORDER BY workshop.Name ASC
+Visualize BAR SELECT Residence , COUNT(*) FROM player WHERE Occupation != 'Researcher' GROUP BY Residence ORDER BY COUNT(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = station.id GROUP BY services, local_authority
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = 'France' OR country = 'Belgium' ORDER BY circuitId DESC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize SCATTER SELECT card_number , customer_id FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Years_Played , COUNT(*) FROM player GROUP BY Years_Played
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_price DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY Competition ASC
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Registration_Date , COUNT(DISTINCT Registration_Date) FROM Voting_record ORDER BY COUNT(DISTINCT Registration_Date) ASC BIN Registration_Date BY WEEKDAY
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY SUM(Enrollment) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters
+Visualize SCATTER SELECT card_id , card_number FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY COUNT(*) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT Country , COUNT(*) FROM mountain GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY Country
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY Builder DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'Defender'
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) ASC
+Visualize PIE SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT Year , COUNT(Year) FROM artist WHERE Country != "United States" GROUP BY Year
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY formats ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = route.train_id AND station.id = route.station_id GROUP BY services , local_authority ORDER BY COUNT(services) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions DESC
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) DESC
+Visualize BAR SELECT problem_category_description , count(*) FROM Problem_Category_Codes INNER JOIN Problem_Log ON Problem_Category_Codes.problem_category_code = Problem_Log.problem_category_code GROUP BY problem_category_description
+Visualize BAR SELECT origin , count(*) FROM train GROUP BY origin ORDER BY count(*) ASC
+Visualize PIE SELECT Position , count(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT payment_method_code , COUNT(payment_method_code) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(payment_method_code) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC
+Visualize PIE SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country IN ('France','Belgium')
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY location ASC
+Visualize BAR SELECT Name , Budget_in_Billions FROM department
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize PIE SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize BAR SELECT County , COUNT(*) FROM school GROUP BY County ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Name , COUNT(Author) FROM workshop w JOIN submission s ON w.Workshop_ID = s.Workshop_ID JOIN Acceptance a ON s.Submission_ID = a.Submission_ID GROUP BY Name
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT DISTINCT Registration_Date , COUNT(Registration_Date) FROM Student ORDER BY COUNT(Registration_Date) DESC BIN Registration_Date BY WEEKDAY
+Visualize SCATTER SELECT Version_Number , Template_ID FROM Templates
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY Status ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) DESC
+Visualize BAR SELECT Position , count(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT product_type_code, max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY Competition ASC
+Visualize BAR SELECT Result , count(*) FROM Acceptance GROUP BY Result ORDER BY count(*) ASC
+Visualize BAR SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Headquarters , COUNT(DISTINCT Company_ID) FROM company GROUP BY Headquarters ORDER BY COUNT(DISTINCT Company_ID) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY Occupation DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = "Defender"
+Visualize PIE SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation DESC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week ASC
+Visualize BAR SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue ORDER BY COUNT(*) ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code ASC
+Visualize PIE SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) ASC
+Visualize BAR SELECT time , COUNT(*) FROM train JOIN route ON train.id = route.train_id JOIN station ON route.station_id = station.id WHERE station.network_name = 'Chennai' GROUP BY time ORDER BY time ASC
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation ORDER BY Occupation DESC
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY Gender ASC
+Visualize BAR SELECT born_state , avg(age) FROM head GROUP BY born_state ORDER BY avg(age) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY YEAR
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country = 'France' OR country = 'Belgium'
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT County, count(*) as Number_of_Schools, sum(Enrollment) as Total_Enrollment FROM School GROUP BY County
+Visualize BAR SELECT Customers_Cards.card_id, Customers_Cards.customer_id, Customers_Cards.card_type_code, Customers_Cards.card_number FROM Customers_Cards ORDER BY Customers_Cards.card_id ASC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY formats ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY COUNT(Creation) DESC BIN Creation BY YEAR
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize PIE SELECT Country , count(*) FROM climber GROUP BY country
+Visualize PIE SELECT transaction_type , COUNT(*) FROM Financial_transactions GROUP BY transaction_type
+Visualize BAR SELECT day_of_week, avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week DESC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) ASC
+Visualize PIE SELECT customer_name , customer_id FROM customers WHERE customer_address LIKE '%TN%'
+Visualize BAR SELECT Address , COUNT(*) FROM shop GROUP BY Address ORDER BY Address ASC
+Visualize SCATTER SELECT order_id , customer_id FROM Customer_Orders WHERE order_status_code = 'Cancelled' ORDER BY order_date
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code DESC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY log_entry_description ASC
+Visualize SCATTER SELECT Country, COUNT(DISTINCT Country) FROM artist GROUP BY Country
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Name ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY SUM(Enrollment) DESC
+Visualize LINE SELECT YEAR(creation) , SUM(budget_in_billions) FROM department BIN creation BY YEAR
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers_Cards GROUP BY customer_id
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions DESC
+Visualize BAR SELECT Arrival , COUNT(Train_Num) FROM train GROUP BY Arrival ORDER BY Arrival DESC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code DESC
+Visualize SCATTER SELECT max(product_price) , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT card_type_code, COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Address , COUNT(*) FROM shop GROUP BY Address ORDER BY COUNT(*) ASC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY COUNT(*) DESC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY Status DESC
+Visualize BAR SELECT card_number , sum(account_id) FROM Customers_Cards GROUP BY card_number ORDER BY card_number ASC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY location ASC
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY COUNT(*) ASC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name ASC
+Visualize BAR SELECT Country , count(*) FROM artist GROUP BY Country ORDER BY count(*) DESC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation BIN Creation BY YEAR
+Visualize BAR SELECT Builder , count(*) FROM railway GROUP BY Builder ORDER BY count(*) ASC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description
+Visualize BAR SELECT services , count(*) FROM station GROUP BY services ORDER BY count(*) ASC
+Visualize BAR SELECT languages, avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize BAR SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state ORDER BY COUNT(born_state) ASC
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code ASC
+Visualize BAR SELECT County, SUM(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state ORDER BY COUNT(born_state) DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number DESC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Competition , count(*) FROM match GROUP BY Competition
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters
+Visualize PIE SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code
+Visualize SCATTER SELECT customer_id , account_name FROM Accounts
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT Occupation, COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender'
+Visualize PIE SELECT Author , COUNT(*) FROM submission GROUP BY Author
+Visualize BAR SELECT Country, COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT COUNT(DISTINCT country) FROM manager WHERE age > 50 OR age < 46 ORDER BY COUNT(DISTINCT country) ASC
+Visualize BAR SELECT Product_Type_Code, COUNT(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation ASC
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers_Cards GROUP BY customer_id
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Theme , Year ORDER BY COUNT(Year) ASC
+Visualize BAR SELECT X , COUNT(*) FROM Products GROUP BY X ORDER BY X DESC
+Visualize BAR SELECT Year , COUNT(Year_Join) FROM artist BIN Year_Join BY WEEKDAY GROUP BY Year
+Visualize BAR SELECT origin , count(*) FROM train GROUP BY origin
+Visualize BAR SELECT Arrival , COUNT(Train_Num) FROM train GROUP BY Arrival ORDER BY COUNT(Train_Num) DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize PIE SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize PIE SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week ASC
+Visualize BAR SELECT Competition , count(*) FROM match GROUP BY Competition ORDER BY count(*) DESC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Year
+Visualize STACKED SELECT Year_Join , COUNT(Name) FROM artist WHERE Country != "United States" GROUP BY Year_Join ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country
+Visualize PIE SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY formats DESC
+Visualize SCATTER SELECT constructorId , count(*) FROM races GROUP BY constructorId
+Visualize BAR SELECT Name , count(*) FROM workshop GROUP BY Name
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week
+Visualize SCATTER SELECT count(*) , sum(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description
+Visualize BAR SELECT last_name, COUNT(last_name) FROM Candidates GROUP BY last_name
+Visualize BAR SELECT formats, COUNT(DISTINCT artist_name) FROM files GROUP BY formats ORDER BY formats ASC
+Visualize PIE SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY policy_type_code
+Visualize PIE SELECT County , SUM(Enrollment) FROM School GROUP BY County
+Visualize PIE SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Position , COUNT(Position) FROM match_season GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Registration_Date , COUNT(Registration_Date) FROM Student JOIN Voting_record ON Student.StuID = Voting_record.StuID GROUP BY Registration_Date ORDER BY COUNT(Registration_Date) DESC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) DESC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) DESC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Builder , count(*) FROM railway GROUP BY Builder ORDER BY count(*) ASC
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country = 'France' OR country = 'Belgium' ORDER BY location DESC
+Visualize SCATTER SELECT min(product_price) , max(product_price) FROM Products
+Visualize PIE SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT product_type_code, min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) DESC
+Visualize BAR SELECT COUNT(Phone) FROM Employee
+Visualize BAR SELECT cust_name, acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize SELECT customer_id, customer_name FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_name DESC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Class DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY Country DESC
+Visualize PIE SELECT Status , avg(Population) FROM city GROUP BY Status
+Visualize SCATTER SELECT account_name , account_id FROM Accounts
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize PIE SELECT County , count(*) FROM School GROUP BY County
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY acc_type ASC
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry ORDER BY Industry ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) ASC
+Visualize BAR SELECT transaction_type, COUNT(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country='France' OR country='Belgium' ORDER BY location DESC
+Visualize BAR SELECT product_type_code, avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = "defender" GROUP BY Draft_Pick_Number , Draft_Class ORDER BY COUNT(*) DESC
+Visualize BAR SELECT COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) ASC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT Name, Age FROM artist ORDER BY Age ASC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY log_entry_description DESC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation DESC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Gender, COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) DESC
+Visualize BAR SELECT Status , avg(Population) FROM city GROUP BY Status ORDER BY Status ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY Builder DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types, Templates WHERE Ref_Template_Types.Template_Type_Code = Templates.Template_Type_Code GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) DESC
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY services DESC
+Visualize SCATTER SELECT customer_id , count(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY Position ASC
+Visualize PIE SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+Visualize BAR SELECT COUNT(DISTINCT Product_Type_Code) FROM Products
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT problem_category_code , COUNT(*) FROM Problem_Log GROUP BY problem_category_code ORDER BY problem_category_code ASC
+Visualize SCATTER SELECT order_id , customer_id FROM Customer_Orders WHERE order_status_code = "Cancelled" ORDER BY order_date
+Visualize PIE SELECT Address , count(*) FROM member GROUP BY address
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone
+Visualize BAR SELECT Years_Played , COUNT(*) FROM player GROUP BY Years_Played ORDER BY COUNT(*) DESC
+Visualize LINE SELECT YEAR(creation) , AVG(Budget_in_Billions) FROM department BIN creation BY YEAR
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status
+Visualize SCATTER SELECT Advisor , count(*) FROM Student GROUP BY advisor
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) ASC
+Visualize BAR SELECT Name , Age FROM artist
+Visualize SCATTER SELECT County, count(*) , sum(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT t.Template_Type_Code , COUNT(t.Template_Type_Code) FROM Templates t JOIN Ref_Template_Types rt ON t.Template_Type_Code = rt.Template_Type_Code GROUP BY t.Template_Type_Code ORDER BY rt.Template_Type_Description ASC;
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name
+Visualize There is no specific database schema provided for the "city" table. Please provide the schema for the "city" table in order to generate the VQL query for the given question.
+Visualize BAR SELECT Address, COUNT(*) FROM member GROUP BY Address ORDER BY Address ASC
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation
+Visualize BAR SELECT Position , count(*) FROM player GROUP BY position
+Visualize BAR SELECT Address , avg(Age) FROM member GROUP BY Address
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY County ASC
+Visualize BAR SELECT product_type_code, AVG(product_price) FROM Products GROUP BY product_type_code ORDER BY AVG(product_price) DESC
+Visualize BAR SELECT languages , AVG(rating) FROM song GROUP BY languages ORDER BY AVG(rating) ASC
+Visualize BAR SELECT origin , count(*) FROM train GROUP BY origin ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Year_Join , COUNT(Year_Join) FROM artist GROUP BY Year_Join ORDER BY COUNT(Year_Join) ASC BIN Year_Join BY WEEKDAY
+Visualize BAR SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state ORDER BY born_state ASC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY avg(high_temperature) DESC
+Visualize BAR SELECT Employee.FirstName, Employee.LastName, COUNT(Employee.Phone) FROM Employee GROUP BY Employee.FirstName, Employee.LastName ORDER BY COUNT(Employee.Phone) ASC
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = route.train_id AND station.id = route.station_id GROUP BY local_authority , services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY Author ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played ASC
+Visualize BAR SELECT origin , COUNT(*) FROM train GROUP BY origin ORDER BY COUNT(*) DESC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) ASC
+Visualize SCATTER SELECT card_number , customer_id FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) ASC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation ASC
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY Position DESC
+Visualize BAR SELECT customer_last_name , count(*) FROM Customers GROUP BY customer_last_name
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author
+Visualize BAR SELECT languages , AVG(rating) FROM song GROUP BY languages ORDER BY AVG(rating) ASC
+Visualize SCATTER SELECT MIN(product_price) , MAX(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_price DESC
+Visualize PIE SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT Arrival , COUNT(*) FROM train GROUP BY Arrival ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Year BIN Year BY WEEKDAY
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers_Cards GROUP BY customer_id
+Visualize PIE SELECT Country , COUNT(*) FROM climber GROUP BY Country
+Visualize SCATTER SELECT card_id , card_number FROM Customers_Cards
+Visualize BAR SELECT phone , COUNT(phone) FROM employee GROUP BY phone ORDER BY last_name DESC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) ASC
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) DESC
+Visualize BAR SELECT EXTRACT(YEAR FROM Year_Join) , COUNT(EXTRACT(YEAR FROM Year_Join)) FROM artist GROUP BY EXTRACT(YEAR FROM Year_Join) ORDER BY COUNT(EXTRACT(YEAR FROM Year_Join)) ASC BIN EXTRACT(YEAR FROM Year_Join) BY WEEKDAY
+Visualize BAR SELECT languages, AVG(rating) FROM song GROUP BY languages ORDER BY AVG(rating) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT County , count(*) FROM School GROUP BY County ORDER BY count(*) DESC
+Visualize BAR SELECT donator_name , amount FROM endowment ORDER BY amount DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player WHERE Occupation != "Researcher" GROUP BY Residence ORDER BY COUNT(Residence) DESC
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY count(*) ASC
+Visualize BAR SELECT name , count(*) FROM train GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code ASC
+Visualize BAR SELECT Country, COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Country , avg(Age) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize STACKED BAR SELECT Theme, Year, COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme, Year ORDER BY Year
+Visualize BAR SELECT Country, COUNT(Perpetrator_ID) FROM perpetrator GROUP BY Country ORDER BY COUNT(Perpetrator_ID) DESC
+Visualize SCATTER SELECT customer_id , card_id FROM Customers_Cards
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize SCATTER SELECT Advisor , count(*) FROM Student GROUP BY advisor
+Visualize BAR SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY Author DESC
+Visualize BAR SELECT payment_method_code , COUNT(DISTINCT customer_id) FROM customers GROUP BY payment_method_code ORDER BY COUNT(DISTINCT customer_id) ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) DESC
+Visualize BAR SELECT Status , avg(Population) FROM city GROUP BY Status ORDER BY avg(Population) DESC
+Visualize BAR SELECT Country, COUNT(DISTINCT Mountain_ID) FROM MOUNTAIN WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(DISTINCT Mountain_ID) ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Country , COUNT(*) FROM artist GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY COUNT(*) ASC
+Visualize PIE SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Competition , COUNT(Match_ID) FROM match GROUP BY Competition ORDER BY COUNT(Match_ID) ASC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY location DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize PIE SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT customer_name , customer_id FROM customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name ASC
+Visualize BAR SELECT LOG_ENTRY_DATE, COUNT(LOG_ENTRY_DATE) FROM Problem_Log WHERE problem_id = 10 BIN LOG_ENTRY_DATE BY WEEKDAY
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT customer_id , customer_name FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) DESC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT Customer_ID FROM Customers ORDER BY Customer_ID ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) DESC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY COUNT(*) ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY customer_last_name ASC
+Visualize BAR SELECT Template_Type_Code, COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) DESC
+Visualize PIE SELECT product_type_code, min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT g_name , rating FROM genre ORDER BY g_name ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation DESC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) DESC
+Visualize SCATTER SELECT Advisor , COUNT(*) FROM Student GROUP BY Advisor
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) ASC
+Visualize PIE SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize SCATTER SELECT account_id , count(*) FROM Financial_Transactions GROUP BY account_id
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY County ASC
+Visualize STACKED BAR SELECT Theme , COUNT(Year) FROM exhibition GROUP BY Theme
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code
+Visualize SELECT COUNT(DISTINCT Product_Type_Code) FROM Products
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY services ASC
+Visualize PIE SELECT time , COUNT(*) FROM train JOIN route ON train.id = route.train_id JOIN station ON route.station_id = station.id WHERE station.network_name = 'Chennai' GROUP BY time
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result DESC
+Visualize PIE SELECT formats , count(*) FROM files GROUP BY formats
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services
+Visualize BAR SELECT COUNT(DISTINCT Product_Type_Code) FROM Products ORDER BY Product_Type_Code ASC
+Visualize BAR SELECT Customer_ID, Customer_name FROM Customers ORDER BY Customer_ID ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal ASC
+Visualize PIE SELECT languages , AVG(rating) FROM song GROUP BY languages
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY YEAR
+Visualize BAR SELECT Country, COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Name DESC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY Country DESC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT payment_method_code, count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT Name , Venue FROM workshop ORDER BY Name ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY services , local_authority ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT Occupation, COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT origin , COUNT(*) FROM train GROUP BY origin ORDER BY COUNT(*) DESC
+Visualize LINE SELECT YEAR(Creation) , AVG(Budget_in_Billions) FROM department GROUP BY YEAR(Creation) ORDER BY YEAR(Creation) DESC
+Visualize BAR SELECT local_authority , count(*) FROM station GROUP BY local_authority , services
+Visualize BAR SELECT Arrival , COUNT(*) FROM train GROUP BY Arrival ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT count(*), constructorId FROM constructorResults GROUP BY constructorId
+Visualize SELECT product_category_code, AVG(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT local_authority, COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY local_authority ASC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation BIN Creation BY YEAR
+Visualize PIE SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT problem_log_id , log_entry_date FROM Problem_Log WHERE problem_id = 10 ORDER BY log_entry_date ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name ASC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) DESC
+Visualize SELECT product_category_code, avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize BAR SELECT day_of_week, avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT Artist_ID , Age FROM artist ORDER BY Age ASC
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) DESC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize PIE SELECT product_type_code, max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize BAR SELECT Builder, COUNT(*) FROM railway GROUP BY Builder
+Visualize SCATTER SELECT Document_ID , count(*) FROM Paragraphs GROUP BY Document_ID ORDER BY Document_ID ASC
+Visualize BAR SELECT log_entry_date, COUNT(log_entry_date) FROM Problem_Log WHERE problem_id = 10 BIN log_entry_date BY WEEKDAY
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) DESC
+Visualize SCATTER SELECT account_name , account_id FROM Accounts
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT Country , COUNT(*) FROM mountain GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize TABLE SELECT Customers_Cards.card_id, Customers_Cards.customer_id, Customers_Cards.card_type_code, Customers_Cards.card_number FROM Customers_Cards
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = "defender" ORDER BY Draft_Class DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(DISTINCT Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(DISTINCT Product_Type_Code) DESC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize LINE SELECT YEAR(Creation) , AVG(Budget_in_Billions) FROM department GROUP BY YEAR(Creation) ORDER BY YEAR(Creation) ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_ID) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT Name, Age FROM artist ORDER BY Age ASC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department BIN Creation BY YEAR
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize BAR SELECT Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY Country ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(*) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id ASC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Address, count(*) FROM member GROUP BY Address ORDER BY count(*) DESC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(DISTINCT Country) DESC
+Visualize PIE SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT Author , count(*) FROM submission GROUP BY Author ORDER BY count(*) DESC
+Visualize BAR SELECT born_state , COUNT(*) FROM head JOIN department ON head.head_ID = department.head_ID GROUP BY born_state ORDER BY name ASC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT account_id , COUNT(*) FROM Accounts GROUP BY account_id ORDER BY account_id DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize LINE SELECT Creation, avg(Budget_in_Billions) FROM department GROUP BY Creation
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT min(product_price) , max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week DESC
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = route.train_id JOIN route ON station.id = route.station_id GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize BAR SELECT formats , COUNT(*) FROM Files GROUP BY formats ORDER BY COUNT(*) DESC
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY COUNT(name) DESC
+Visualize PIE SELECT Competition , COUNT(*) FROM match GROUP BY Competition
+Visualize PIE SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) ASC
+Visualize BAR SELECT Occupation, COUNT(*) FROM player GROUP BY Occupation
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 BIN date_became_customer BY YEAR
+Visualize PIE SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Price ASC
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) DESC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation
+Visualize PIE SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize BAR SELECT Result, COUNT(*) FROM Acceptance GROUP BY Result ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Author , COUNT(*) FROM submission GROUP BY Author ORDER BY COUNT(*) DESC
+Visualize BAR SELECT born_state , avg(age) FROM head JOIN department ON head.head_ID = department.head_ID GROUP BY born_state ORDER BY born_state DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) ASC
+Visualize BAR SELECT product_type_code, min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT card_number , COUNT(card_number) FROM Customers_Cards GROUP BY card_number ORDER BY COUNT(card_number) DESC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize PIE SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT Address , avg(Time_of_purchase) FROM member GROUP BY Address
+Visualize PIE SELECT Template_Type_Code , count(*) FROM Ref_Template_Types rtt LEFT JOIN Templates t ON rtt.Template_Type_Code = t.Template_Type_Code GROUP BY rtt.Template_Type_Code
+Visualize BAR SELECT Country , count(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY count(*) DESC
+Visualize LINE SELECT EXTRACT(YEAR FROM Creation) AS Year , AVG(Budget_in_Billions) FROM department GROUP BY EXTRACT(YEAR FROM Creation) ORDER BY EXTRACT(YEAR FROM Creation) ASC
+Visualize BAR SELECT born_state, avg(age) FROM head GROUP BY born_state ORDER BY avg(age) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize BAR SELECT services , COUNT(services) FROM train JOIN station ON train.id = route.train_id AND station.id = route.station_id GROUP BY services , local_authority ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Position , count(*) FROM player GROUP BY Position ORDER BY count(*) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Industry ORDER BY COUNT(Headquarters) DESC
+Visualize PIE SELECT workshop.Name , COUNT(DISTINCT workshop.Venue) FROM workshop JOIN Acceptance ON workshop.Workshop_ID = Acceptance.Workshop_ID GROUP BY workshop.Name
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize STACKED BAR SELECT Industry, Headquarters, COUNT(DISTINCT Company_ID) FROM company GROUP BY Industry, Headquarters ORDER BY COUNT(DISTINCT Company_ID) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize PIE SELECT Status , avg(Population) FROM city GROUP BY Status
+Visualize BAR SELECT log_entry_date , COUNT(log_entry_date) FROM Problem_Log WHERE problem_id = 10 ORDER BY COUNT(log_entry_date) DESC BIN log_entry_date BY WEEKDAY
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) DESC
+Visualize BAR SELECT Position, COUNT(*) FROM player GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT Policy_Type_Code, COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY Policy_Type_Code DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code DESC
+Visualize BAR SELECT County , COUNT(School_id) FROM School GROUP BY County
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) ASC
+Visualize SCATTER SELECT Template_ID , Version_Number FROM Templates
+Visualize SCATTER SELECT max(product_price) , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) DESC
+Visualize SCATTER SELECT County, count(DISTINCT School_id), SUM(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT Country, COUNT(Country) FROM artist GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Venue FROM workshop ORDER BY Venue ASC
+Visualize SCATTER SELECT Version_Number , Template_ID FROM Templates
+Visualize BAR SELECT Position , COUNT(Position) FROM match_season GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT card_type_code , SUM(card_number) FROM Customers_Cards GROUP BY card_type_code ORDER BY SUM(card_number) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) DESC
+Visualize BAR SELECT product_type_code , MAX(product_price) FROM Products GROUP BY product_type_code ORDER BY product_price DESC
+Visualize BAR SELECT Arrival , COUNT(Train_Num) FROM train GROUP BY Arrival ORDER BY Arrival ASC
+Visualize BAR SELECT local_authority, COUNT(DISTINCT local_authority) FROM station GROUP BY local_authority ORDER BY local_authority ASC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize BAR SELECT product_type_code, max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize PIE SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT g_name , rating FROM genre ORDER BY g_name ASC
+Visualize PIE SELECT Address , COUNT(*) FROM member JOIN shop ON member.Address = shop.Address GROUP BY Address
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) DESC
+Visualize BAR SELECT Arrival , COUNT(Arrival) FROM train GROUP BY Arrival ORDER BY COUNT(Arrival) DESC
+Visualize BAR SELECT Headquarters, COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize SCATTER SELECT account_id , account_name FROM Accounts
+Visualize BAR SELECT SERVICES , COUNT(SERVICES) FROM station GROUP BY SERVICES ORDER BY COUNT(SERVICES) DESC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY name ASC
+Visualize LINE SELECT Theme , Year , COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme , Year ORDER BY Year DESC
+Visualize PIE SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT Name, Age FROM artist ORDER BY Name DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types JOIN Templates ON Ref_Template_Types.Template_Type_Code = Templates.Template_Type_Code JOIN Documents ON Templates.Template_ID = Documents.Template_ID JOIN Paragraphs ON Documents.Document_ID = Paragraphs.Document_ID GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) ASC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY Policy_Type_Code ASC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize LINE SELECT EXTRACT(YEAR FROM Creation) as Year, SUM(Budget_in_Billions) FROM department BIN Creation BY YEAR ORDER BY Year DESC
+Visualize PIE SELECT product_type_code, avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Workshop_ID , COUNT(*) FROM workshop GROUP BY Workshop_ID ORDER BY Workshop_ID DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY COUNT(*) DESC
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT Occupation , count(*) FROM player GROUP BY Occupation
+Visualize BAR SELECT card_type_code , count(*) FROM customers_cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT Position , count(*) FROM player GROUP BY Position ORDER BY count(*) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM match GROUP BY Venue ORDER BY Date DESC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) DESC
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY COUNT(*) DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Industry , Headquarters
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country = 'France' OR country = 'Belgium' ORDER BY circuitId DESC
+Visualize BAR SELECT born_state , avg(age) FROM head GROUP BY born_state
+Visualize BAR SELECT Builder , COUNT(Builder) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize PIE SELECT County , COUNT(DISTINCT School_id) FROM School GROUP BY County
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE "%TN%"
+Visualize BAR SELECT COUNT(name) FROM races WHERE year >= 2009 AND year <= 2011 GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description
+Visualize BAR SELECT County, SUM(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT s.services, COUNT(s.services) FROM train t, station s, route r WHERE t.id = r.train_id AND r.station_id = s.id GROUP BY s.services, s.local_authority ORDER BY s.local_authority ASC
+Visualize SCATTER SELECT Template_Type_Code , Version_Number FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT name , COUNT(*) FROM train GROUP BY name
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) DESC
+Visualize PIE SELECT formats , count(*) FROM files GROUP BY formats
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM railway GROUP BY Name ORDER BY Name ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY country DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(DISTINCT Country) ASC
+Visualize BAR SELECT local_authority , COUNT(*) FROM station GROUP BY local_authority ORDER BY COUNT(*) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority, services ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) DESC
+Visualize BAR SELECT name , count(*) FROM train GROUP BY name ORDER BY count(*) ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Template_Type_Code , count(*) FROM templates GROUP BY Template_Type_Code ORDER BY count(*) DESC
+Visualize BAR SELECT born_state , COUNT(*) FROM head GROUP BY born_state ORDER BY born_state DESC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY LastName ASC
+Visualize BAR SELECT account_id, COUNT(*) FROM Financial_Transactions GROUP BY account_id
+Visualize BAR SELECT COUNT(Phone) FROM Employee
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(*) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(*) DESC
+Visualize SELECT count(DISTINCT Product_Type_Code) FROM Products ORDER BY count(DISTINCT Product_Type_Code) DESC
+Visualize BAR SELECT Venue , count(*) FROM workshop GROUP BY Venue ORDER BY count(*) DESC
+Visualize BAR SELECT Document_Description , COUNT(*) FROM Documents GROUP BY Document_Description ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_number) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize BAR SELECT g_name , rating FROM genre ORDER BY g_name ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT born_state , AVG(age) FROM head h, department d, management m WHERE h.head_ID = m.head_ID AND d.Department_ID = m.department_ID GROUP BY born_state ORDER BY born_state ASC
+Visualize BAR SELECT Country , count(*) FROM mountain GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Name, COUNT(*) FROM train GROUP BY Name ORDER BY Name DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY circuitId DESC
+Visualize BAR SELECT Name, Age FROM artist ORDER BY Age DESC
+Visualize SCATTER SELECT card_id , card_number FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Position , count(*) FROM player GROUP BY Position ORDER BY count(*) ASC
+Visualize PIE SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize LINE SELECT YEAR(Creation) , AVG(Budget_in_Billions) FROM department ORDER BY YEAR(Creation) ASC BIN Creation BY YEAR
+Visualize SCATTER SELECT customer_id , card_number FROM Customers_Cards
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize SELECT card_type_code, COUNT(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code DESC
+Visualize SCATTER SELECT customer_id , count(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT Year, COUNT(*) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT COUNT(DISTINCT Country) FROM manager WHERE Age > 50 OR Age < 46
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011
+Visualize PIE SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code
+Visualize BAR SELECT Employee.Phone , COUNT(Employee.Phone) FROM Employee GROUP BY Employee.Phone ORDER BY Employee.Phone DESC
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY Document_Description DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT last_name, COUNT(last_name) FROM Candidates GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT g_name , rating FROM genre ORDER BY g_name
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name ASC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY circuitId ASC
+Visualize BAR SELECT Working_year_starts , COUNT(Working_year_starts) FROM manager GROUP BY Working_year_starts ORDER BY Level DESC
+Visualize BAR SELECT Country , COUNT(*) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Workshop_ID , COUNT(Venue) FROM workshop GROUP BY Workshop_ID ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry
+Visualize BAR SELECT COUNT(log_entry_description) FROM Problem_Log GROUP BY problem_id ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY count(*) DESC
+Visualize BAR SELECT Position , count(*) FROM player GROUP BY position
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT local_authority , COUNT(services) FROM station GROUP BY local_authority ORDER BY local_authority DESC
+Visualize BAR SELECT Phone, COUNT(EmployeeId) FROM Employee GROUP BY Phone ORDER BY COUNT(EmployeeId) ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) DESC
+Visualize SCATTER SELECT customer_id , card_id FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT local_authority , COUNT(DISTINCT station_id) FROM station GROUP BY local_authority ORDER BY COUNT(DISTINCT station_id) ASC
+Visualize LINE SELECT YEAR(Creation) , SUM(Budget_in_Billions) FROM department ORDER BY YEAR(Creation) ASC BIN Creation BY YEAR
+Visualize SCATTER SELECT customer_id , account_name FROM Accounts
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) ASC
+Visualize BAR SELECT Headquarters , count(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Price ASC
+Visualize BAR SELECT Headquarters, COUNT(*) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) DESC
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY Position ASC
+Visualize BAR SELECT Workshop_ID , COUNT(Venue) FROM workshop GROUP BY Workshop_ID ORDER BY COUNT(Venue) ASC
+Visualize PIE SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue
+Visualize STACKEDBAR SELECT services , COUNT(*) FROM train JOIN station ON train.id = route.train_id GROUP BY services ,local_authority ORDER BY services DESC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player WHERE Occupation != 'Researcher' GROUP BY Residence ORDER BY COUNT(Residence) DESC
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id ASC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id DESC
+Visualize BAR SELECT Document_Description , COUNT(*) FROM Documents GROUP BY Document_Description ORDER BY COUNT(*) DESC
+Visualize BAR SELECT services, COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Venue, COUNT(*) FROM workshop GROUP BY Venue ORDER BY Venue ASC
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY acc_type ASC
+Visualize PIE SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) DESC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id DESC
+Visualize LINE SELECT YEAR(creation) , AVG(budget_in_billions) FROM department ORDER BY YEAR(creation) ASC BIN creation BY YEAR
+Visualize PIE SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) ASC
+Visualize PIE SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_name ASC
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Industry , COUNT(DISTINCT Company_ID) FROM company GROUP BY Industry ORDER BY COUNT(DISTINCT Company_ID) DESC
+Visualize BAR SELECT phone , COUNT(phone) FROM Employee GROUP BY phone ORDER BY LastName DESC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY avg(high_temperature) DESC
+Visualize BAR SELECT Builder , COUNT(Builder) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize STACKED BAR SELECT Theme, COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT card_type_code , SUM(card_number) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country IN ("France", "Belgium")
+Visualize BAR SELECT Document_Description , count(*) FROM Documents GROUP BY Document_Description ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize PIE SELECT customer_name , customer_id FROM customers WHERE customer_address LIKE '%TN%'
+Visualize BAR SELECT Residence , COUNT(*) FROM player WHERE Occupation != "Researcher" GROUP BY Residence ORDER BY Player_name ASC
+Visualize PIE SELECT Venue, COUNT(*) FROM match GROUP BY Venue ORDER BY Date DESC
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played ASC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY avg(high_temperature) ASC
+Visualize BAR SELECT Country , count(distinct Country) FROM artist GROUP BY Country ORDER BY count(distinct Country) DESC
+Visualize SCATTER SELECT Template_ID , count(*) FROM Templates GROUP BY Template_ID
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize PIE SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) DESC
+Visualize PIE SELECT course_name , COUNT(*) FROM Courses GROUP BY course_name
+Visualize BAR SELECT last_name , COUNT(last_name) FROM Candidates GROUP BY last_name ORDER BY last_name DESC
+Visualize PIE SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types INNER JOIN Templates ON Ref_Template_Types.Template_Type_Code = Templates.Template_Type_Code GROUP BY Template_Type_Code
+Visualize PIE SELECT COUNT(DISTINCT Country) FROM manager WHERE Age > 50 OR Age < 46
+Visualize BAR SELECT Arrival , COUNT(Arrival) FROM train GROUP BY Arrival ORDER BY Arrival DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize BAR SELECT COUNT(DISTINCT name) FROM train ORDER BY COUNT(DISTINCT name) ASC
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY count(*) DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY formats ASC
+Visualize BAR SELECT FirstName, LastName, COUNT(Phone) FROM Employee GROUP BY FirstName, LastName ORDER BY LastName ASC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM customers_cards GROUP BY card_type_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) DESC
+Visualize PIE SELECT County , Sum(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types INNER JOIN Templates ON Ref_Template_Types.Template_Type_Code=Templates.Template_Type_Code GROUP BY Template_Type_Code
+Visualize BAR SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state ORDER BY COUNT(born_state) ASC
+Visualize BAR SELECT Years_Played, COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department GROUP BY Creation
+Visualize BAR SELECT transaction_type , COUNT(*) FROM financial_transactions GROUP BY transaction_type ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT count(*) , sum(enrollment) FROM School GROUP BY Location
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize LINE SELECT Creation , avg(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation ASC
+Visualize BAR SELECT country , count(*) FROM climber GROUP BY country
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) ASC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Gender , COUNT(Player_ID) FROM player GROUP BY Gender ORDER BY COUNT(Player_ID) DESC
+Visualize SCATTER SELECT customer_id , count(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT Result , COUNT(Result) FROM acceptance GROUP BY Result ORDER BY Result DESC
+Visualize LINE SELECT YEAR(Creation) , COUNT(Department_ID) FROM department GROUP BY YEAR(Creation) ORDER BY YEAR(Creation) DESC BIN YEAR(Creation) BY YEAR
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name DESC
+Visualize BAR SELECT languages , AVG(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize PIE SELECT formats , COUNT(*) FROM files GROUP BY formats
+Visualize BAR SELECT cust_name, acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal ASC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type ASC
+Visualize BAR SELECT Year, COUNT(*) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Year ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Position , COUNT(Position) FROM match_season GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY Card_type_code ASC
+Visualize BAR SELECT payment_method_code , COUNT(customer_id) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status
+Visualize BAR SELECT Country , avg(Age) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize LINE SELECT Working_year_starts , COUNT(*) FROM manager GROUP BY Level ORDER BY Level DESC
+Visualize PIE SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY policy_type_code
+Visualize BAR SELECT card_number , SUM(card_number) FROM Customers_Cards GROUP BY card_number ORDER BY card_number ASC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position
+Visualize PIE SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT circuitId , location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY circuitId ASC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Year , COUNT(Name) FROM artist WHERE Country != "United States" GROUP BY Year
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Working_year_starts , COUNT(Working_year_starts) FROM manager GROUP BY Working_year_starts ORDER BY Level DESC
+Visualize BAR SELECT customer_name , customer_id FROM customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name DESC
+Visualize BAR SELECT born_state , COUNT(*) FROM head GROUP BY born_state
+Visualize BAR SELECT COUNT(raceId) FROM races WHERE year BETWEEN 2009 AND 2011 ORDER BY COUNT(raceId) DESC
+Visualize PIE SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender
+Visualize BAR SELECT DISTINCT Registration_Date FROM Voting_record BIN Registration_Date BY WEEKDAY
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Industry , Headquarters ORDER BY Headquarters ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT product_type_code , AVG(product_price) FROM Products GROUP BY product_type_code ORDER BY AVG(product_price) ASC
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender ORDER BY Gender ASC
+Visualize SCATTER SELECT customer_id , COUNT(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Template_Type_Code, count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'defender'
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY County DESC
+Visualize SELECT customer_id, customer_name FROM Customers WHERE customer_address LIKE '%TN%'
+Visualize LINE SELECT Working_year_starts , COUNT(Working_year_starts) FROM manager GROUP BY Working_year_starts ORDER BY Level DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code
+Visualize SCATTER SELECT Document_ID , count(*) FROM Paragraphs GROUP BY document_id ORDER BY document_id
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) DESC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Price ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY Builder DESC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY customer_last_name DESC
+Visualize BAR SELECT payment_method_code, COUNT(customer_id) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(customer_id) DESC
+Visualize PIE SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code
+Visualize BAR SELECT origin , COUNT(*) FROM train GROUP BY origin ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) DESC
+Visualize BAR SELECT Competition , count(*) FROM match GROUP BY Competition
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) ASC
+Visualize PIE SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT Theme , COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme ORDER BY Year ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Position , count(*) FROM match_season GROUP BY Position ORDER BY Position DESC
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY count(*) DESC
+Visualize LINE SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT customer_name, customer_id FROM customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id ASC
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author ORDER BY COUNT(Author) DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY Country ASC
+Visualize TABLE SELECT Customers_Cards.card_id, Customers_Cards.customer_id, Customers_Cards.card_type_code, Customers_Cards.card_number FROM Customers_Cards
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age ASC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY County DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) ASC
+Visualize LINE SELECT YEAR(Creation) , SUM(Budget_in_Billions) FROM department GROUP BY YEAR(Creation) ORDER BY SUM(Budget_in_Billions) DESC BIN YEAR(Creation) BY YEAR
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Price ASC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT services, COUNT(services) FROM train GROUP BY local_authority, services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT time , COUNT(train_number) FROM train WHERE destination = 'Chennai' GROUP BY time ORDER BY time ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize PIE SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code
+Visualize BAR SELECT COUNT(DISTINCT Country) FROM manager WHERE age > 50 OR age < 46
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) DESCBIN date_became_customer BY YEAR
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM Perpetrator GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT services, COUNT(services) FROM train GROUP BY local_authority, services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT Result, COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) DESC
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY services ASC
+Visualize BAR SELECT product_category_code, AVG(product_price) FROM Products GROUP BY product_category_code ORDER BY AVG(product_price) DESC
+Visualize BAR SELECT Product_Type_Code, count(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code DESC
+Visualize BAR SELECT phone , COUNT(phone) FROM Employee GROUP BY phone ORDER BY COUNT(phone) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT Headquarters , COUNT(*) FROM company GROUP BY Headquarters ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT customer_id , account_name FROM Accounts
+Visualize BAR SELECT services, COUNT(*) FROM train GROUP BY services
+Visualize BAR SELECT Employee.FirstName, Employee.LastName, COUNT(Employee.Phone) FROM Employee GROUP BY Employee.FirstName, Employee.LastName ORDER BY COUNT(Employee.Phone) DESC
+Visualize LINE SELECT YEAR(creation) AS "Year", COUNT(Department_ID) FROM Department BIN creation BY YEAR
+Visualize SCATTER SELECT account_id , customer_id FROM Accounts
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) ASC
+Visualize BAR SELECT Employee.FirstName, Employee.LastName, COUNT(Employee.Phone) FROM Employee GROUP BY Employee.FirstName, Employee.LastName
+Visualize SCATTER SELECT Document_ID , count(*) FROM Paragraphs GROUP BY Document_ID ORDER BY Document_ID
+Visualize BAR SELECT COUNT(Product_Name) FROM Products
+Visualize SCATTER SELECT card_id , customer_id FROM Customers_Cards
+Visualize BAR SELECT Status , avg(Population) FROM city GROUP BY Status ORDER BY avg(Population) DESC
+Visualize BAR SELECT customer_last_name, COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) DESC
+Visualize SCATTER SELECT customer_id, count(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT log_entry_description , COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority , services ORDER BY local_authority DESC
+Visualize PIE SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Position , COUNT(Position) FROM player GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize LINE SELECT YEAR(creation) , SUM(budget_in_billions) FROM department ORDER BY YEAR(creation) DESC BIN creation BY YEAR
+Visualize PIE SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number ASC
+Visualize SCATTER SELECT order_id , customer_id FROM Customer_Orders WHERE order_status_code = "Cancelled" ORDER BY order_date
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY COUNT(*) ASC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) ASC
+Visualize PIE SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE '%TN%'
+Visualize SCATTER SELECT constructorId , count(*) FROM races GROUP BY constructorId
+Visualize BAR SELECT Country , avg(Age) FROM artist GROUP BY Country
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) ASC
+Visualize BAR SELECT County , count(*) FROM School GROUP BY county
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry ORDER BY Industry ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY services , local_authority
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) ASC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY YEAR
+Visualize BAR SELECT County, SUM(Enrollment) FROM School GROUP BY County ORDER BY SUM(Enrollment) ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT product_category_code, avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize SCATTER SELECT Version_Number , Template_ID FROM Templates
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services , local_authority
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT log_entry_date , problem_log_id FROM Problem_Log WHERE problem_id = 10
+Visualize BAR SELECT transaction_type , count(*) FROM financial_transactions GROUP BY transaction_type ORDER BY count(*) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY YEAR
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types GROUP BY Template_Type_Code
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM customers GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize LINE SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 ORDER BY Country ASC
+Visualize BAR SELECT Customer_ID FROM Customers ORDER BY Customer_ID ASC
+Visualize BAR SELECT Position , COUNT(Position) FROM player GROUP BY Position ORDER BY COUNT(Position) DESC
+Visualize BAR SELECT Name , count(*) FROM train GROUP BY Name ORDER BY count(*) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY YEAR
+Visualize BAR SELECT origin , count(*) FROM train GROUP BY origin
+Visualize SCATTER SELECT constructorId , COUNT(*) FROM races GROUP BY constructorId
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY day_of_week DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Occupation, COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize SCATTER SELECT order_id , customer_id FROM Customer_Orders WHERE order_status_code = "Cancelled" ORDER BY order_date
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY last_name ASC
+Visualize BAR SELECT Occupation, COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+Visualize TABLE SELECT time, train_number FROM train WHERE destination = "Chennai"
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" GROUP BY circuitId, location ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM match GROUP BY Venue ORDER BY Date DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) ASC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name
+Visualize PIE SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize SELECT acc_type, avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT born_state, AVG(age) FROM head GROUP BY born_state ORDER BY AVG(age) ASC
+Visualize BAR SELECT origin , COUNT(*) FROM train GROUP BY origin ORDER BY origin ASC
+Visualize BAR SELECT Country, COUNT(*) FROM perpetrator JOIN people ON perpetrator.People_ID = people.People_ID GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT problem_category_description , COUNT(log_entry_description) FROM Problem_Category_Codes JOIN Problem_Log ON Problem_Category_Codes.problem_category_code = Problem_Log.problem_category_code GROUP BY problem_category_description ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT Name , Age FROM artist
+Visualize PIE SELECT transaction_type , COUNT(transaction_type) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Arrival , COUNT(*) FROM train GROUP BY Arrival
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT Document_Description , COUNT(*) FROM Documents GROUP BY Document_Description ORDER BY Document_Description ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM artist ORDER BY COUNT(DISTINCT Country) ASC
+Visualize BAR SELECT donator_name , amount FROM endowment ORDER BY amount DESC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize LINE SELECT Creation , avg(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation DESC
+Visualize BAR SELECT age FROM head ORDER BY age
+Visualize PIE SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT transaction_type , count(*) FROM financial_transactions GROUP BY transaction_type ORDER BY count(*) ASC
+Visualize BAR SELECT Working_year_starts , COUNT(Working_year_starts) FROM manager GROUP BY Working_year_starts ORDER BY Level DESC
+Visualize BAR SELECT Address , COUNT(*) FROM shop GROUP BY Address
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name DESC
+Visualize BAR SELECT problem_log_id , log_entry_date FROM Problem_Log WHERE problem_id = 10 ORDER BY log_entry_date DESC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY COUNT(*) DESC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) DESC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code
+Visualize SCATTER SELECT Template_ID , count(*) FROM Documents GROUP BY Template_ID
+Visualize BAR SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY Policy_Type_Code ASC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT born_state , avg(age) FROM head INNER JOIN department ON head.head_ID = department.head_ID GROUP BY born_state
+Visualize BAR SELECT Address , COUNT(*) FROM member GROUP BY Address ORDER BY COUNT(*) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize PIE SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize PIE SELECT course_name , COUNT(course_name) FROM courses GROUP BY course_name
+Visualize BAR SELECT card_type_code, COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code DESC
+Visualize BAR SELECT Registration_Date , COUNT(DISTINCT Registration_Date) FROM Voting_record ORDER BY COUNT(DISTINCT Registration_Date) ASC BIN Registration_Date BY WEEKDAY
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services
+Visualize BAR SELECT Country , count(*) FROM artist GROUP BY Country ORDER BY count(*) ASC
+Visualize BAR SELECT origin, count(*) FROM train GROUP BY origin ORDER BY count(*) DESC
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT Residence , COUNT(Residence) FROM player WHERE Occupation != 'Researcher' GROUP BY Residence
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM train JOIN station ON train.id = route.train_id WHERE station.id = route.station_id GROUP BY local_authority
+Visualize SCATTER SELECT Template_ID , count(*) FROM Documents GROUP BY Template_ID
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number DESC
+Visualize SCATTER SELECT Template_ID , count(*) FROM Documents GROUP BY Template_ID
+Visualize BAR SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY Policy_Type_Code ASC
+Visualize BAR SELECT services, COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) DESC
+Visualize PIE SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code
+Visualize BAR SELECT origin , count(*) FROM train GROUP BY origin ORDER BY count(*) DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Years_Played , count(*) FROM player GROUP BY Years_Played ORDER BY count(*) DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY SUM(Enrollment) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) DESC
+Visualize BAR SELECT Arrival , COUNT(*) FROM train GROUP BY Arrival ORDER BY Arrival ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT Venue , COUNT(Venue) FROM match ORDER BY Date DESC
+Visualize PIE SELECT COUNT(DISTINCT Author) FROM submission
+Visualize PIE SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT card_id , customer_id , card_type_code , card_number FROM Customers_Cards ORDER BY card_id ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT Years_Played , COUNT(*) FROM player GROUP BY Years_Played ORDER BY COUNT(*) ASC
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result
+Visualize BAR SELECT problem_log_id, log_entry_date FROM problem_log WHERE problem_id = 10 ORDER BY log_entry_date ASC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name DESC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium"
+Visualize PIE SELECT Competition , count(*) FROM match GROUP BY competition
+Visualize SCATTER SELECT Template_ID , count(*) FROM Documents GROUP BY Template_ID
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) DESC
+Visualize STACKED BAR SELECT Theme , COUNT(Year) FROM exhibition GROUP BY Theme ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played ASC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) ASC
+Visualize PIE SELECT Country , COUNT(*) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Customer GROUP BY Phone ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) DESC
+Visualize PIE SELECT Country , COUNT(*) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = "Defender" ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT born_state , avg(age) FROM head h JOIN management m ON h.head_ID = m.head_ID GROUP BY born_state ORDER BY avg(age) DESC
+Visualize SELECT cust_name, acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry ORDER BY COUNT(Industry) ASC
+Visualize BAR SELECT Status , avg(Population) FROM city GROUP BY Status ORDER BY avg(Population) DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) ASC
+Visualize PIE SELECT Country , count(*) FROM climber GROUP BY country
+Visualize BAR SELECT COUNT(DISTINCT races.name) FROM races WHERE year BETWEEN 2009 AND 2011 ORDER BY races.name ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY MONTH
+Visualize BAR SELECT Builder , COUNT(Builder) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) DESC
+Visualize SCATTER SELECT account_id , COUNT(*) FROM Financial_Transactions GROUP BY account_id
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation ASCBIN Creation BY YEAR
+Visualize BAR SELECT card_type_code , COUNT(card_number) FROM Customers_Cards GROUP BY card_type_code
+Visualize PIE SELECT Industry , COUNT(*) FROM company GROUP BY Industry
+Visualize BAR SELECT log_entry_date , COUNT(log_entry_date) FROM Problem_Log WHERE problem_id = 10 ORDER BY COUNT(log_entry_date) ASC BIN log_entry_date BY WEEKDAY
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY COUNT(*) DESC
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name ASC
+Visualize BAR SELECT Address, COUNT(*) FROM shop GROUP BY Address ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize PIE SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY local_authority ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT County, COUNT(*) FROM school GROUP BY County ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Name , COUNT(Year_Join) FROM artist WHERE Country != "United States" GROUP BY Year_Join
+Visualize BAR SELECT phone , COUNT(phone) FROM employee GROUP BY phone
+Visualize BAR SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state
+Visualize LINE SELECT Creation, COUNT(Creation) FROM department BIN Creation BY YEAR
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name
+Visualize BAR SELECT Name , Budget_in_Billions FROM department
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY count(*) DESC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize LINE SELECT Creation , COUNT(Creation) FROM Department GROUP BY Creation ORDER BY Creation DESC
+Visualize PIE SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%'
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY Gender DESC
+Visualize PIE SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT formats , COUNT(DISTINCT artist_name) FROM files GROUP BY formats
+Visualize LINE SELECT YEAR(creation) , SUM(Budget_in_Billions) FROM department ORDER BY YEAR(creation) ASC BIN creation BY YEAR
+Visualize BAR SELECT payment_method_code , COUNT(payment_method_code) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT date_became_customer, COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY YEAR
+Visualize BAR SELECT services, COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Count(*) FROM submission GROUP BY Author ORDER BY Count(*) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize PIE SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize PIE SELECT Position , COUNT(*) FROM player GROUP BY Position
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY formats ASC
+Visualize BAR SELECT Country , COUNT(*) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT County, COUNT(*) FROM School GROUP BY County ORDER BY County ASC
+Visualize BAR SELECT Name, Age FROM artist ORDER BY Age ASC
+Visualize PIE SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code
+Visualize PIE SELECT County , count(*) FROM School GROUP BY County
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name
+Visualize PIE SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Price ASC
+Visualize BAR SELECT Gender, COUNT(*) FROM player GROUP BY Gender ORDER BY COUNT(*) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM train JOIN station ON train.id = route.train_id AND station.id = route.station_id GROUP BY services , local_authority ORDER BY COUNT(local_authority) ASC
+Visualize SELECT Year_Join, COUNT(Name) FROM artist WHERE Country != 'United States' GROUP BY Year_Join ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Arrival , COUNT(Arrival) FROM train GROUP BY Arrival ORDER BY COUNT(Arrival) ASC
+Visualize BAR SELECT local_authority, COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY local_authority DESC, services ORDER BY services DESC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY name ASC
+Visualize LINE SELECT Creation , AVG(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) DESC
+Visualize SCATTER SELECT count(*) , sum(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code ASC
+Visualize PIE SELECT Template_Type_Code , COUNT(*) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code
+Visualize PIE SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize PIE SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT Country, COUNT(Country) FROM artist GROUP BY Country
+Visualize BAR SELECT formats , COUNT(formats) FROM files GROUP BY formats
+Visualize PIE SELECT Position , COUNT(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 GROUP BY date_became_customer
+Visualize BAR SELECT Year , COUNT(*) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Year ORDER BY COUNT(*) DESC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY SUM(Enrollment) DESC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number DESC
+Visualize PIE SELECT Competition , count(*) FROM match GROUP BY competition
+Visualize BAR SELECT COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize BAR SELECT Venue, COUNT(Venue) FROM match GROUP BY Venue ORDER BY Date DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT Status, avg(Population) FROM City GROUP BY Status ORDER BY Status ASC
+Visualize BAR SELECT Customers_Cards.card_id, Customers_Cards.customer_id, Customers_Cards.card_type_code, Customers_Cards.card_number FROM Customers_Cards ORDER BY Customers_Cards.card_id DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id >= 10 AND customer_id <= 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT Customer_ID FROM Customers ORDER BY Customer_ID ASC
+Visualize PIE SELECT Product_Type_Code , count(*) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT year , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY year ORDER BY COUNT(name) ASC
+Visualize BAR SELECT YEAR_Join , COUNT(YEAR_Join) FROM artist GROUP BY YEAR_Join ORDER BY COUNT(YEAR_Join) DESC BIN YEAR_Join BY WEEKDAY
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) DESC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT log_entry_date , COUNT(log_entry_date) FROM Problem_Log WHERE problem_id = 10 ORDER BY COUNT(log_entry_date) ASC BIN log_entry_date BY WEEKDAY
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department GROUP BY Creation ORDER BY Creation ASC
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Ref_Template_Types GROUP BY Template_Type_Code
+Visualize PIE SELECT customer_name , customer_id FROM customers WHERE customer_address LIKE '%TN%'
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY cust_name ASC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY Competition DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department BIN Creation BY YEAR
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Class ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal ASC
+Visualize BAR SELECT Venue, COUNT(Venue) FROM match GROUP BY Venue ORDER BY Date DESC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY EmployeeId ASC
+Visualize PIE SELECT Position , count(*) FROM player GROUP BY position
+Visualize STACKED BAR SELECT Theme, Year, COUNT(*) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Theme, Year ORDER BY Year ASC BIN Year BY YEAR ORDER BY COUNT(*) ASC
+Visualize PIE SELECT County , sum(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT product_type_code, avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT employee_id , COUNT(phone) FROM employee GROUP BY employee_id ORDER BY COUNT(phone) DESC
+Visualize BAR SELECT log_entry_description , count(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY count(log_entry_description) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) ASC
+Visualize PIE SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT Gender , COUNT(*) FROM player GROUP BY Gender
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT services , COUNT(*) FROM train GROUP BY services ORDER BY services ASC
+Visualize BAR SELECT Phone, COUNT(*) FROM employee GROUP BY Phone ORDER BY COUNT(*) ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM Candidates GROUP BY last_name
+Visualize BAR SELECT Age FROM artist
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize BAR SELECT phone , COUNT(phone) FROM Employee GROUP BY phone ORDER BY COUNT(phone) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY local_authority ASC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY Name ASC
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type DESC
+Visualize SCATTER SELECT customer_id , count(*) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT product_type_code , MAX(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Level , COUNT(*) FROM manager GROUP BY Level ORDER BY Level DESC
+Visualize BAR SELECT Occupation , COUNT(Occupation) FROM player GROUP BY Occupation ORDER BY COUNT(Occupation) DESC
+Visualize PIE SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_price DESC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County
+Visualize BAR SELECT born_state, COUNT(born_state) FROM head GROUP BY born_state ORDER BY COUNT(born_state) DESC
+Visualize BAR SELECT Years_Played, COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY COUNT(Years_Played) DESC
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY COUNT(Result) ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) ASC
+Visualize BAR SELECT Age , COUNT(*) FROM artist GROUP BY Age ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played ORDER BY Years_Played DESC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY Occupation ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 ORDER BY COUNT(DISTINCT Country) DESC
+Visualize BAR SELECT Arrival , COUNT(Arrival) FROM train GROUP BY Arrival ORDER BY Arrival ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code ASC
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer ORDER BY COUNT(date_became_customer) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) ASC
+Visualize LINE SELECT YEAR(Creation) , COUNT(Department_ID) FROM department ORDER BY YEAR(Creation) DESC BIN YEAR(Creation) BY YEAR
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY local_authority ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name
+Visualize BAR SELECT Name , Age FROM artist
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT local_authority , count(*) FROM station GROUP BY local_authority ORDER BY count(*) DESC
+Visualize PIE SELECT Template_Type_Code , count(*) FROM Ref_Template_Types GROUP BY Template_Type_Code
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY acc_type ASC
+Visualize BAR SELECT payment_method_code , COUNT(payment_method_code) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT Template_Type_Code, COUNT(Template_Type_Code) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) DESC
+Visualize SCATTER SELECT Document_ID , count(*) FROM Paragraphs GROUP BY Document_ID ORDER BY Document_ID ASC
+Visualize BAR SELECT Address, COUNT(*) FROM shop GROUP BY Address ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Years_Played , COUNT(Years_Played) FROM player GROUP BY Years_Played
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize PIE SELECT Country , COUNT(Country) FROM artist GROUP BY Country
+Visualize BAR SELECT date_became_customer, COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize PIE SELECT Residence , COUNT(Residence) FROM player WHERE Occupation != 'Researcher' GROUP BY Residence
+Visualize STACKED SELECT Year_Join , COUNT(Name) FROM artist WHERE Country != "United States" GROUP BY Year_Join ORDER BY Year_Join ASC STACK BY Name
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY acc_type DESC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = 'France' OR country = 'Belgium' ORDER BY location ASC
+Visualize BAR SELECT formats , COUNT(DISTINCT artist_name) FROM files GROUP BY formats
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Venue FROM workshop
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) ASC
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers_Cards GROUP BY customer_id
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder
+Visualize SCATTER SELECT customer_id , count(distinct account_id) FROM Accounts GROUP BY customer_id
+Visualize BAR SELECT g_name , rating FROM genre ORDER BY g_name ASC
+Visualize BAR SELECT Advisor , COUNT(*) FROM Student GROUP BY Advisor
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY last_name DESC
+Visualize BAR SELECT product_type_code, avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) ASC
+Visualize PIE SELECT Position , COUNT(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM train JOIN station ON train.origin = station.id GROUP BY local_authority ORDER BY local_authority DESC
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Arrival , COUNT(Train_ID) FROM train GROUP BY Arrival ORDER BY Arrival ASC
+Visualize BAR SELECT Country , avg(Age) FROM artist GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize PIE SELECT Country , COUNT(DISTINCT Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_name ASC
+Visualize SCATTER SELECT account_id , customer_id FROM Accounts
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY services , local_authority ORDER BY COUNT(local_authority) DESC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize SCATTER SELECT customer_id , card_number FROM Customers_Cards
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry
+Visualize BAR SELECT acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize BAR SELECT Author , COUNT(Author) FROM submission GROUP BY Author
+Visualize BAR SELECT County , COUNT(*) FROM School GROUP BY County ORDER BY County ASC
+Visualize BAR SELECT phone , COUNT(phone) FROM Employee GROUP BY phone ORDER BY COUNT(phone) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description
+Visualize BAR SELECT Result , COUNT(Result) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT payment_method_code , COUNT(*) FROM Customers GROUP BY payment_method_code ORDER BY COUNT(*) ASC
+Visualize SCATTER SELECT card_id, customer_id FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM train GROUP BY local_authority ORDER BY COUNT(local_authority) DESC
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions DESC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats ORDER BY COUNT(*) DESC
+Visualize BAR SELECT languages, avg(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize BAR SELECT County , count(*) FROM School GROUP BY County
+Visualize SCATTER SELECT account_id , count(*) FROM Financial_Transactions GROUP BY account_id
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY services DESC
+Visualize BAR SELECT languages , AVG(rating) FROM song GROUP BY languages
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) ASC
+Visualize BAR SELECT Position , COUNT(*) FROM player GROUP BY Position ORDER BY Position DESC
+Visualize BAR SELECT DISTINCT Registration_Date FROM Voting_record BIN Registration_Date BY WEEKDAY
+Visualize BAR SELECT problem_category_description , count(*) FROM problem_log GROUP BY problem_category_description ORDER BY problem_category_description ASC
+Visualize BAR SELECT Country, COUNT(Manager_ID) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Manager_ID) DESC
+Visualize BAR SELECT Industry , COUNT(*) FROM company GROUP BY Industry ORDER BY COUNT(*) DESC
+Visualize PIE SELECT Venue , COUNT(*) FROM match ORDER BY Date DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM train JOIN station ON train.id = route.train_id JOIN station ON route.station_id = station.id GROUP BY local_authority , services ORDER BY local_authority ASC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Industry , COUNT(Headquarters) FROM company GROUP BY Industry , Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) ASC
+Visualize BAR SELECT product_type_code, max(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT local_authority, COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize SCATTER SELECT Age , Time_of_purchase FROM member
+Visualize BAR SELECT product_type_code , AVG(product_price) FROM Products GROUP BY product_type_code
+Visualize SELECT customer_id, customer_name FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type
+Visualize BAR SELECT name , count(*) FROM train GROUP BY name ORDER BY count(*) DESC
+Visualize BAR SELECT local_authority , COUNT(services) FROM station GROUP BY local_authority ORDER BY COUNT(services) DESC BIN local_authority BY COUNT(services)
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT name , COUNT(name) FROM train GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT formats , COUNT(*) FROM files GROUP BY formats
+Visualize BAR SELECT Country, COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition WHERE Ticket_Price < 15 GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT product_type_code, min(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code DESC
+Visualize BAR SELECT services , COUNT(services) FROM train INNER JOIN station ON train.id = station.id GROUP BY services ORDER BY COUNT(services) ASC
+Visualize BAR SELECT Year, COUNT(Year) FROM artist WHERE Country != 'United States' GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT customer_id, customer_name FROM Customers WHERE customer_address LIKE "%TN%" ORDER BY customer_id DESC
+Visualize BAR SELECT formats , COUNT(DISTINCT artist_name) FROM files GROUP BY formats ORDER BY COUNT(DISTINCT artist_name) DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT Years_Played , COUNT(*) FROM player GROUP BY Years_Played ORDER BY Years_Played ASC
+Visualize BAR SELECT County , SUM(Enrollment) FROM School GROUP BY County ORDER BY County ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT Country, COUNT(DISTINCT Country) FROM artist GROUP BY Country ORDER BY COUNT(DISTINCT Country) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY count(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY services DESC
+Visualize SCATTER SELECT customer_id , account_id FROM Accounts
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize PIE SELECT born_state , COUNT(born_state) FROM head GROUP BY born_state
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY Country DESC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%' ORDER BY acc_bal DESC
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code ASC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM Candidates GROUP BY last_name ORDER BY COUNT(last_name) DESC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY Country
+Visualize BAR SELECT Workshop_ID , COUNT(Venue) FROM workshop GROUP BY Workshop_ID
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY languages ASC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) ASC
+Visualize PIE SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender
+Visualize PIE SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Year , count(*) FROM exhibition WHERE Ticket_Price < 15 GROUP BY year ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize PIE SELECT Country , count(*) FROM climber GROUP BY country
+Visualize LINE SELECT YEAR(Creation) , COUNT(Department_ID) FROM department ORDER BY YEAR(Creation) ASC BIN YEAR(Creation) BY YEAR
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code ASC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT acc_type , avg(acc_bal) FROM customer WHERE credit_score < 50 GROUP BY acc_type ORDER BY avg(acc_bal) DESC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = 'France' OR country = 'Belgium' ORDER BY location DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) ASC
+Visualize SCATTER SELECT Advisor , count(*) FROM Student GROUP BY Advisor
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%'
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY circuitId ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY MONTH
+Visualize BAR SELECT Template_Type_Code , count(*) FROM templates GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT Phone , COUNT(Phone) FROM Employee GROUP BY Phone ORDER BY Phone ASC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) ASC
+Visualize BAR SELECT Customer_name , Customer_ID FROM Customers ORDER BY Customer_ID ASC
+Visualize BAR SELECT product_type_code , AVG(product_price) FROM products GROUP BY product_type_code ORDER BY AVG(product_price) DESC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY COUNT(Product_Type_Code) DESC
+Visualize BAR SELECT languages , AVG(rating) FROM song GROUP BY languages ORDER BY AVG(rating) DESC
+Visualize PIE SELECT transaction_type, count(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Template_Type_Code , COUNT(*) FROM Templates GROUP BY Template_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT payment_method_code , COUNT(DISTINCT customer_id) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code ORDER BY min(product_price) ASC
+Visualize PIE SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code
+Visualize BAR SELECT Position , count(*) FROM match_season GROUP BY Position ORDER BY Position DESC
+Visualize BAR SELECT Product_Type_Code , count(*) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT Country , count(DISTINCT Country) FROM artist GROUP BY Country ORDER BY Country DESC
+Visualize PIE SELECT Gender , COUNT(Player_ID) FROM player GROUP BY Gender
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Theme
+Visualize SCATTER SELECT Version_Number , Template_ID FROM Templates
+Visualize BAR SELECT Result , COUNT(*) FROM Acceptance GROUP BY Result ORDER BY Result ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT problem_category_description, COUNT(log_entry_description) from Problem_Category_Codes, Problem_Log WHERE Problem_Category_Codes.problem_category_code = Problem_Log.problem_category_code GROUP BY problem_category_description ORDER BY COUNT(log_entry_description) ASC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status
+Visualize BAR SELECT Headquarters, COUNT(Headquarters) FROM company GROUP BY Industry, Headquarters ORDER BY COUNT(Headquarters) DESC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week
+Visualize BAR SELECT races.name , COUNT(races.name) FROM races WHERE races.year BETWEEN 2009 AND 2011 GROUP BY races.name ORDER BY COUNT(races.name) ASC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department GROUP BY Creation ORDER BY Creation ASC BIN Creation BY YEAR
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code DESC
+Visualize BAR SELECT Address , COUNT(Address) FROM member GROUP BY Address WHERE Address IN (SELECT Address FROM shop)
+Visualize BAR SELECT COUNT(log_entry_date) FROM Problem_Log WHERE problem_id = 10 BIN log_entry_date BY WEEKDAY ORDER BY COUNT(log_entry_date) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Builder , COUNT(*) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize BAR SELECT Venue , COUNT(*) FROM workshop GROUP BY Venue ORDER BY Venue DESC
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE "%TN%"
+Visualize BAR SELECT problem_category_description , count(*) FROM Problem_Log JOIN Problem_Category_Codes ON Problem_Log.problem_category_code = Problem_Category_Codes.problem_category_code GROUP BY problem_category_description
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) DESC
+Visualize BAR SELECT Gender , COUNT(Gender) FROM player GROUP BY Gender ORDER BY COUNT(Gender) ASC
+Visualize SCATTER SELECT constructorId , count(*) FROM races GROUP BY constructorId
+Visualize SCATTER SELECT MIN(product_price) , MAX(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) DESC, services
+Visualize SCATTER SELECT account_id , count(*) FROM Financial_Transactions GROUP BY account_id
+Visualize BAR SELECT customer_name , customer_id FROM Customers WHERE customer_address LIKE '%TN%' ORDER BY customer_name ASC
+Visualize BAR SELECT day_of_week, AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY AVG(high_temperature) ASC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize BAR SELECT log_entry_description, COUNT(log_entry_description) FROM Problem_Log GROUP BY log_entry_description ORDER BY COUNT(log_entry_description) ASC
+Visualize BAR SELECT Country , count(*) FROM climber GROUP BY country ORDER BY count(*) ASC
+Visualize SCATTER SELECT card_number , card_id FROM Customers_Cards
+Visualize PIE SELECT Country , COUNT(Country) FROM artist GROUP BY Country
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE "%a%" ORDER BY acc_bal DESC
+Visualize PIE SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry ORDER BY COUNT(Industry) DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM Candidates GROUP BY last_name ORDER BY last_name ASC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY count(*) DESC
+Visualize BAR SELECT Builder , count(*) FROM railway GROUP BY Builder ORDER BY Builder ASC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY product_type_code ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY count(*) DESC
+Visualize PIE SELECT Country , COUNT(*) FROM artist GROUP BY Country
+Visualize BAR SELECT course_name, COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY COUNT(course_name) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM artist GROUP BY Country
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Industry , Headquarters ORDER BY COUNT(Headquarters) ASC
+Visualize STACK SELECT Year_Join , COUNT(Year_Join) FROM artist WHERE Country != "United States" GROUP BY Name , Year_Join ORDER BY COUNT(Year_Join) DESC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) DESC BIN date_became_customer BY YEAR
+Visualize BAR SELECT COUNT(name) FROM train
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority, services
+Visualize BAR SELECT problem_log_id , log_entry_date FROM Problem_Log WHERE problem_id = 10 ORDER BY log_entry_date DESC
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age ASC
+Visualize BAR SELECT County , COUNT(DISTINCT School_id) FROM School GROUP BY County ORDER BY County DESC
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) ASC
+Visualize BAR SELECT card_type_code , COUNT(card_type_code) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(card_type_code) ASC
+Visualize STACKED BAR SELECT services, local_authority, COUNT(services) FROM train JOIN station ON train.origin = station.id JOIN route ON train.id = route.train_id JOIN weekly_weather ON route.station_id = weekly_weather.station_id GROUP BY services, local_authority ORDER BY COUNT(services) DESC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates WHERE Version_Number > 5 GROUP BY Template_Type_Code ORDER BY COUNT(Template_Type_Code) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 GROUP BY date_became_customer
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY formats DESC
+Visualize BAR SELECT product_category_code, avg(product_price) FROM Products GROUP BY product_category_code
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Country , COUNT(*) FROM climber GROUP BY Country ORDER BY Country ASC
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions ASC
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT account_id , count(*) FROM Financial_transactions GROUP BY account_id
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY customer_last_name ASC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT problem_category_description , COUNT(log_entry_description) FROM Problem_Category_Codes INNER JOIN Problem_Log ON Problem_Category_Codes.problem_category_code = Problem_Log.problem_category_code GROUP BY problem_category_description ORDER BY COUNT(log_entry_description) DESC
+Visualize BAR SELECT Draft_Pick_Number, Draft_Class FROM match_season WHERE Position = "Defender" ORDER BY Draft_Class DESC
+Visualize BAR SELECT Address , COUNT(*) FROM member GROUP BY Address ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT customer_id , card_id FROM Customers_Cards
+Visualize PIE SELECT Country , count(*) FROM artist GROUP BY country
+Visualize SCATTER SELECT Time_of_purchase , Age FROM member
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY services DESC
+Visualize PIE SELECT Address , COUNT(*) FROM member GROUP BY Address
+Visualize STACKED BAR SELECT Industry, Headquarters, COUNT(Headquarters) FROM company GROUP BY Industry, Headquarters
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority ORDER BY COUNT(local_authority) ASC
+Visualize BAR SELECT customer_name, customer_id FROM Customers WHERE customer_address LIKE "%TN%"
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions ASC
+Visualize BAR SELECT Arrival, COUNT(*) FROM train GROUP BY Arrival
+Visualize BAR SELECT Name , Age FROM artist ORDER BY Age DESC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) DESC
+Visualize BAR SELECT Position , COUNT(*) FROM match_season GROUP BY Position
+Visualize BAR SELECT Phone , COUNT(*) FROM Employee GROUP BY Phone ORDER BY Phone DESC
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY Competition ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT order_date , COUNT(order_date) FROM customer_orders WHERE customer_id BETWEEN 10 AND 20 GROUP BY order_date ORDER BY COUNT(order_date) ASC BIN order_date BY WEEKDAY
+Visualize BAR SELECT Country , COUNT(Country) FROM MOUNTAIN WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) ASC
+Visualize BAR SELECT Occupation , COUNT(*) FROM player GROUP BY Occupation ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Document_Description , COUNT(Document_Description) FROM Documents GROUP BY Document_Description ORDER BY COUNT(Document_Description) DESC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) DESC
+Visualize BAR SELECT EmployeeId, COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY EmployeeId ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM artist WHERE Country != "United States" GROUP BY Year ORDER BY COUNT(Year) DESC
+Visualize BAR SELECT product_type_code , min(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue ORDER BY COUNT(Venue) DESC
+Visualize BAR SELECT born_state , avg(age) FROM head GROUP BY born_state ORDER BY born_state DESC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY count(*) ASC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY avg(product_price) DESC
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT Venue , COUNT(Venue) FROM workshop GROUP BY Venue
+Visualize STACKED BAR SELECT Headquarters , Industry , COUNT(*) FROM company GROUP BY Headquarters , Industry ORDER BY Industry ASC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY Status ASC
+Visualize BAR SELECT Year , COUNT(Name) FROM artist WHERE Country != "United States" GROUP BY Year ORDER BY Year ASC
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM mountain WHERE Height > 5000 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT transaction_type , COUNT(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year >= 2009 AND year <= 2011 GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Registration_Date , COUNT(Registration_Date) FROM Voting_record ORDER BY COUNT(Registration_Date) DESC BIN Registration_Date BY WEEKDAY
+Visualize SCATTER SELECT customer_id , card_number FROM Customers_Cards
+Visualize BAR SELECT Template_Type_Code , count(*) FROM Ref_Template_Types GROUP BY Template_Type_Code ORDER BY count(*) ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize SCATTER SELECT Template_ID , count(*) FROM Documents GROUP BY Template_ID
+Visualize BAR SELECT formats , count(distinct artist_name) FROM files JOIN song ON files.f_id = song.f_id GROUP BY formats ORDER BY count(distinct artist_name) DESC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY services ASC
+Visualize BAR SELECT Status, AVG(Population) FROM city GROUP BY Status ORDER BY AVG(Population) ASC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT languages , avg(rating) FROM song GROUP BY languages ORDER BY avg(rating) DESC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize SELECT customer_id, customer_name FROM Customers JOIN Customer_Addresses ON Customers.customer_id = Customer_Addresses.customer_id JOIN Addresses ON Customer_Addresses.address_id = Addresses.address_id WHERE address_details LIKE '%TN%' ORDER BY customer_name ASC
+Visualize BAR SELECT Country , COUNT(DISTINCT Country) FROM artist ORDER BY COUNT(DISTINCT Country) ASC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Theme ORDER BY COUNT(Year) DESC BIN Year BY YEAR
+Visualize BAR SELECT Industry , COUNT(Industry) FROM company GROUP BY Industry ORDER BY COUNT(Industry) DESC
+Visualize BAR SELECT County , sum(Enrollment) FROM School GROUP BY County ORDER BY County ASC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Registration_Date , COUNT(Registration_Date) FROM Voting_record GROUP BY Registration_Date
+Visualize BAR SELECT Gender , COUNT(Player_ID) FROM player GROUP BY Gender
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT Country , AVG(Age) FROM artist GROUP BY Country ORDER BY AVG(Age) ASC
+Visualize BAR SELECT Registration_Date , COUNT(Registration_Date) FROM Voting_record GROUP BY Registration_Date ORDER BY COUNT(Registration_Date) ASC
+Visualize BAR SELECT cust_name , acc_bal FROM customer WHERE cust_name LIKE '%a%'
+Visualize SCATTER SELECT order_id , customer_id FROM Customer_Orders WHERE order_status_code = 'Cancelled' ORDER BY order_date
+Visualize BAR SELECT Country , COUNT(*) FROM perpetrator GROUP BY Country
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY services ORDER BY COUNT(services) DESC
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code ASC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT Name, COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) ASC
+Visualize BAR SELECT Product_Type_Code, COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition JOIN artist ON exhibition.Artist_ID = artist.Artist_ID WHERE artist.Country != 'United States' GROUP BY Year ORDER BY COUNT(Year) ASC
+Visualize BAR SELECT product_type_code, max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) DESC
+Visualize SCATTER SELECT customer_id , count(*) FROM Customers_Cards GROUP BY customer_id
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'Defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT card_type_code , SUM(card_number) FROM Customers_Cards GROUP BY card_type_code ORDER BY SUM(card_number) DESC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY Status DESC
+Visualize BAR SELECT day_of_week , avg(high_temperature) FROM weekly_weather GROUP BY day_of_week ORDER BY avg(high_temperature) ASC
+Visualize BAR SELECT Headquarters , COUNT(Headquarters) FROM company GROUP BY Headquarters ORDER BY Headquarters DESC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) DESC
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY COUNT(customer_last_name) ASC
+Visualize BAR SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code
+Visualize BAR SELECT Competition , COUNT(*) FROM match GROUP BY Competition ORDER BY COUNT(*) DESC
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 ORDER BY COUNT(date_became_customer) ASC BIN date_became_customer BY WEEKDAY
+Visualize BAR SELECT formats , count(*) FROM files GROUP BY formats ORDER BY count(*) ASC
+Visualize BAR SELECT Name , COUNT(Name) FROM train GROUP BY Name ORDER BY COUNT(Name) ASC
+Visualize LINE SELECT Creation , SUM(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY services ORDER BY services ASC
+Visualize BAR SELECT c.customer_id, c.customer_first_name, c.customer_last_name, cc.card_id, cc.card_type_code, cc.card_number FROM customers c JOIN customers_cards cc ON c.customer_id = cc.customer_id ORDER BY c.customer_first_name DESC, c.customer_last_name DESC
+Visualize BAR SELECT Product_Name , COUNT(DISTINCT Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(DISTINCT Product_Name) ASC
+Visualize BAR SELECT local_authority , COUNT(local_authority) FROM station GROUP BY local_authority
+Visualize BAR SELECT Draft_Pick_Number , Draft_Class FROM match_season WHERE Position = 'defender' ORDER BY Draft_Pick_Number ASC
+Visualize BAR SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code
+Visualize BAR SELECT born_state, COUNT(*) FROM head GROUP BY born_state ORDER BY COUNT(*) DESC
+Visualize PIE SELECT born_state , COUNT(*) FROM head GROUP BY born_state
+Visualize BAR SELECT card_type_code , count(*) FROM customers_cards GROUP BY card_type_code ORDER BY card_type_code ASC
+Visualize BAR SELECT Template_Type_Code , COUNT(Template_Type_Code) FROM Templates GROUP BY Template_Type_Code ORDER BY Template_Type_Code DESC
+Visualize BAR SELECT formats , COUNT(DISTINCT artist_name) FROM files GROUP BY formats ORDER BY COUNT(DISTINCT artist_name) ASC
+Visualize BAR SELECT payment_method_code , COUNT(payment_method_code) FROM Customers GROUP BY payment_method_code
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Year ORDER BY COUNT(Year) ASC
+Visualize BAR SELECT Product_Name , COUNT(Product_Name) FROM Products GROUP BY Product_Name ORDER BY COUNT(Product_Name) DESC
+Visualize BAR SELECT local_authority , COUNT(services) FROM station GROUP BY services , local_authority ORDER BY COUNT(services) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM Customers GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT born_state , avg(age) FROM head GROUP BY born_state ORDER BY avg(age) DESC
+Visualize LINE SELECT YEAR(Creation), AVG(Budget_in_Billions) FROM department ORDER BY Creation DESC BIN Creation BY YEAR
+Visualize BAR SELECT t.Template_Type_Code , count(*) FROM Templates t INNER JOIN Ref_Template_Types r ON t.Template_Type_Code = r.Template_Type_Code GROUP BY t.Template_Type_Code ORDER BY t.Template_Type_Code DESC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Theme, COUNT(DISTINCT Year) FROM exhibition GROUP BY Theme ORDER BY COUNT(DISTINCT Year) ASC
+Visualize BAR SELECT circuitId, location FROM circuits WHERE country = "France" OR country = "Belgium" ORDER BY location ASC
+Visualize PIE SELECT time , COUNT(*) FROM train WHERE destination = 'Chennai' GROUP BY time
+Visualize LINE SELECT Creation , COUNT(Creation) FROM department ORDER BY COUNT(Creation) DESC BIN Creation BY YEAR
+Visualize BAR SELECT customer_last_name , COUNT(customer_last_name) FROM Customers GROUP BY customer_last_name ORDER BY customer_last_name DESC
+Visualize BAR SELECT Country , COUNT(Country) FROM manager WHERE Age > 50 OR Age < 46 GROUP BY Country ORDER BY COUNT(Country) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT transaction_type , count(*) FROM Financial_Transactions GROUP BY transaction_type ORDER BY transaction_type DESC
+Visualize BAR SELECT Status , AVG(Population) FROM city GROUP BY Status ORDER BY Official_Name DESC
+Visualize BAR SELECT Product_Type_Code , COUNT(Product_Type_Code) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code ASC
+Visualize BAR SELECT card_type_code , COUNT(*) FROM Customers_Cards GROUP BY card_type_code ORDER BY COUNT(*) ASC
+Visualize BAR SELECT services , COUNT(services) FROM train GROUP BY local_authority BIN services BY WEEKDAY
+Visualize BAR SELECT date_became_customer , COUNT(date_became_customer) FROM Customers WHERE customer_id BETWEEN 10 AND 20 BIN date_became_customer BY YEAR
+Visualize BAR SELECT Product_Type_Code, COUNT(*) FROM Products GROUP BY Product_Type_Code ORDER BY Product_Type_Code DESC
+Visualize BAR SELECT name , COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011 GROUP BY name ORDER BY COUNT(name) DESC
+Visualize LINE SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Year_Join , COUNT(Year_Join) FROM artist ORDER BY COUNT(Year_Join) DESC BIN Year_Join BY WEEKDAY
+Visualize BAR SELECT Name , Budget_in_Billions FROM department ORDER BY Budget_in_Billions ASC
+Visualize BAR SELECT COUNT(name) FROM races WHERE year BETWEEN 2009 AND 2011
+Visualize PIE SELECT Venue , COUNT(Venue) FROM match ORDER BY Date DESC
+Visualize BAR SELECT services , COUNT(services) FROM station GROUP BY local_authority ORDER BY COUNT(services) DESC
+Visualize BAR SELECT product_type_code , max(product_price) FROM Products GROUP BY product_type_code ORDER BY max(product_price) ASC
+Visualize BAR SELECT Policy_Type_Code , count(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY count(*) DESC
+Visualize BAR SELECT Year , COUNT(Year) FROM exhibition GROUP BY Year
+Visualize BAR SELECT product_category_code , avg(product_price) FROM Products GROUP BY product_category_code ORDER BY product_category_code ASC
+Visualize BAR SELECT EmployeeId , COUNT(Phone) FROM Employee GROUP BY EmployeeId ORDER BY COUNT(Phone) DESC
+Visualize BAR SELECT Policy_Type_Code , COUNT(*) FROM Policies GROUP BY Policy_Type_Code ORDER BY COUNT(*) DESC
+Visualize BAR SELECT product_type_code , avg(product_price) FROM Products GROUP BY product_type_code
+Visualize BAR SELECT Years_Played, COUNT(*) FROM player GROUP BY Years_Played ORDER BY Years_Played DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM People GROUP BY last_name ORDER BY COUNT(last_name) ASC
+Visualize BAR SELECT course_name , COUNT(course_name) FROM Courses GROUP BY course_name ORDER BY course_name ASC
+Visualize BAR SELECT time , COUNT(*) FROM train JOIN route ON train.id = route.train_id JOIN station ON route.station_id = station.id WHERE station.network_name = 'Chennai' GROUP BY time ORDER BY time
+Visualize BAR SELECT day_of_week , AVG(high_temperature) FROM weekly_weather GROUP BY day_of_week
+Visualize PIE SELECT card_type_code , count(*) FROM Customers_Cards GROUP BY card_type_code

@@ -1,0 +1,1172 @@
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName ASC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" BIN date_incident_start BY YEAR
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize PIE SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize LINE SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY YEAR
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS BIN Planned_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) DESC BIN date_of_notes BY WEEKDAY
+Visualize SCATTER SELECT sum(tours) , ranking_date FROM rankings GROUP BY ranking_date
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) ASC
+Visualize PIE SELECT cName , min(enr) FROM college GROUP BY state
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT other_details , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) ASC
+Visualize PIE SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize PIE SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize PIE SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY YEAR
+Visualize PIE SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) ASC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) DESC BIN Last_year BY WEEKDAY
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date DESC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_end) ASC BIN date_incident_end BY MONTH
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Actual_Delivery_Date) DESC BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry
+Visualize BAR SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS ASC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS ASC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) ASC BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name DESC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) ASC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name
+Visualize PIE SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY First_year
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT name , followers FROM user_profiles ORDER BY followers DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year ASC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) DESC
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) DESC
+Visualize BAR SELECT dept_name , SUM(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date ASC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) ASC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) DESC
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) DESC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize SCATTER SELECT max(capacity) , avg(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force ASC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date DESC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize PIE SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) ASC BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) DESC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY Industry ASC
+Visualize PIE SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY COUNT(date_of_latest_revision) ASC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) ASC BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY COUNT(*) ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) ASC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS BIN Planned_Delivery_Date BY YEAR
+Visualize SCATTER SELECT max(capacity) , avg(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize LINE SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) ASC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building ASC
+Visualize PIE SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) DESC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes DESC BIN date_of_notes BY YEAR
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) DESC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Planned_Delivery_Date) ASC BIN Planned_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_start) DESC BIN date_incident_start BY WEEKDAY
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN Last_year BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment ASC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name
+Visualize PIE SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY First_year ORDER BY COUNT(First_year) DESC
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building
+Visualize BAR SELECT other_details , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY COUNT(*) DESC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName ASC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize PIE SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT ID , salary FROM instructor ORDER BY salary
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) ASC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY First_year ORDER BY COUNT(First_year) ASC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date ASC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) ASC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) DESC BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Planned_Delivery_Date) DESC BIN Planned_Delivery_Date BY WEEKDAY
+Visualize PIE SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize PIE SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date DESC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY COUNT(Last_year) ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) ASC
+Visualize BAR SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building ASC
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT last_name , COUNT(last_name) FROM Teachers GROUP BY last_name ORDER BY last_name
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name
+Visualize PIE SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT name , Assets_billion FROM Companies ORDER BY name ASC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) ASC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name
+Visualize PIE SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled ASC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) ASC
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT dept_name , SUM(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) ASC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes DESC BIN date_of_notes BY YEAR
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) ASC
+Visualize LINE SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision ASC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS BIN Planned_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) ASC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision ASC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) ASC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize PIE SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) ASC BIN Last_year BY WEEKDAY
+Visualize PIE SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) ASC
+Visualize BAR SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY WEEKDAY
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) DESC BIN date_of_notes BY WEEKDAY
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize PIE SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" GROUP BY date_incident_end ORDER BY date_incident_end ASC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize PIE SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) ASC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_end) DESC BIN date_incident_end BY MONTH
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) ASC BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize PIE SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision DESC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building
+Visualize PIE SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY WEEKDAY
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize PIE SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" GROUP BY date_incident_end ORDER BY COUNT(date_incident_end) ASC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize PIE SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY WEEKDAY
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) ASC
+Visualize PIE SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date DESC BIN Actual_Delivery_Date BY YEAR
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) DESC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY YEAR
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) DESC
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT name , followers FROM user_profiles ORDER BY followers DESC
+Visualize PIE SELECT cName , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year ASC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) ASC
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) DESC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" GROUP BY date_incident_end ORDER BY date_incident_end DESC
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) ASC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date ASC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) DESC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state
+Visualize SCATTER SELECT Length , Height FROM roller_coaster
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) ASC
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize SCATTER SELECT Length , Height FROM roller_coaster
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made DESC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) DESC
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building
+Visualize PIE SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize SCATTER SELECT ID , salary FROM instructor ORDER BY salary
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state DESC
+Visualize PIE SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize PIE SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName DESC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize PIE SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY COUNT(date_of_latest_revision) DESC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building ASC
+Visualize PIE SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY COUNT(date_of_latest_revision) DESC BIN date_of_latest_revision BY WEEKDAY
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date ASC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(First_year) DESC BIN First_year BY WEEKDAY
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize SCATTER SELECT Length , Height FROM roller_coaster
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled ORDER BY Date_Claim_Settled ASC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) ASC BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" BIN date_incident_start BY WEEKDAY
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY COUNT(Last_year) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) ASC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name DESC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY YEAR
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) DESC BIN Date_Payment_Made BY YEAR
+Visualize PIE SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize PIE SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize PIE SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date ASC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Actual_Delivery_Date) DESC BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) ASC
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize SCATTER SELECT sum(tours) , ranking_date FROM rankings GROUP BY ranking_date
+Visualize LINE SELECT Date_Payment_Made , Amount_Payment FROM Payments GROUP BY Payment_Method_Code , Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) DESC
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) DESC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date DESC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Actual_Delivery_Date) ASC BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) DESC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year ASC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date DESC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name DESC
+Visualize PIE SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" GROUP BY date_incident_end ORDER BY COUNT(date_incident_end) DESC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date DESC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY Industry ASC
+Visualize BAR SELECT cName , enr FROM College ORDER BY enr
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT dept_name , SUM(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize PIE SELECT cName , min(enr) FROM college GROUP BY state
+Visualize PIE SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY count(*) DESC
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize PIE SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY WEEKDAY
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY YEAR
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building
+Visualize BAR SELECT other_details , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes ASC BIN date_of_notes BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes ASC BIN date_of_notes BY YEAR
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY YEAR
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) ASC
+Visualize BAR SELECT name , Assets_billion FROM Companies ORDER BY name ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) ASC
+Visualize BAR SELECT state , enr FROM College ORDER BY enr
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year DESC
+Visualize PIE SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY COUNT(Payment_Method_Code) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) DESC
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date ASC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize PIE SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location DESC
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state DESC
+Visualize PIE SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT dept_name , SUM(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) DESC
+Visualize LINE SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY YEAR
+Visualize SCATTER SELECT ID , salary FROM instructor ORDER BY salary
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS ASC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) ASC BIN date_of_notes BY WEEKDAY
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName ASC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) DESC
+Visualize PIE SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) DESC
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY COUNT(Location) DESC
+Visualize SCATTER SELECT sum(tours) , ranking_date FROM rankings GROUP BY ranking_date
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Planned_Delivery_Date) DESC BIN Planned_Delivery_Date BY WEEKDAY
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision ASC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM student GROUP BY dept_name ORDER BY tot_cred
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) ASC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent ASC
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize PIE SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize PIE SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName ASC
+Visualize BAR SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) ASC BIN date_of_notes BY WEEKDAY
+Visualize SCATTER SELECT sum(tours) , ranking_date FROM rankings GROUP BY ranking_date
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY COUNT(*) DESC
+Visualize SCATTER SELECT ID , salary FROM instructor ORDER BY salary
+Visualize SCATTER SELECT Payment_ID , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_start) DESC BIN date_incident_start BY YEAR
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) DESC BIN Last_year BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes ASC BIN date_of_notes BY YEAR
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY WEEKDAY
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year ORDER BY year DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force ASC
+Visualize PIE SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY max(capacity) DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS DESC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize PIE SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Settled BY YEAR
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) DESC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building DESC
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision DESC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY Industry DESC
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) ASC
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date ASC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name ASC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year DESC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName ASC
+Visualize BAR SELECT name , Assets_billion FROM Companies ORDER BY name ASC
+Visualize BAR SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize SCATTER SELECT sum(tours) , ranking_date FROM rankings GROUP BY ranking_date
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY avg(Product_Price) DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) ASC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize PIE SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(First_year) ASC BIN First_year BY WEEKDAY
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name ASC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements BIN Date_Claim_Settled BY WEEKDAY
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year ASC
+Visualize BAR SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year DESC
+Visualize SCATTER SELECT Length , Height FROM roller_coaster
+Visualize PIE SELECT state , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building ORDER BY building DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state DESC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize BAR SELECT dept_name , SUM(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) ASC BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName DESC
+Visualize PIE SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality DESC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" BIN date_incident_end BY MONTH
+Visualize PIE SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT name , Assets_billion FROM Companies ORDER BY name ASC
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY count(*) ASC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize SCATTER SELECT max(capacity) , avg(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName DESC
+Visualize PIE SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize LINE SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY WEEKDAY
+Visualize PIE SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name ASC
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name ASC
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , Assets_billion FROM Companies ORDER BY name ASC
+Visualize BAR SELECT other_details , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY pName ASC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name DESC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes BIN date_of_notes BY YEAR
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location DESC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name DESC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) DESC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) ASC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize SCATTER SELECT Payment_ID , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa'
+Visualize LINE SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY YEAR
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name DESC
+Visualize SCATTER SELECT sum(Population) , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM student GROUP BY dept_name ORDER BY tot_cred
+Visualize PIE SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements BIN Date_Claim_Made BY WEEKDAY
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_end) DESC BIN date_incident_end BY WEEKDAY
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) ASC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" GROUP BY date_incident_end
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements ORDER BY COUNT(Date_Claim_Settled) DESC BIN Date_Claim_Settled BY YEAR
+Visualize BAR SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes DESC BIN date_of_notes BY YEAR
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize PIE SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) ASC
+Visualize BAR SELECT First_year , COUNT(First_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN First_year BY WEEKDAY
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" BIN date_incident_end BY WEEKDAY
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name
+Visualize BAR SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY AVG(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize LINE SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY Actual_Delivery_Date DESC BIN Actual_Delivery_Date BY YEAR
+Visualize BAR SELECT Location , COUNT(Location) FROM party GROUP BY Location ORDER BY Location ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize LINE SELECT year , count(*) FROM SECTION GROUP BY semester , year
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize LINE SELECT Order_Date , COUNT(Order_Date) FROM BOOKINGS BIN Order_Date BY YEAR
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_start) ASC BIN date_incident_start BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name DESC
+Visualize LINE SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details , date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building
+Visualize PIE SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name
+Visualize BAR SELECT date_address_from , COUNT(date_address_from) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT other_details , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) DESC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY catalog_entry_name ASC
+Visualize LINE SELECT Date_Claim_Settled , COUNT(Date_Claim_Settled) FROM Settlements GROUP BY Date_Claim_Settled
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY year DESC
+Visualize SCATTER SELECT ID , salary FROM instructor ORDER BY salary
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY min(enr) ASC
+Visualize LINE SELECT date_address_from , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) ASC
+Visualize BAR SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , count(*) FROM tryout GROUP BY cName ORDER BY count(*) DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes ASC BIN date_of_notes BY YEAR
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY sum(credits) ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY WEEKDAY
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT date_incident_end , COUNT(date_incident_end) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_end) ASC BIN date_incident_end BY WEEKDAY
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize LINE SELECT Date_Payment_Made , AVG(Amount_Payment) FROM Payments GROUP BY Date_Payment_Made ORDER BY Date_Payment_Made ASC
+Visualize PIE SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_name DESC
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY Nationality ASC
+Visualize BAR SELECT pName , HS FROM Player WHERE HS < 1500 ORDER BY HS DESC
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY name DESC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY COUNT(building) ASC
+Visualize BAR SELECT Date_Payment_Made , SUM(Amount_Payment) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY SUM(Amount_Payment) ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY name ASC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments GROUP BY Payment_Method_Code ORDER BY Date_Payment_Made ASC BIN Date_Payment_Made BY YEAR
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment ASC
+Visualize BAR SELECT Date_Payment_Made , Amount_Payment FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY Amount_Payment DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY COUNT(Last_year) DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name
+Visualize BAR SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY COUNT(date_of_notes) DESC BIN date_of_notes BY WEEKDAY
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm
+Visualize PIE SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent DESC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name ASC
+Visualize LINE SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY Planned_Delivery_Date ASC BIN Planned_Delivery_Date BY YEAR
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand
+Visualize BAR SELECT dept_name , sum(credits) FROM course GROUP BY dept_name
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) ASC
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY sum(Population) DESC
+Visualize BAR SELECT cName , enr FROM College ORDER BY enr
+Visualize BAR SELECT name , COUNT(name) FROM Highschooler GROUP BY name ORDER BY COUNT(name) DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" GROUP BY Last_year ORDER BY COUNT(Last_year) ASC
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT date_incident_start , COUNT(date_incident_start) FROM Behavior_Incident WHERE incident_type_code = "NOISE" ORDER BY COUNT(date_incident_start) ASC BIN date_incident_start BY YEAR
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY count(*) DESC
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize LINE SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT building , max(capacity) FROM classroom GROUP BY building
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code DESC
+Visualize BAR SELECT dept_name , min(salary) FROM instructor GROUP BY dept_name ORDER BY min(salary) ASC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state ORDER BY cName DESC
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" BIN Last_year BY WEEKDAY
+Visualize PIE SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code
+Visualize LINE SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses GROUP BY date_address_to ORDER BY monthly_rental DESC
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building ORDER BY building ASC
+Visualize BAR SELECT building , count(*) FROM classroom WHERE capacity > 50 GROUP BY building ORDER BY count(*) ASC
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT hand , count(*) FROM players GROUP BY hand ORDER BY hand DESC
+Visualize BAR SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY COUNT(date_of_latest_revision) ASC BIN date_of_latest_revision BY WEEKDAY
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) ASC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) ASC
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY Continent ASC
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY COUNT(*) ASC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize SCATTER SELECT sum(Population) , avg(LifeExpectancy) FROM country GROUP BY Continent
+Visualize BAR SELECT date_address_to , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) DESC BIN Date_Claim_Made BY YEAR
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT catalog_entry_name , capacity FROM Catalog_Contents WHERE price_in_dollars > 700 ORDER BY capacity ASC
+Visualize BAR SELECT dept_name , COUNT(dept_name) FROM instructor GROUP BY dept_name ORDER BY salary
+Visualize PIE SELECT other_details , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY min(enr) DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY Payment_Method_Code ASC
+Visualize PIE SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm ORDER BY GovernmentForm ASC
+Visualize BAR SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT Industry , COUNT(*) FROM Companies GROUP BY Industry ORDER BY Industry DESC
+Visualize BAR SELECT state , min(enr) FROM college GROUP BY state ORDER BY state ASC
+Visualize PIE SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize SCATTER SELECT student_id , address_id FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT cName , min(enr) FROM college GROUP BY state
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) ASC
+Visualize SCATTER SELECT address_id , monthly_rental FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT name , AVG(grade) FROM Highschooler GROUP BY name ORDER BY AVG(grade) DESC
+Visualize BAR SELECT Nationality , COUNT(*) FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC
+Visualize BAR SELECT Payment_Method_Code , SUM(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY SUM(Amount_Payment) ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+Visualize BAR SELECT GovernmentForm , sum(Population) FROM country GROUP BY GovernmentForm
+Visualize BAR SELECT Last_year , COUNT(Last_year) FROM party WHERE Party_Theme = "Spring" OR Party_Theme = "Teqnology" ORDER BY COUNT(Last_year) ASC BIN Last_year BY WEEKDAY
+Visualize PIE SELECT state , enr FROM College ORDER BY enr
+Visualize BAR SELECT building , avg(capacity) FROM classroom GROUP BY building ORDER BY avg(capacity) DESC
+Visualize PIE SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5
+Visualize BAR SELECT Actual_Delivery_Date , COUNT(Actual_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Actual_Delivery_Date) ASC BIN Actual_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT Payment_Method_Code , COUNT(Payment_Method_Code) FROM Payments GROUP BY Payment_Method_Code
+Visualize LINE SELECT date_of_latest_revision , COUNT(date_of_latest_revision) FROM Catalogs ORDER BY date_of_latest_revision DESC BIN date_of_latest_revision BY MONTH
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT date_address_from , SUM(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize LINE SELECT date_of_notes , COUNT(date_of_notes) FROM Assessment_Notes ORDER BY date_of_notes DESC BIN date_of_notes BY YEAR
+Visualize BAR SELECT date_address_to , COUNT(date_address_to) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_to BY WEEKDAY
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) DESC
+Visualize BAR SELECT date_address_from , AVG(monthly_rental) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC BIN date_address_from BY YEAR
+Visualize BAR SELECT Continent , avg(LifeExpectancy) FROM country GROUP BY Continent ORDER BY avg(LifeExpectancy) ASC
+Visualize PIE SELECT cName , enr FROM College ORDER BY enr
+Visualize SCATTER SELECT student_id , monthly_rental FROM Student_Addresses ORDER BY monthly_rental DESC
+Visualize BAR SELECT Payment_Method_Code , AVG(Amount_Payment) FROM Payments GROUP BY Payment_Method_Code ORDER BY AVG(Amount_Payment) DESC
+Visualize BAR SELECT Date_Payment_Made , COUNT(Date_Payment_Made) FROM Payments WHERE Payment_Method_Code = 'Visa' ORDER BY COUNT(Date_Payment_Made) DESC BIN Date_Payment_Made BY WEEKDAY
+Visualize BAR SELECT Police_force , COUNT(*) FROM county_public_safety GROUP BY Police_force ORDER BY Police_force DESC
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY AVG(salary) ASC
+Visualize BAR SELECT name , SUM(grade) FROM Highschooler GROUP BY name ORDER BY SUM(grade) ASC
+Visualize BAR SELECT Product_Name , avg(Product_Price) FROM PRODUCTS GROUP BY Product_Name ORDER BY Product_Name ASC
+Visualize BAR SELECT dept_name , count(*) FROM student GROUP BY dept_name ORDER BY dept_name ASC
+Visualize BAR SELECT catalog_level_name , catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10 ORDER BY catalog_level_number DESC
+Visualize BAR SELECT Date_Claim_Made , COUNT(Date_Claim_Made) FROM Settlements ORDER BY COUNT(Date_Claim_Made) DESC BIN Date_Claim_Made BY WEEKDAY
+Visualize BAR SELECT payment_method_code , count(*) FROM INVOICES GROUP BY payment_method_code ORDER BY payment_method_code ASC
+Visualize BAR SELECT date_address_to , SUM(monthly_rental) FROM Student_Addresses ORDER BY monthly_rental DESC BIN date_address_to BY MONTH
+Visualize PIE SELECT other_details , COUNT(other_details) FROM Student_Addresses GROUP BY other_details ORDER BY monthly_rental DESC
+Visualize BAR SELECT year , count(*) FROM matches GROUP BY YEAR ORDER BY count(*) ASC
+Visualize BAR SELECT building , COUNT(building) FROM department GROUP BY building
+Visualize BAR SELECT Planned_Delivery_Date , COUNT(Planned_Delivery_Date) FROM BOOKINGS ORDER BY COUNT(Planned_Delivery_Date) ASC BIN Planned_Delivery_Date BY WEEKDAY
+Visualize BAR SELECT dept_name , AVG(salary) FROM instructor GROUP BY dept_name ORDER BY dept_name ASC

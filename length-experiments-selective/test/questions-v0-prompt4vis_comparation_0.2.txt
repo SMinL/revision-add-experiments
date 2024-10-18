@@ -1,0 +1,2 @@
+avg_org_prompt_length:635.4266211604096
+avg_compress_prompt_length:545.6988054607508
